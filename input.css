@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.splide {
+  position: initial;
+}
+
+.splide__arrow svg {
+  width: 14px;
+  height: 14px;
+}
+
+.hover-change-primary-to-white:hover > .text-primary {
+  color: white !important;
+}
+
+@media (min-width: 768px) {
+  .splide__arrow svg {
+    width: 20px;
+    height: 20px;
+  }
+}
