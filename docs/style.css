@@ -555,6 +555,11 @@ video {
   position: relative;
 }
 
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mr-8{
   margin-right: 2rem;
 }
@@ -601,6 +606,14 @@ video {
 
 .mb-6{
   margin-bottom: 1.5rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.mb-1{
+  margin-bottom: 0.25rem;
 }
 
 .flex{
@@ -651,6 +664,22 @@ video {
   height: 600px;
 }
 
+.h-\[212px\]{
+  height: 212px;
+}
+
+.h-\[172px\]{
+  height: 172px;
+}
+
+.h-32{
+  height: 8rem;
+}
+
+.h-\[162px\]{
+  height: 162px;
+}
+
 .w-full{
   width: 100%;
 }
@@ -663,12 +692,24 @@ video {
   width: 159px;
 }
 
+.w-\[162px\]{
+  width: 162px;
+}
+
+.w-32{
+  width: 8rem;
+}
+
 .list-disc{
   list-style-type: disc;
 }
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -703,8 +744,24 @@ video {
   gap: 0.5rem;
 }
 
+.gap-9{
+  gap: 2.25rem;
+}
+
+.gap-8{
+  gap: 2rem;
+}
+
+.gap-10{
+  gap: 2.5rem;
+}
+
 .rounded-xl{
   border-radius: 0.75rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
 }
 
 .bg-white{
@@ -746,6 +803,10 @@ video {
   background-image: url('https://i.ibb.co/xFdYdk6/bg-hero.png');
 }
 
+.bg-\[url\(\'https\:\/\/i\.ibb\.co\/rdMbVLy\/team-hero\.png\'\)\]{
+  background-image: url('https://i.ibb.co/rdMbVLy/team-hero.png');
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -771,6 +832,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pl-6{
   padding-left: 1.5rem;
 }
@@ -793,6 +859,11 @@ video {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold{
@@ -833,6 +904,16 @@ video {
 .text-green-600{
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+
+.text-gray-700{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-gray-600{
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -893,6 +974,10 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -914,5 +999,13 @@ video {
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:items-center{
+    align-items: center;
   }
 }
