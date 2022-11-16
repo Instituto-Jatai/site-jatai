@@ -10,9 +10,12 @@
   <body>
     <div class="relative bg-white">
       <!-- Header -->
-      <div class="bg-white h-20">
+      <div
+        class="bg-white sticky top-0 left-0 right-0 h-20 overflow-hidden px-4"
+        id="header"
+      >
         <div
-          class="container w-full h-full flex flex-row items-center justify-between"
+          class="container w-full h-20 flex flex-row items-center justify-between"
         >
           <div class="p-4 flex flex-row">
             <img
@@ -41,8 +44,22 @@
               </a>
             </div>
           </div>
+
           <div class="p-4">
-            <img src="../assets/menu.svg" alt="menu" class="lg:hidden" />
+            <img
+              src="../assets/menu.svg"
+              onclick="handleMobileMenu()"
+              alt="menu"
+              id="menu-sandwich"
+              class="lg:hidden"
+            />
+            <img
+              src="../assets/close.svg"
+              onclick="handleMobileMenu()"
+              id="menu-close"
+              alt="close menu "
+              class="hidden lg:hidden"
+            />
             <div class="items-center p-6 hidden lg:flex">
               <a href="https://twitter.com/jatai_org" target="_blank">
                 <img
@@ -69,6 +86,50 @@
                 />
               </a>
             </div>
+          </div>
+        </div>
+        <div class="container flex flex-col">
+          <a
+            href="/"
+            class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8"
+          >
+            Início
+          </a>
+          <a
+            href="/team"
+            class="p-4 border-b border-gray-600 text-base text-green-700 hover:text-green-700 mr-8 font-semibold"
+          >
+            Equipe
+          </a>
+          <a
+            href="/contact"
+            class="p-4 text-base text-gray-800 hover:text-green-700 mr-8"
+          >
+            Contato
+          </a>
+
+          <div class="mt-6 items-center flex flex-row">
+            <a
+              class="mr-4"
+              href="https://twitter.com/jatai_org"
+              target="_blank"
+            >
+              <img src="../assets/twitter.svg " alt="Twitter" class="h-10" />
+            </a>
+            <a
+              class="mr-4"
+              href="https://www.linkedin.com/company/jatai/about/"
+              target="_blank"
+            >
+              <img src="../assets/linkedin.svg" alt="LinkedIn" class="h-10" />
+            </a>
+            <a
+              class="mr-4"
+              href="https://github.com/Instituto-Jatai"
+              target="_blank"
+            >
+              <img src="../assets/github.svg" alt="Github" class="h-10" />
+            </a>
           </div>
         </div>
       </div>
@@ -273,5 +334,34 @@
         </div>
       </div>
     </div>
+    <script>
+      function handleMobileMenu() {
+        const header = document.getElementById("header");
+        const menuSanduiche = document.getElementById("menu-sandwich");
+        const closeButton = document.getElementById("menu-close");
+
+        menuSanduiche.addEventListener("click", () => {
+          header.classList.add(
+            "flex",
+            "flex-col",
+
+            "h-[100vh]"
+          );
+          menuSanduiche.classList.add("hidden");
+          closeButton.classList.remove("hidden");
+        });
+
+        closeButton.addEventListener("click", () => {
+          header.classList.remove(
+            "flex",
+            "flex-col",
+
+            "h-[100vh]"
+          );
+          menuSanduiche.classList.remove("hidden");
+          closeButton.classList.add("hidden");
+        });
+      }
+    </script>
   </body>
 </html>
