@@ -12,7 +12,7 @@
       <!-- Header -->
       <div
         id="header"
-        class="bg-white fixed top-0 left-0 right-0 h-20 overflow-hidden"
+        class="bg-white fixed top-0 left-0 right-0 h-20 overflow-hidden px-4"
       >
         <div
           class="container w-full h-20 flex flex-row items-center justify-between"
@@ -49,7 +49,15 @@
               src="assets/menu.svg"
               onclick="handleMobileMenu()"
               alt="menu"
+              id="menu-sandwich"
               class="lg:hidden"
+            />
+            <img
+              src="assets/close.svg"
+              onclick="handleMobileMenu()"
+              id="menu-close"
+              alt="close menu "
+              class="hidden lg:hidden"
             />
             <div class="items-center p-6 hidden lg:flex">
               <a href="https://twitter.com/jatai_org" target="_blank">
@@ -421,11 +429,30 @@
     <script>
       function handleMobileMenu() {
         const header = document.getElementById("header");
-        if (header.classList.contains("h-full")) {
-          header.classList.remove("h-full");
-        } else {
-          header.classList.add("h-full");
-        }
+        const menuSanduiche = document.getElementById("menu-sandwich");
+        const closeButton = document.getElementById("menu-close");
+
+        menuSanduiche.addEventListener("click", () => {
+          header.classList.add(
+            "flex",
+            "flex-col",
+
+            "h-[100vh]"
+          );
+          menuSanduiche.classList.add("hidden");
+          closeButton.classList.remove("hidden");
+        });
+
+        closeButton.addEventListener("click", () => {
+          header.classList.remove(
+            "flex",
+            "flex-col",
+
+            "h-[100vh]"
+          );
+          menuSanduiche.classList.remove("hidden");
+          closeButton.classList.add("hidden");
+        });
       }
     </script>
   </body>
