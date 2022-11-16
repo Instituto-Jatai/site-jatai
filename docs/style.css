@@ -680,6 +680,10 @@ video {
   height: 162px;
 }
 
+.h-\[24px\]{
+  height: 24px;
+}
+
 .w-full{
   width: 100%;
 }
@@ -764,6 +768,28 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-2xl{
+  border-radius: 1rem;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.border-2{
+  border-width: 2px;
+}
+
+.border-gray-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.border-gray-200{
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -807,6 +833,10 @@ video {
   background-image: url('https://i.ibb.co/rdMbVLy/team-hero.png');
 }
 
+.bg-\[url\(\'https\:\/\/i\.ibb\.co\/Lnf1byd\/hero-contact\.png\'\)\]{
+  background-image: url('https://i.ibb.co/Lnf1byd/hero-contact.png');
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -835,6 +865,11 @@ video {
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pl-6{
