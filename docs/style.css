@@ -571,6 +571,10 @@ video {
   margin-top: 2.25rem;
 }
 
+.mb-16{
+  margin-bottom: 4rem;
+}
+
 .mt-16{
   margin-top: 4rem;
 }
@@ -587,14 +591,6 @@ video {
   margin-top: 2rem;
 }
 
-.mb-4{
-  margin-bottom: 1rem;
-}
-
-.mb-6{
-  margin-bottom: 1.5rem;
-}
-
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -603,8 +599,8 @@ video {
   margin-top: 1rem;
 }
 
-.mb-16{
-  margin-bottom: 4rem;
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 
 .flex{
@@ -651,22 +647,6 @@ video {
   height: 150px;
 }
 
-.h-\[500px\]{
-  height: 500px;
-}
-
-.h-\[350px\]{
-  height: 350px;
-}
-
-.h-\[558\]{
-  height: 558;
-}
-
-.h-\[558px\]{
-  height: 558px;
-}
-
 .h-\[600px\]{
   height: 600px;
 }
@@ -683,10 +663,6 @@ video {
   width: 159px;
 }
 
-.w-\[558px\]{
-  width: 558px;
-}
-
 .list-disc{
   list-style-type: disc;
 }
@@ -701,10 +677,6 @@ video {
 
 .flex-col{
   flex-direction: column;
-}
-
-.content-center{
-  align-content: center;
 }
 
 .items-start{
@@ -760,24 +732,14 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.bg-slate-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-}
-
-.bg-slate-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
-}
-
 .bg-slate-900{
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-.bg-slate-800{
+.bg-green-800{
   --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  background-color: rgb(22 101 52 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'https\:\/\/i\.ibb\.co\/xFdYdk6\/bg-hero\.png\'\)\]{
@@ -826,11 +788,6 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-2xl{
@@ -912,24 +869,16 @@ video {
     margin-right: 2.5rem;
   }
 
-  .md\:h-\[350px\]{
-    height: 350px;
-  }
-
-  .md\:h-\[360px\]{
-    height: 360px;
-  }
-
-  .md\:h-\[460px\]{
-    height: 460px;
-  }
-
   .md\:h-\[380px\]{
     height: 380px;
   }
 
   .md\:w-\[558px\]{
     width: 558px;
+  }
+
+  .md\:w-full{
+    width: 100%;
   }
 
   .md\:max-w-\[558px\]{
