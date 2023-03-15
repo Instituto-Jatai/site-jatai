@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Pré-diagnóstico</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-E2E5R7TPJW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-E2E5R7TPJW");
+    </script>
+  </head>
+  <body>
+    <div class="relative bg-white">
+      <!-- Header -->
+      <div
+        class="bg-white sticky top-0 left-0 right-0 h-20 overflow-hidden px-4"
+        id="header"
+      >
+        <div
+          class="container w-full h-20 flex flex-row items-center justify-between"
+        >
+          <div class="p-4 flex flex-row">
+            <img
+              src="../assets/jatai-green-logo.svg"
+              alt="Logo"
+              class="h-7 md:mr-10"
+            />
+            <div class="hidden items-center lg:flex">
+              <a
+                href="/"
+                class="text-base text-gray-800 hover:text-green-700 mr-8"
+              >
+                Início
+              </a>
+              <a
+                href="/team"
+                class="text-base text-gray-800 hover:text-green-700 mr-8"
+              >
+                Equipe
+              </a>
+              <a
+                href="/contact"
+                class="text-base text-gray-800 hover:text-green-700 mr-8"
+              >
+                Contato
+              </a>
+              <a
+                href="/prediagnosis"
+                class="text-base text-green-700 hover:text-green-700 mr-8 font-semibold"
+              >
+                Pré-diagnóstico
+              </a>
+            </div>
+          </div>
+
+          <div class="p-4">
+            <img
+              src="../assets/menu.svg"
+              onclick="handleMobileMenu()"
+              alt="menu"
+              id="menu-sandwich"
+              class="lg:hidden"
+            />
+            <img
+              src="../assets/close.svg"
+              onclick="handleMobileMenu()"
+              id="menu-close"
+              alt="close menu "
+              class="hidden lg:hidden"
+            />
+            <div class="items-center p-6 hidden lg:flex">
+              <a href="https://twitter.com/jatai_org" target="_blank">
+                <img
+                  src="../assets/twitter.svg "
+                  alt="Twitter"
+                  class="h-10 mr-6"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/jatai/about/"
+                target="_blank"
+              >
+                <img
+                  src="../assets/linkedin.svg"
+                  alt="LinkedIn"
+                  class="h-10 mr-6"
+                />
+              </a>
+              <a href="https://github.com/Instituto-Jatai" target="_blank">
+                <img
+                  src="../assets/github.svg"
+                  alt="Github"
+                  class="h-10 mr-6"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container flex flex-col">
+          <a
+            href="/"
+            class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8"
+          >
+            Início
+          </a>
+          <a
+            href="/team"
+            class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8"
+          >
+            Equipe
+          </a>
+          <a
+            href="/contact"
+            class="p-4 text-base text-gray-800 hover:text-green-700 mr-8"
+          >
+            Contato
+          </a>
+          <a
+            href="/prediagnosis"
+            class="p-4 border-b border-gray-600 text-base text-green-700 hover:text-green-700 mr-8 font-semibold"
+          >
+            Pré-diagnóstico
+          </a>
+
+          <div class="mt-6 items-center flex flex-row">
+            <a
+              class="mr-4"
+              href="https://twitter.com/jatai_org"
+              target="_blank"
+            >
+              <img src="../assets/twitter.svg " alt="Twitter" class="h-10" />
+            </a>
+            <a
+              class="mr-4"
+              href="https://www.linkedin.com/company/jatai/about/"
+              target="_blank"
+            >
+              <img src="../assets/linkedin.svg" alt="LinkedIn" class="h-10" />
+            </a>
+            <a
+              class="mr-4"
+              href="https://github.com/Instituto-Jatai"
+              target="_blank"
+            >
+              <img src="../assets/github.svg" alt="Github" class="h-10" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- End of Header -->
+    </div>
+  </body>
+</html>
