@@ -831,6 +831,14 @@ video {
   background-image: url('https://i.ibb.co/rdMbVLy/team-hero.png');
 }
 
+.bg-\[url\(\'https\:\/\/ibb\.co\/LYtJF7T\'\)\]{
+  background-image: url('https://ibb.co/LYtJF7T');
+}
+
+.bg-\[url\(\'https\:\/\/i\.ibb\.co\/n6cnGJX\/christin-hume-Hcfwew744z4-unsplash-1\.png\'\)\]{
+  background-image: url('https://i.ibb.co/n6cnGJX/christin-hume-Hcfwew744z4-unsplash-1.png');
+}
+
 .bg-cover{
   background-size: cover;
 }
