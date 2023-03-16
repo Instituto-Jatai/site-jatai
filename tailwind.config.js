@@ -9,7 +9,7 @@ module.exports = {
         "primary-transparent": "#00a4ea0d",
         "gray-transparent": "#000000b3",
         "white-transparent": "#ffffffcc",
-        "teste": "rgba(20, 31, 25, 0.5)",
+        "light-grey": "rgba(20, 31, 25, 0.5)",
       },
       container: {
         center: true,
