@@ -806,6 +806,10 @@ video {
   gap: 2.25rem;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
 .gap-y-6{
   row-gap: 1.5rem;
 }
@@ -888,6 +892,14 @@ video {
 
 .bg-\[url\(\'https\:\/\/i\.ibb\.co\/rdMbVLy\/team-hero\.png\'\)\]{
   background-image: url('https://i.ibb.co/rdMbVLy/team-hero.png');
+}
+
+.bg-\[url\(\'https\:\/\/i\.ibb\.co\/3YJ3LTB\/Frame-685\.png\'\)\]{
+  background-image: url('https://i.ibb.co/3YJ3LTB/Frame-685.png');
+}
+
+.bg-\[url\(\'https\:\/\/ibb\.co\/Nn4vHFZ\'\)\]{
+  background-image: url('https://ibb.co/Nn4vHFZ');
 }
 
 .bg-cover{
