@@ -818,6 +818,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-y-hidden{
+  overflow-y: hidden;
+}
+
 .rounded-xl{
   border-radius: 0.75rem;
 }
