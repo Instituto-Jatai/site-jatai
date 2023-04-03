@@ -22,11 +22,12 @@
 
 <body>
   <div class="relative pt-20 bg-white">
+   
     <!-- Header -->
-    <div id="header" class="bg-white fixed top-0 left-0 right-0 h-20 overflow-hidden px-4">
+    <div class="bg-white sticky top-0 left-0 right-0 h-20 overflow-hidden px-4" id="header">
       <div class="container w-full h-20 flex flex-row items-center justify-between">
         <div class="p-4 flex flex-row">
-          <img src="assets/jatai-green-logo.svg" alt="Logo" class="h-7 md:mr-10" />
+          <img src="../assets/jatai-green-logo.svg" alt="Logo" class="h-7 md:mr-10" />
           <div class="hidden items-center lg:flex">
             <a href="/" class="text-base text-green-700 hover:text-green-700 mr-8 font-semibold">
               Início
@@ -37,10 +38,12 @@
             <a href="/contact" class="text-base text-gray-800 hover:text-green-700 mr-8">
               Contato
             </a>
-            <a href="/cases" class="text-base text-gray-800 hover:text-green-700 mr-8">
-              Casos de Sucesso
             </a>
-            <a href="/#" class="text-base text-gray-800 hover:text-green-700 mr-8 flex flex-row gap-2">
+            <a href="/cases"
+                            class=" text-base text-gray-800 hover:text-green-700 mr-8">
+                            Casos de Sucesso
+            </a>
+            <a href="/prediagnosis" class="text-base text-gray-800 hover:text-green-700 mr-8 flex flex-row gap-2">
               Pré-diagnóstico
               <span class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full font-semibold">
                 EM BREVE!
@@ -48,38 +51,40 @@
             </a>
           </div>
         </div>
+
         <div class="p-4">
-          <img src="assets/menu.svg" onclick="handleMobileMenu()" alt="menu" id="menu-sandwich" class="lg:hidden" />
-          <img src="assets/close.svg" onclick="handleMobileMenu()" id="topic-close-button" alt="close menu "
+          <img src="../assets/menu.svg" onclick="handleMobileMenu()" alt="menu" id="menu-sandwich" class="lg:hidden" />
+          <img src="../assets/close.svg" onclick="handleMobileMenu()" id="menu-close" alt="close menu "
             class="hidden lg:hidden" />
           <div class="items-center p-6 hidden lg:flex">
             <a href="https://twitter.com/jatai_org" target="_blank">
-              <img src="assets/twitter.svg " alt="Twitter" class="h-10 mr-6" />
+              <img src="../assets/twitter.svg " alt="Twitter" class="h-10 mr-6" />
             </a>
             <a href="https://www.linkedin.com/company/jatai/about/" target="_blank">
-              <img src="assets/linkedin.svg" alt="LinkedIn" class="h-10 mr-6" />
+              <img src="../assets/linkedin.svg" alt="LinkedIn" class="h-10 mr-6" />
             </a>
             <a href="https://github.com/Instituto-Jatai" target="_blank">
-              <img src="assets/github.svg" alt="Github" class="h-10 mr-6" />
+              <img src="../assets/github.svg" alt="Github" class="h-10 mr-6" />
             </a>
           </div>
         </div>
       </div>
       <div class="container flex flex-col">
-        <a href="/"
-          class="p-4 border-b border-gray-600 text-base text-green-700 hover:text-green-700 mr-8 font-semibold">
+        <a href="/" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8">
           Início
         </a>
-        <a href="/team" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8">
+        <a href="/team"
+          class="p-4 border-b border-gray-600 text-base text-green-700 hover:text-green-700 mr-8 font-semibold">
           Equipe
         </a>
         <a href="/contact" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8">
           Contato
         </a>
-        <a href="/cases" class="text-base border-b text-gray-800 hover:text-green-700 mr-8">
-          Casos de Sucesso
-        </a>
-        <a href="/#" class="p-4  text-base text-gray-800 hover:text-green-700 mr-8 flex flex-row gap-2">
+        <a href="/cases"
+                            class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8">
+                            Casos de Sucesso
+                        </a>
+        <a href="/prediagnosis" class="p-4  text-base text-gray-800 hover:text-green-700 mr-8 flex flex-row gap-2">
           Pré-diagnóstico
           <span class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full font-semibold">
             EM BREVE!
@@ -88,13 +93,13 @@
 
         <div class="mt-6 items-center flex flex-row">
           <a class="mr-4" href="https://twitter.com/jatai_org" target="_blank">
-            <img src="assets/twitter.svg " alt="Twitter" class="h-10" />
+            <img src="../assets/twitter.svg " alt="Twitter" class="h-10" />
           </a>
           <a class="mr-4" href="https://www.linkedin.com/company/jatai/about/" target="_blank">
-            <img src="assets/linkedin.svg" alt="LinkedIn" class="h-10" />
+            <img src="../assets/linkedin.svg" alt="LinkedIn" class="h-10" />
           </a>
           <a class="mr-4" href="https://github.com/Instituto-Jatai" target="_blank">
-            <img src="assets/github.svg" alt="Github" class="h-10" />
+            <img src="../assets/github.svg" alt="Github" class="h-10" />
           </a>
         </div>
       </div>
@@ -351,6 +356,37 @@
       </div>
     </div>
   </div>
+    <script>
+    function handleMobileMenu() {
+      const header = document.getElementById("header");
+      const menuSanduiche = document.getElementById("menu-sandwich");
+      const closeButton = document.getElementById("menu-close");
+
+      menuSanduiche.addEventListener("click", () => {
+        header.classList.add(
+          "flex",
+          "flex-col",
+
+          "h-[100vh]"
+        );
+        menuSanduiche.classList.add("hidden");
+        closeButton.classList.remove("hidden");
+      });
+
+      closeButton.addEventListener("click", () => {
+        header.classList.remove(
+          "flex",
+          "flex-col",
+
+          "h-[100vh]"
+        );
+        menuSanduiche.classList.remove("hidden");
+        closeButton.classList.add("hidden");
+      });
+    }
+      
+      handleMobileMenu();
+  </script>
   <script>
     function handleToggleTopic() {
       const topic1 = document.getElementById("div-topic-one");
@@ -361,7 +397,6 @@
       const topic2Button = document.getElementById("img-topic-two");
       const topic3Button = document.getElementById("img-topic-three");
 
-      // The img-topic when clicked must toggle the hidden class of the div-topic amd change the src of the img-topic, when other img-topic is clicked, the div-topic must be hidden and the img-topic must change the src to the original one
       topic1Button.addEventListener("click", () => {
         topic1.classList.toggle("hidden");
         topic2.classList.add("hidden");
@@ -408,35 +443,6 @@
     }
 
     handleToggleTopic();
-
-
-    function handleMobileMenu() {
-      const header = document.getElementById("header");
-      const menuSanduiche = document.getElementById("menu-sandwich");
-      const closeButton = document.getElementById("menu-close");
-
-      menuSanduiche.addEventListener("click", () => {
-        header.classList.add(
-          "flex",
-          "flex-col",
-
-          "h-[100vh]"
-        );
-        menuSanduiche.classList.add("hidden");
-        closeButton.classList.remove("hidden");
-      });
-
-      closeButton.addEventListener("click", () => {
-        header.classList.remove(
-          "flex",
-          "flex-col",
-
-          "h-[100vh]"
-        );
-        menuSanduiche.classList.remove("hidden");
-        closeButton.classList.add("hidden");
-      });
-    }
   </script>
 </body>
 
