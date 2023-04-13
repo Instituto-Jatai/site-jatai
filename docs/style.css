@@ -748,6 +748,10 @@ video {
   height: 80px;
 }
 
+.h-8{
+  height: 2rem;
+}
+
 .max-h-\[200px\]{
   max-height: 200px;
 }
@@ -1239,6 +1243,10 @@ video {
 @media (min-width: 768px){
   .md\:mr-10{
     margin-right: 2.5rem;
+  }
+
+  .md\:flex{
+    display: flex;
   }
 
   .md\:h-\[380px\]{

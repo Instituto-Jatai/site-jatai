@@ -31,7 +31,7 @@
             <img src="../assets/jatai-green-logo.svg" alt="Logo" class="h-7 md:mr-10" />
           </a>
 
-          <select id="language-select" class="mr-10">
+          <select id="language-select" class="mr-10 hidden md:flex">
             <option value="pt">Português</option>
             <option value="en">English</option>
             <option value="es">Español</option>
@@ -52,11 +52,14 @@
                             class=" text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Casos de Sucesso">
                             Casos de Sucesso
             </a>
-            <a href="/" class="text-base text-gray-800 hover:text-green-700 mr-8 flex flex-row gap-2" data-i18n="Pré-diagnóstico">
-              Pré-diagnóstico
-              <span class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full font-semibold" data-i18n="EM BREVE!">
-                EM BREVE!
-              </span>
+            <div class="flex flex-row gap-2">
+              <a href="/" class="text-base text-gray-800 hover:text-green-700" data-i18n="Pré-diagnóstico">
+                Pré-diagnóstico
+                </a>
+                <span class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full font-semibold" data-i18n="EM BREVE!">
+                  EM BREVE!
+                </span>
+            </div>
             </a>
           </div>
         </div>
@@ -80,25 +83,28 @@
       </div>
       <div class="container flex flex-col">
         <a href="/"
-          class="p-4 border-b border-gray-600 text-base text-green-700 hover:text-green-700 mr-8 font-semibold">
+          class="p-4 border-b border-gray-600 text-base text-green-700 hover:text-green-700 mr-8 font-semibold" data-i18n="Início">
           Início
         </a>
-        <a href="/team" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8">
+        <a href="/team" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Equipe">
           Equipe
         </a>
-        <a href="/contact" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8">
+        <a href="/contact" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Contato">
           Contato
         </a>
         <a href="/cases"
-                            class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8">
-                            Casos de Sucesso
-                        </a>
-        <a href="/" class="p-4  text-base text-gray-800 hover:text-green-700 mr-8 flex flex-row gap-2">
-          Pré-diagnóstico
-          <span class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full font-semibold">
+          class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Casos de Sucesso">
+          Casos de Sucesso
+        </a>
+        <div class="flex flex-row items-center">
+          <a href="/" class="p-4  text-base text-gray-800 hover:text-green-700 flex flex-row" data-i18n="Pré-diagnóstico">
+            Pré-diagnóstico
+          </a>
+          <span class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full flex h-8 justify-center font-semibold" data-i18n="EM BREVE!">
             EM BREVE!
           </span>
-        </a>
+        </div>
+
 
         <div class="mt-6 items-center flex flex-row">
           <a class="mr-4" href="https://twitter.com/jatai_org" target="_blank">
@@ -118,7 +124,7 @@
     <!-- Hero Slider -->
     <div class=" h-[512px] bg-cover bg-center bg-no-repeat bg-[url('https://i.ibb.co/xFdYdk6/bg-hero.png')]">
       <div class="container h-full flex flex-col justify-center px-6">
-        <span class="text-white text-4xl md:text-5xl font-light not-italic md:max-w-[558px]">Construindo organizações
+        <span class="text-white text-4xl md:text-5xl font-light not-italic md:max-w-[558px]" >Construindo organizações
           públicas para o mundo
           <span class="font-semibold">digital</span> e
           <span class="font-semibold">sustentável</span></span>
@@ -381,7 +387,13 @@
             "Contato": "Contato",
             "Casos de Sucesso": "Casos de Sucesso",
             "Pré-diagnóstico": "Pré-diagnóstico",
-            "EM BREVE!": "EM BREVE!"
+            "EM BREVE!": "EM BREVE!",
+            "Construindo organizações": "Construindo organizações públicas para o mundo",
+            "Construindo organizações": "Construindo organizações",
+            "digital": "digital",
+            "sustentável": "sustentável",
+            "Somos uma organização": "Somos uma organização sem fins lucrativos criada com a missão de apoiar organizações públicas a se tornarem mais ágeis para se adaptarem ao mundo digital e sustentável.",
+            "Fale conosco": "Fale conosco"
           }
         },
         en: {
@@ -391,7 +403,12 @@
             "Contato": "Contact",
             "Casos de Sucesso": "Success Stories",
             "Pré-diagnóstico": "Pre-diagnosis",
-            "EM BREVE!": "COMING SOON!"
+            "EM BREVE!": "COMING SOON!",
+            "Construindo organizações": "Building public organizations for the digital and sustainable world",
+            "digital": "digital",
+            "sustentável": "sustainable",
+            "Somos uma organização": "We are a non-profit organization created with the mission of supporting public organizations to become more agile in adapting to the digital and sustainable world.",
+            "Fale conosco": "Contact us"
           }
         },
         es: {
@@ -401,7 +418,12 @@
             "Contato": "Contacto",
             "Casos de Sucesso": "Casos de Éxito",
             "Pré-diagnóstico": "Pre-diagnóstico",
-            "EM BREVE!": "¡PRÓXIMAMENTE!"
+            "EM BREVE!": "¡PRÓXIMAMENTE!",
+            "Construindo organizações": "Construyendo organizaciones públicas para el mundo digital y sostenible",
+            "digital": "digital",
+            "sustentável": "sostenible",
+            "Somos uma organização sem fins lucrativos criada com a missão de apoiar organizações públicas a se tornarem mais ágeis para se adaptarem ao mundo digital e sustentável.": "Somos una organización sin fines de lucro creada con la misión de apoyar a las organizaciones públicas a ser más ágiles para adaptarse al mundo digital y sostenible.",
+            "Fale conosco": "Contáctanos"
           }
         }
       }
