@@ -137,7 +137,7 @@
                         </button>
                     </div>
                 </div>
-                <div data-tf-widget="gXXiZqn3" data-tf-opacity="100" data-tf-iframe-props="title=Diagnóstico" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:500px;"></div>
+                <div class="hidden" id="typeform-widget" data-tf-widget="gXXiZqn3" data-tf-opacity="100" data-tf-iframe-props="title=Diagnóstico" data-tf-transitive-search-params data-tf-medium="snippet" style="width:100%;height:500px;"></div>
                 <script src="//embed.typeform.com/next/embed.js"></script>
                 <!-- End of What is prediagnosis -->
 
@@ -256,18 +256,12 @@
         }
 
         function showForm() {
-            const prediagnosisSection = document.getElementById("prediagnosis-section");
-            const startFormButton = document.getElementById("showFormButton");
-
-            startFormButton.addEventListener("click", () => {
-
-                prediagnosisSection.innerHTML = '';
-                prediagnosisSection.insertAdjacentHTML("afterbegin", `
-            <></>
-          `)
-
-            });
-        } showForm();
+   // Mostra a seção do Typeform
+   document.getElementById("typeform-widget").classList.remove("hidden");
+   
+   // Oculta a seção do Pré-diagnóstico
+   document.getElementById("prediagnosis-section").classList.add("hidden");
+} showForm();
     </script>
     
 </body>
