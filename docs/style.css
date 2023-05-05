@@ -595,10 +595,6 @@ video {
   margin-bottom: 5rem;
 }
 
-.mr-10{
-  margin-right: 2.5rem;
-}
-
 .mr-8{
   margin-right: 2rem;
 }
@@ -1193,10 +1189,6 @@ video {
 @media (min-width: 768px){
   .md\:mr-10{
     margin-right: 2.5rem;
-  }
-
-  .md\:flex{
-    display: flex;
   }
 
   .md\:h-\[380px\]{
