@@ -783,6 +783,14 @@ video {
   width: 80px;
 }
 
+.w-96{
+  width: 24rem;
+}
+
+.w-2\/3{
+  width: 66.666667%;
+}
+
 .max-w-\[200px\]{
   max-width: 200px;
 }
@@ -813,6 +821,10 @@ video {
 
 .flex-col{
   flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .items-start{
@@ -857,6 +869,10 @@ video {
 
 .gap-20{
   gap: 5rem;
+}
+
+.gap-1{
+  gap: 0.25rem;
 }
 
 .gap-y-6{
