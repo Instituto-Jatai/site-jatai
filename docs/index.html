@@ -31,10 +31,14 @@
             <img src="../assets/jatai-green-logo.svg" alt="Logo" class="h-7 md:mr-10" />
           </a>
 
-
+          <select id="language-select" class="mr-10 md:flex">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+          </select>
           
           <div class="hidden items-center lg:flex">
-            <a href="/" class="text-base text-green-700 hover:text-green-700 mr-8 font-semibold" data-i18n="Início">
+            <a href="/" class="text-base text-green-700 hover:text-green-700 mr-8 font-semibold" data-i18n="Início">  √ç
               Início
             </a>
             <a href="/team" class="text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Equipe">
@@ -52,7 +56,7 @@
               <a href="/prediagnosis" class="text-base text-gray-800 hover:text-green-700" data-i18n="Pré-diagnóstico">
                 Pré-diagnóstico
                 </a>
-                <span class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full font-semibold">
+                <span data-i18n="NOVO!" class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full font-semibold">
                   NOVO!
                 </span>
             </div>
@@ -96,7 +100,7 @@
           <a href="/prediagnosis" class="p-4  text-base text-gray-800 hover:text-green-700 flex flex-row" data-i18n="Pré-diagnóstico">
             Pré-diagnóstico
           </a>
-          <span class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full flex h-8 justify-center font-semibold">
+          <span data-i18n="NOVO!" class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full flex h-8 justify-center font-semibold">
             NOVO!
           </span>
         </div>
@@ -120,16 +124,15 @@
     <!-- Hero Slider -->
     <div class=" h-[512px] bg-cover bg-center bg-no-repeat bg-[url('https://i.ibb.co/xFdYdk6/bg-hero.png')]">
       <div class="container h-full flex flex-col justify-center px-6">
-        <span class="text-white text-4xl md:text-5xl font-light not-italic md:max-w-[558px]" >Construindo organizações
-          públicas para o mundo
-          <span class="font-semibold">digital</span> e
-          <span class="font-semibold">sustentável</span></span>
-        <span class="text-base text-white mt-2 md:max-w-[558px]">Somos uma organização sem fins lucrativos criada com
-          a
-          missão de
-          apoiar organizações públicas a se tornarem mais ágeis para se
-          adaptarem ao mundo digital e sustentável.</span>
-        <button class="bg-green-700 text-white w-[180px] h-[48px] mt-9 rounded-xl font-normal">
+        <div class="md:w-1/2">
+          <span data-i18n="Construindo organizações" class="text-white text-4xl md:text-5xl font-light not-italic md:max-w-[558px]" ></span>
+          <span data-i18n="digital" class="font-semibold text-white text-4xl md:text-5xl not-italic"></span>
+          <span data-i18n="e" class="font-light text-white text-4xl md:text-5xl not-italic mx-2"></span>
+          <span data-i18n="sustentável" class="font-semibold text-white text-4xl md:text-5xl not-italic"></span>
+          <span data-i18n="world" class="font-light text-white text-4xl md:text-5xl not-italic"></span>
+        </div>
+        <span data-i18n="Somos uma organização" class="text-base text-white mt-2 md:max-w-[558px]"></span>
+        <button data-i18n="Fale conosco" class="bg-green-700 text-white w-[180px] h-[48px] mt-9 rounded-xl font-normal">
           <a href="https://calendly.com/eduardospano/jatai-30min">Fale com a gente</a>
         </button>
       </div>
@@ -140,8 +143,8 @@
     <!-- What we do -->
     <div class="mb-16" id="what-we-do">
       <div class="container flex flex-col px-6">
-        <span class="text-gray-800 mt-16 text-4xl font-semibold">O que fazemos</span>
-        <span class="text-gray-800 text-base mt-6 md:max-w-[756px]">Ajudamos você que é gestor público a enfrentar os
+        <span data-i18n="O que fazemos" class="text-gray-800 mt-16 text-4xl font-semibold">O que fazemos</span>
+        <span data-i18n="Ajudamos você" class="text-gray-800 text-base mt-6 md:max-w-[756px]">Ajudamos você que é gestor público a enfrentar os
           desafios da
           inovação e digitalização no setor público. Construímos com você
           soluções para desafios de equipe, governança, recursos e
@@ -152,37 +155,28 @@
           <div class="flex flex-row items-center justify-between">
             <div class="flex items-center">
               <img src="assets/build-tech-teams.svg" alt="" class="mr-6" />
-              <span class="w-[159px] md:w-full text-xl font-semibold">Construir equipes de tecnologia</span>
+              <span data-i18n="Construir equipes de tecnologia" class="w-[159px] md:w-full text-xl font-semibold"></span>
             </div>
 
             <img src="assets/plus.svg" alt="" class="p-4 hover:cursor-pointer" id="img-topic-one" />
           </div>
 
           <div class="mt-10 hidden" id="div-topic-one">
-            <span class="font-semibold">Apoiamos a criação de equipe interna e contratação de
-              equipes.</span>
+            <span data-i18n="Apoiamos a criação de equipe interna e contratação de equipes." class="font-semibold"></span>
 
             <ul class="mt-8 pl-6 list-disc">
               <li>
-                <span class="font-semibold">Por quê?</span> Sem equipes de
-                tecnologia adequadas e qualificadas, iniciativas de uso de
-                tecnologias não prosperam. Por isso, é importante garantir uma
-                equipe com capacidade para transformar sua organização com uso
-                de tecnologia.
+                <span data-i18n="Por quê?" class="font-semibold"></span> 
+                <span data-i18n="Sem equipes de tecnologia"></span> 
               </li>
 
               <li>
-                <span class="font-semibold">O que fazemos?</span> Apoiamos na
-                definição de perfis necessários, da estrutura organizacional e
-                na contratação de equipes multidisciplinares em modelo de
-                Ateliê de software, para superar as dificuldades com as
-                antigas contratações de fábrica de software
+                <span data-i18n="O que fazemos?" class="font-semibold"></span> <span data-i18n="Apoiamos na definição de perfis necessários"></span>
               </li>
 
               <li>
-                <span class="font-semibold">Resultados esperados:</span>
-                Equipe estruturada e com capacidade de entrega de produtos
-                digitais de qualidade mais rapidamente
+                <span data-i18n="Resultados esperados" class="font-semibold"></span>
+                <span data-i18n="Equipe estruturada e com capacidade de entrega"></span>
               </li>
             </ul>
           </div>
@@ -195,41 +189,27 @@
           <div class="flex flex-row items-center justify-between">
             <div class="flex items-center">
               <img src="assets/code.svg" alt="" class="mr-6" />
-              <span class="w-[159px] md:w-full text-xl font-semibold">Digitalizar gestão com uso de tecnologias
-                abertas</span>
+              <span data-i18n="Digitalizar gestão com uso de tecnologias abertas" class="w-[159px] md:w-full text-xl font-semibold"></span>
             </div>
 
             <img src="assets/plus.svg" alt="" class="p-4 hover:cursor-pointer" id="img-topic-two" />
           </div>
 
           <div class="mt-10 hidden" id="div-topic-two">
-            <span class="font-semibold">Apoiamos a escolha de tecnologias abertas que gerem impacto,
-              eficiência e autonomia.</span>
+            <span data-i18n="Apoiamos a escolha de tecnologias abertas" class="font-semibold"></span>
 
             <ul class="mt-8 pl-6 list-disc">
               <li>
-                <span class="font-semibold">Por quê?</span> Tecnologias
-                abertas oferecem soluções comuns para necessidades
-                compartilhadas entre diferentes organizações públicas. Mas
-                além de entregarem resultados, geram mais eficiência nos
-                gastos com tecnologias, garantem independência com relação aos
-                fornecedores e permitem mais flexibilidade na entrega do
-                serviço público.
+                <span data-i18n="Por quê?" class="font-semibold"></span> <span data-i18n="Tecnologias abertas oferecem soluções comuns"></span>
               </li>
 
               <li>
-                <span class="font-semibold">O que fazemos?</span> Apoiamos na
-                busca de software em código-aberto que resolvam problemas de
-                gestão pública, no levantamento do mercado de fornecedores
-                para essas soluções e na contratação para implantação e
-                fornecimento e suporte dessas soluções para a organização
-                pública.
+                <span data-i18n="O que fazemos?" class="font-semibold"></span> <span data-i18n="Apoiamos na busca de software em código-aberto"></span>
               </li>
 
               <li>
-                <span class="font-semibold">Resultados esperados:</span>
-                Tecnologia aberta contratada e implantada, gerando resultados
-                para a organização pública.
+                <span data-i18n="Resultados esperados" class="font-semibold"></span>
+                <span data-i18n="Tecnologia aberta contratada e implantada"></span>
               </li>
             </ul>
           </div>
@@ -242,40 +222,30 @@
           <div class="flex flex-row items-center justify-between">
             <div class="flex items-center">
               <img src="assets/idea.svg" alt="" class="mr-6" />
-              <span class="w-[159px] md:w-full text-xl font-semibold">Contratar soluções para problemas públicos</span>
+              <span data-i18n="Contratar soluções para problemas públicos" class="w-[159px] md:w-full text-xl font-semibold"></span>
             </div>
 
             <img src="assets/plus.svg" alt="" class="p-4 hover:cursor-pointer" id="img-topic-three" />
           </div>
 
           <div class="mt-10 hidden" id="div-topic-three">
-            <span class="font-semibold">Apoiamos na definição de problemas públicos e chamada de
-              soluções para o ecossistema de inovação.</span>
+            <span data-i18n="Apoiamos na definição de problemas públicos" class="font-semibold">
+          </span>
 
             <ul class="mt-8 pl-6 list-disc">
               <li>
-                <span class="font-semibold">Por quê?</span> Nem sempre a
-                melhor solução para os problemas públicos sai de dentro das
-                nossas organizações. Abrir problemas do governo para o
-                ecossistema de inovação, permitindo o teste de soluções e sua
-                contratação tem grande potencial para a resolução desses
-                problemas de forma criativa.
+                <span data-i18n="Por quê?" class="font-semibold"></span> 
+                <span data-i18n="Nem sempre a melhor solução"></span>
               </li>
 
               <li>
-                <span class="font-semibold">O que fazemos?</span> Apoiamos na
-                definição de problemas públicos e na realização da chamada de
-                soluções para o ecossistema de inovação. Estruturamos a
-                chamada tendo como base a licitação prevista no Marco Legal de
-                Startups e Empreendedorismo, o que permite o pagamento dos
-                testes pela organização pública, assim como sua contratação
-                caso esses testes sejam bem sucedidos.
+                <span data-i18n="O que fazemos?" class="font-semibold"></span>
+                <span data-i18n="Apoiamos na definição de problemas públicos e na realização da chamada de soluções para o ecossistema de inovação. Estruturamos"></span>
               </li>
 
               <li>
-                <span class="font-semibold">Resultados esperados:</span>Teste
-                de soluções e contratação para a resolução do problema
-                apresentado.
+                <span data-i18n="Resultados esperados" class="font-semibold"></span>
+                <span data-i18n="Teste de soluções e contratação para a resolução"></span>
               </li>
             </ul>
           </div>
@@ -288,7 +258,7 @@
     <!-- Partners  -->
     <div class="bg-gray-02">
       <div class="container  px-6 pt-6">
-        <span class="text-4xl font-semibold">Parceiros, Beneficiários e Clientes</span>
+        <span data-i18n="Parceiros, Beneficiários e Clientes" class="text-4xl font-semibold"></span>
         <div class="filter grayscale grid grid-cols-2 gap-4 md:grid-cols-4 pb-16 mt-6">
           <div class="h-[150px] flex items-center justify-center">
             <img src="./assets/gesto.png" alt="Instituto Gesto" />
@@ -327,20 +297,18 @@
         <div class="flex flex-col mb-10 md:justify-between md:flex-row w-full">
           <!-- Contact -->
           <div class="flex flex-col mt-8">
-            <span class="text-white flex text-2xl">Vamos marcar uma conversa?</span>
-            <span class="text-white mt-2 md:w-[558px]">Entre em contato para discutir conosco suas necessidades!
-              Podemos marcar um encontro online informal para pensar em como
-              podemos te ajudar.</span>
+            <span data-i18n="Vamos marcar uma conversa?" class="text-white flex text-2xl"></span>
+            <span data-i18n="Entre em contato para discutir conosco suas necessidades!" class="text-white mt-2 md:w-[558px]"></span>
 
             <button class="bg-slate-900 text-white w-[180px] h-[48px] rounded-xl mt-4">
-              <a href="https://calendly.com/eduardospano/jatai-30min">Fale com a gente</a>
+              <a data-i18n="Fale com a gente" href="https://calendly.com/eduardospano/jatai-30min"></a>
             </button>
           </div>
           <!-- End of Contact -->
 
           <!-- Social -->
           <div class="flex flex-col mt-8">
-            <span class="text-white font-bold mb-6">Siga a Jataí</span>
+            <span data-i18n="Siga a Jataí" class="text-white font-bold mb-6"></span>
 
             <div class="flex flex-row mb-6 gap-2">
               <img src="assets/twitter-p.svg" alt="" />
@@ -383,13 +351,44 @@
             "Contato": "Contato",
             "Casos": "Casos",
             "Pré-diagnóstico": "Pré-diagnóstico",
+            "NOVO!": "NOVO!",
             "EM BREVE!": "EM BREVE!",
             "Construindo organizações": "Construindo organizações públicas para o mundo",
-            "Construindo organizações": "Construindo organizações",
             "digital": "digital",
+            "e": "e",
+            "world": "",
             "sustentável": "sustentável",
             "Somos uma organização": "Somos uma organização sem fins lucrativos criada com a missão de apoiar organizações públicas a se tornarem mais ágeis para se adaptarem ao mundo digital e sustentável.",
-            "Fale conosco": "Fale conosco"
+            "Fale conosco": "Fale conosco",
+            "O que fazemos": "O que fazemos",
+            "Ajudamos você": "Ajudamos você que é gestor público a enfrentar os desafios da inovação e digitalização no setor público. Construímos com você soluções para desafios de equipe, governança, recursos e contratações.",
+            "Construir equipes de tecnologia": "Construir equipes de tecnologia",
+            "Apoiamos a criação de equipe interna e contratação de equipes.": "Apoiamos a criação de equipe interna e contratação de equipes.",
+            "Por quê?": "Por quê?",
+            "Sem equipes de tecnologia": "Sem equipes de tecnologia adequadas e qualificadas, iniciativas de uso de tecnologias não prosperam. Por isso, é importante garantir uma equipe com capacidade para transformar sua organização com uso de tecnologia.",
+            "O que fazemos?": "O que fazemos?",
+            "Apoiamos na definição de perfis necessários": "Apoiamos na definição de perfis necessários, da estrutura organizacional e na contratação de equipes multidisciplinares em modelo de Ateliê de software, para superar as dificuldades com as antigas contratações de fábrica de software",
+            "Resultados esperados": "Resultados esperados:",
+            "Equipe estruturada e com capacidade de entrega": "Equipe estruturada e com capacidade de entrega de produtos digitais de qualidade mais rapidamente",
+
+            "Digitalizar gestão com uso de tecnologias abertas": "Digitalizar gestão com uso de tecnologias abertas",
+            "Apoiamos a escolha de tecnologias abertas": "Apoiamos a escolha de tecnologias abertas que gerem impacto, eficiência e autonomia.",
+            "Tecnologias abertas oferecem soluções comuns": "Tecnologias abertas oferecem soluções comuns para necessidades compartilhadas entre diferentes organizações públicas. Mas além de entregarem resultados, geram mais eficiência nos gastos com tecnologias, garantem independência com relação aos fornecedores e permitem mais flexibilidade na entrega do serviço público.",
+            "Apoiamos na busca de software em código-aberto": "Apoiamos na busca de software em código-aberto que resolvam problemas de gestão pública, no levantamento do mercado de fornecedores para essas soluções e na contratação para implantação e fornecimento e suporte dessas soluções para a organização pública.",
+            "Tecnologia aberta contratada e implantada": "Tecnologia aberta contratada e implantada, gerando resultados para a organização pública.",
+
+            "Contratar soluções para problemas públicos": "Contratar soluções para problemas públicos",
+            "Apoiamos na definição de problemas públicos": "Apoiamos na definição de problemas públicos e chamada de soluções para o ecossistema de inovação.",
+            "Nem sempre a melhor solução": "Nem sempre a melhor solução para os problemas públicos sai de dentro das nossas organizações. Abrir problemas do governo para o ecossistema de inovação, permitindo o teste de soluções e sua contratação tem grande potencial para a resolução desses problemas de forma criativa.",
+            "Apoiamos na definição de problemas públicos e na realização da chamada de soluções para o ecossistema de inovação. Estruturamos": "Apoiamos na definição de problemas públicos e na realização da chamada de soluções para o ecossistema de inovação. Estruturamos a chamada tendo como base a licitação prevista no Marco Legal de Startups e Empreendedorismo, o que permite o pagamento dos testes pela organização pública, assim como sua contratação caso esses testes sejam bem sucedidos.",
+            "Teste de soluções e contratação para a resolução": "Teste de soluções e contratação para a resolução do problema apresentado.",
+            
+            "Parceiros, Beneficiários e Clientes": "Parceiros, Beneficiários e Clientes",
+
+            "Vamos marcar uma conversa?": "Vamos marcar uma conversa?",
+            "Entre em contato para discutir conosco suas necessidades!": "Entre em contato para discutir conosco suas necessidades! Podemos marcar um encontro online informal para pensar em como podemos te ajudar.",
+            "Fale com a gente": "Fale com a gente",
+            "Siga a Jataí": "Siga a Jataí",
           }
         },
         en: {
@@ -399,12 +398,44 @@
             "Contato": "Contact",
             "Casos": "Cases",
             "Pré-diagnóstico": "Pre-diagnosis",
+            "NOVO!": "NEW!",
             "EM BREVE!": "COMING SOON!",
-            "Construindo organizações": "Building public organizations for the digital and sustainable world",
+            "Construindo organizações": "Building public organizations for the",
             "digital": "digital",
+            "e": "and",
+            "world": "world",
             "sustentável": "sustainable",
             "Somos uma organização": "We are a non-profit organization created with the mission of supporting public organizations to become more agile in adapting to the digital and sustainable world.",
-            "Fale conosco": "Contact us"
+            "Fale conosco": "Contact us",
+            "O que fazemos": "What we do",
+            "Ajudamos você": "We help you as a public manager meet the challenges of innovation and digitalization in the public sector. We build with you solutions to team bulding, governance, and public procurement challenges.",
+            "Construir equipes de tecnologia": "Building Technology Teams",
+            "Apoiamos a criação de equipe interna e contratação de equipes.": "We support internal team building and hiring teams.",
+            "Por quê?": "Why?",
+            "Sem equipes de tecnologia": "Without adequate and qualified technology teams, technology initiatives do not prosper. That's why it's important to secure a team with the capability to transform your organization using technology.",
+            "O que fazemos?": "What we do?",
+            "Apoiamos na definição de perfis necessários": "We support you in defining the necessary profiles, the organizational structure, and in procuring multidisciplinary teams in a software studio model, to overcome the difficulties with the traditional software house public procurement",
+            "Resultados esperados": "Expected results:",
+            "Equipe estruturada e com capacidade de entrega": "Structured team with the ability to deliver quality digital products faster",
+            
+            "Digitalizar gestão com uso de tecnologias abertas": "Digitize management using open technologies",
+            "Apoiamos a escolha de tecnologias abertas": "We support the choice of open technologies that generate impact, efficiency, and autonomy.",
+            "Tecnologias abertas oferecem soluções comuns": "Open technologies offer common solutions to shared needs across different public organizations. But as well as delivering results, they generate more efficiency in technology spending, guarantee independence from suppliers and allow more flexibility in public service delivery.",
+            "Apoiamos na busca de software em código-aberto": "We provide support in the search for open source software that solves public management problems, in surveying the market for suppliers of these solutions, and in contracting the implementation, supply, and support of these solutions for the public organization.",
+            "Tecnologia aberta contratada e implantada": "Open technology contracted and implemented, generating results for the public organization.",
+
+            "Contratar soluções para problemas públicos": "Public procurement of solutions for public problems",
+            "Apoiamos na definição de problemas públicos": "We support in defining public problems and setting up public procurement for solutions from the innovation ecosystem.",
+            "Nem sempre a melhor solução": "The best solution to public problems does not always come from within our organizations. Opening up government problems to the innovation ecosystem, allowing for the testing of solutions and their public procurement has great potential for solving these problems creatively.",
+            "Apoiamos na definição de problemas públicos e na realização da chamada de soluções para o ecossistema de inovação. Estruturamos": "We support the definition of public problems and the execution of the call for solutions for the innovation ecosystem. We structure the call based on the bidding foreseen in the Legal Framework for Startups and Entrepreneurship, which allows the payment of the tests by the public organization, as well as its hiring in case these tests are successful.",
+            "Teste de soluções e contratação para a resolução": "Testing of solutions and public procurement for solutions of the problem presented.",
+
+            "Parceiros, Beneficiários e Clientes": "Partners, Beneficiaries and Clients",
+
+            "Vamos marcar uma conversa?": "Let's have a chat?",
+            "Entre em contato para discutir conosco suas necessidades!": "Get in touch to discuss your needs with us! We can schedule an informal online meeting to think about how we can help you.",
+            "Fale com a gente": "Contact us",
+            "Siga a Jataí": "Follow Jataí",
           }
         },
         es: {
@@ -414,12 +445,43 @@
             "Contato": "Contacto",
             "Casos": "Casos",
             "Pré-diagnóstico": "Pre-diagnóstico",
+            "NOVO!": "¡NUEVO!",
             "EM BREVE!": "¡PRÓXIMAMENTE!",
-            "Construindo organizações": "Construyendo organizaciones públicas para el mundo digital y sostenible",
+            "Construindo organizações": "Construyendo organizaciones públicas para el mundo",
             "digital": "digital",
+            "e": "y",
+            "world": "",
             "sustentável": "sostenible",
-            "Somos uma organização sem fins lucrativos criada com a missão de apoiar organizações públicas a se tornarem mais ágeis para se adaptarem ao mundo digital e sustentável.": "Somos una organización sin fines de lucro creada con la misión de apoyar a las organizaciones públicas a ser más ágiles para adaptarse al mundo digital y sostenible.",
-            "Fale conosco": "Contáctanos"
+            "Somos uma organização": "Somos una organización sin fines de lucro creada con la misión de apoyar a las organizaciones públicas a ser más ágiles para adaptarse al mundo digital y sostenible.",
+            "Fale conosco": "Contáctanos",
+            "O que fazemos": "A qué nos dedicamos",
+            "Ajudamos você": "Ayudamos a los gestores públicos a afrontar los retos de la innovación y la digitalización en el sector público. Construimos con usted soluciones a los retos de personal, gobernanza, dotación de recursos y contratación.",
+            "Construir equipes de tecnologia": "Creación de equipos tecnológicos",
+            "Apoiamos a criação de equipe interna e contratação de equipes.": "Apoyamos la creación de equipos internos y la contratación de equipos.",
+            "Por quê?": "¿Por qué?",
+            "Sem equipes de tecnologia": "Sin equipos tecnológicos adecuados y cualificados, las iniciativas tecnológicas no prosperan. Por eso es importante asegurarse un equipo con capacidad para transformar su organización utilizando la tecnología.",
+            "O que fazemos?": "¿Qué hacemos?",
+            "Apoiamos na definição de perfis necessários": "Apoyamos en la definición de los perfiles necesarios, de la estructura organizativa y en la contratación de equipos multidisciplinares en un modelo de estudio de software, para superar las dificultades con las antiguas contrataciones de fábrica de software",
+            "Resultados esperados": "Resultados esperados:",
+            "Equipe estruturada e com capacidade de entrega": "Equipo estructurado y con capacidad de entrega de productos digitales de calidad más rápidamente",
+
+            "Digitalizar gestão com uso de tecnologias abertas": "Digitalizar la gestión mediante tecnologías abiertas",
+            "Apoiamos a escolha de tecnologias abertas": "Apoyamos la elección de tecnologías abiertas que ofrezcan impacto, eficiencia y autonomía.",
+            "Tecnologias abertas oferecem soluções comuns": "Las tecnologías abiertas ofrecen soluciones comunes a necesidades compartidas por distintas organizaciones públicas. Pero además de ofrecer resultados, generan más eficiencia en el gasto tecnológico, garantizan la independencia de los proveedores y permiten más flexibilidad en la prestación de servicios públicos.",
+            "Apoiamos na busca de software em código-aberto": "Prestamos apoyo en la búsqueda de software de código abierto que resuelva problemas de gestión pública, en la prospección del mercado de proveedores de estas soluciones y en la contratación de la implantación, suministro y soporte de estas soluciones para la organización pública.",
+            "Tecnologia aberta contratada e implantada": "Tecnología abierta contratada e implantada, generando resultados para la organización pública.",
+            
+            "Contratar soluções para problemas públicos": "Contratar soluciones a problemas públicos",
+            "Apoiamos na definição de problemas públicos": "Apoyamos en la definición de problemas públicos y en la convocatoria de soluciones para el ecosistema de innovación.",
+            "Nem sempre a melhor solução": "La mejor solución a los problemas públicos no siempre procede de nuestras organizaciones. Abrir los problemas de la Administración al ecosistema de innovación, permitir que se prueben y contraten soluciones tiene un gran potencial para resolver estos problemas de forma creativa.",
+            "Apoiamos na definição de problemas públicos e na realização da chamada de soluções para o ecossistema de inovação. Estruturamos": "Ayudamos a definir los problemas públicos y hacemos la convocatoria de soluciones al ecosistema de innovación. Estructuramos la convocatoria en base al proceso de licitación previsto en el Marco Legal para Startups y Emprendimiento, que permite el pago de las pruebas por parte del organismo público, así como su contratación en caso de que estas pruebas sean exitosas.",
+            "Teste de soluções e contratação para a resolução": "Pruebas de soluciones y contratación para la resolución del problema planteado.",
+            "Parceiros, Beneficiários e Clientes": "Aliados, Beneficiarios y Clientes",
+
+            "Vamos marcar uma conversa?": "¿Vamos a marcar una conversación?",
+            "Entre em contato para discutir conosco suas necessidades!": "¡Contáctanos para discutir tus necesidades! Podemos programar una reunión informal en línea para pensar en cómo podemos ayudarle.",
+            "Fale com a gente": "Contáctanos",
+            "Siga a Jataí": "Sigue a Jataí",
           }
         }
       }
