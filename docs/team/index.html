@@ -29,23 +29,29 @@
           <a href="/">
             <img src="../assets/jatai-green-logo.svg" alt="Logo" class="h-7 md:mr-10" />
           </a>
+
+          <select id="language-select" class="mr-10 md:flex">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+          </select>
           
           <div class="hidden items-center lg:flex">
-            <a href="/" class="text-base text-gray-800 hover:text-green-700 mr-8">
+            <a href="/" class="text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Início">
               Início
             </a>
-            <a href="/team" class="text-base text-green-700 hover:text-green-700 mr-8 font-semibold">
+            <a href="/team" class="text-base text-green-700 hover:text-green-700 mr-8 font-semibold" data-i18n="Equipe">
               Equipe
             </a>
-            <a href="/contact" class="text-base text-gray-800 hover:text-green-700 mr-8">
+            <a href="/contact" class="text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Contato">
               Contato
             </a>
             </a>
             <a href="/cases"
-                            class=" text-base text-gray-800 hover:text-green-700 mr-8">
+                            class=" text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Casos">
                             Casos
             </a>
-            <a href="/prediagnosis" class="text-base text-gray-800 hover:text-green-700 mr-8 flex flex-row gap-2">
+            <a href="/prediagnosis" class="text-base text-gray-800 hover:text-green-700 mr-8 flex flex-row gap-2" data-i18n="Pré-diagnóstico">
               Pré-diagnóstico
               <span class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full font-semibold">
                 NOVO!
@@ -72,26 +78,28 @@
         </div>
       </div>
       <div class="container flex flex-col">
-        <a href="/" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8">
+        <a data-i18n="Início" href="/" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8">
           Início
         </a>
-        <a href="/team"
+        <a data-i18n="Equipe" href="/team"
           class="p-4 border-b border-gray-600 text-base text-green-700 hover:text-green-700 mr-8 font-semibold">
           Equipe
         </a>
-        <a href="/contact" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8">
+        <a data-i18n="Contato" href="/contact" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8">
           Contato
         </a>
-        <a href="/cases"
-                            class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8">
-                            Casos
-                        </a>
-        <a href="/prediagnosis" class="p-4  text-base text-gray-800 hover:text-green-700 mr-8 flex flex-row gap-2">
-          Pré-diagnóstico
-          <span class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full font-semibold">
+        <a data-i18n="Casos" href="/cases"
+            class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8">
+            Casos
+        </a>
+        <div class="flex flex-row items-center">
+          <a href="/prediagnosis" class="p-4  text-base text-gray-800 hover:text-green-700 flex flex-row" data-i18n="Pré-diagnóstico">
+            Pré-diagnóstico
+          </a>
+          <span data-i18n="NOVO!" class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full flex h-8 justify-center font-semibold">
             NOVO!
           </span>
-        </a>
+        </div>
 
         <div class="mt-6 items-center flex flex-row">
           <a class="mr-4" href="https://twitter.com/jatai_org" target="_blank">
@@ -111,7 +119,7 @@
     <!-- Hero -->
     <div class="h-[172px] bg-cover bg-center bg-no-repeat bg-[url('https://i.ibb.co/rdMbVLy/team-hero.png')]">
       <div class="container h-full flex flex-col justify-center px-6">
-        <span class="text-white text-4xl font-semibold not-italic md:max-w-[558px]">Equipe Jataí</span>
+        <span class="text-white text-4xl font-semibold not-italic md:max-w-[558px]" data-i18n="Equipe Jataí">Equipe Jataí</span>
       </div>
     </div>
     <!-- End of Hero -->
@@ -129,7 +137,7 @@
             <div class="flex justify-between">
               <div class="flex flex-col">
                 <span class="text-2xl mb-1">Eduardo Spanó</span>
-                <span class="text-base text-gray-700">Diretor executivo</span>
+                <span data-i18n="Diretor executivo" class="text-base text-gray-700">Diretor executivo</span>
               </div>
               <div class="flex gap-2 items-center">
                 <a href="https://www.linkedin.com/in/eduardospano/" target="_blank">
@@ -141,10 +149,8 @@
               </div>
             </div>
             <div class="w-full h-[1px] bg-black my-4"></div>
-            <span class="text-base text-gray-600 mb-4">Doutorando em Política Científica e <br />
-              Tecnológica - Unicamp</span>
-            <span class="text-base text-gray-600">Msc. Administração Pública - Columbia <br />
-              Graduado em Direito - USP</span>
+            <span data-i18n="Doutorando em Política Científica e Tecnológica - Unicamp" class="text-base text-gray-600 mb-4"></span>
+            <span data-i18n="Msc. Administração Pública - Columbia Graduado em Direito - USP" class="text-base text-gray-600"></span>
           </div>
         </div>
 
@@ -156,7 +162,7 @@
             <div class="flex justify-between">
               <div class="flex flex-col">
                 <span class="text-2xl mb-1">Barbara Bueno</span>
-                <span class="text-base text-gray-700">Gestora de projetos</span>
+                <span data-i18n="Gestora de projetos" class="text-base text-gray-700"></span>
               </div>
               <div class="flex gap-2 items-center">
                 <a href="https://www.linkedin.com/in/bárbara-sabadin-bueno-38777360/" target="_blank">
@@ -165,8 +171,8 @@
               </div>
             </div>
             <div class="w-full h-[1px] bg-black my-4"></div>
-            <span class="text-base text-gray-600 mb-4">Mestrado em Ciência Política - IESP-UERJ</span>
-            <span class="text-base text-gray-600">Graduada em Relações Internacionais - UnB</span>
+            <span data-i18n="Mestrado em Ciência Política - IESP-UERJ" class="text-base text-gray-600 mb-4"></span>
+            <span data-i18n="Graduada em Relações Internacionais - UnB" class="text-base text-gray-600"></span>
           </div>
         </div>
 
@@ -178,7 +184,7 @@
             <div class="flex justify-between">
               <div class="flex flex-col">
                 <span class="text-2xl mb-1">Rafael Monnerat</span>
-                <span class="text-base text-gray-700">Pesquisador e Analista júnior</span>
+                <span data-i18n="Pesquisador e Analista júnior" class="text-base text-gray-700"></span>
               </div>
               <div class="flex gap-2 items-center">
                 <a href="https://www.linkedin.com/in/rafaelmonnerat/" target="_blank">
@@ -187,8 +193,8 @@
               </div>
             </div>
             <div class="w-full h-[1px] bg-black my-4"></div>
-            <span class="text-base text-gray-600 mb-4">Mestrando em Política Científica Tecnológica – Unicamp</span>
-            <span class="text-base text-gray-600">Graduado em Direito - UFRJ</span>
+            <span data-i18n="Mestrando em Política Científica Tecnológica – Unicamp" class="text-base text-gray-600 mb-4"></span>
+            <span data-i18n="Graduado em Direito - UFRJ" class="text-base text-gray-600"></span>
           </div>
         </div>
       
@@ -199,7 +205,7 @@
             <div class="flex justify-between">
               <div class="flex flex-col">
                 <span class="text-2xl mb-1">Lucilla Dias</span>
-                <span class="text-base text-gray-700">Especialista em clima</span>
+                <span data-i18n="Especialista em clima" class="text-base text-gray-700"></span>
               </div>
               <div class="flex gap-2 items-center">
                 <a href="https://www.linkedin.com/in/lucilladias/" target="_blank">
@@ -208,8 +214,8 @@
               </div>
             </div>
             <div class="w-full h-[1px] bg-black my-4"></div>
-            <span class="text-base text-gray-600 mb-4">Mestrado em Políticas Públicas - Oxford</span>
-            <span class="text-base text-gray-600">Graduada em Engenharia Ambiental - Unesp</span>
+            <span data-i18n="Mestrado em Políticas Públicas - Oxford" class="text-base text-gray-600 mb-4"></span>
+            <span data-i18n="Graduada em Engenharia Ambiental - Unesp" class="text-base text-gray-600"></span>
           </div>
         </div>
         
@@ -220,7 +226,7 @@
             <div class="flex justify-between">
               <div class="flex flex-col">
                 <span class="text-2xl mb-1">Ludimila da Bela Cruz</span>
-                <span class="text-base text-gray-700">Especialista em tecnologia</span>
+                <span data-i18n="Especialista em tecnologia" class="text-base text-gray-700"></span>
               </div>
               <div class="flex gap-2 items-center">
                 <a href="https://www.linkedin.com/in/ludimilabela/" target="_blank">
@@ -229,7 +235,7 @@
               </div>
             </div>
             <div class="w-full h-[1px] bg-black my-4"></div>
-            <span class="text-base text-gray-600">Graduada em Engenharia de Software - UnB</span>
+            <span data-i18n="Graduada em Engenharia de Software - UnB" class="text-base text-gray-600"></span>
           </div>
         </div>
         
@@ -281,6 +287,119 @@
       </div>
     </div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/20.2.2/i18next.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.0/i18nextBrowserLanguageDetector.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/1.2.2/i18nextHttpBackend.min.js"></script>
+  <script>
+    const i18nextConfig = {
+      lng: 'pt',
+      resources: {
+        pt: {
+          translation: {
+            "Início": "Início",
+            "Equipe": "Equipe",
+            "Contato": "Contato",
+            "Casos": "Casos",
+            "Pré-diagnóstico": "Pré-diagnóstico",
+            "NOVO!": "NOVO!",
+            "Equipe Jataí": "Equipe Jataí",
+            "Diretor executivo": "Diretor executivo",
+            "Doutorando em Política Científica e Tecnológica - Unicamp": "Doutorando em Política Científica e Tecnológica - Unicamp",
+            "Msc. Administração Pública - Columbia Graduado em Direito - USP": "Msc. Administração Pública - Columbia Graduado em Direito - USP",
+            "Gestora de projetos": "Gestora de projetos",
+            "Mestrado em Ciência Política - IESP-UERJ": "Mestrado em Ciência Política - IESP-UERJ",
+            "Graduada em Relações Internacionais - UnB": "Graduada em Relações Internacionais - UnB",
+            "Pesquisador e Analista júnior": "Pesquisador e Analista júnior",
+            "Mestrando em Política Científica Tecnológica – Unicamp": "Mestrando em Política Científica Tecnológica – Unicamp",
+            "Graduado em Direito - UFRJ": "Graduado em Direito - UFRJ",
+            "Especialista em clima": "Especialista em clima",
+            "Mestrado em Políticas Públicas - Oxford": "Mestrado em Políticas Públicas - Oxford",
+            "Graduada em Engenharia Ambiental - Unesp": "Graduada em Engenharia Ambiental - Unesp",
+            "Especialista em tecnologia": "Especialista em tecnologia",
+            "Graduada em Engenharia de Software - UnB": "Graduada em Engenharia de Software - UnB",
+          }
+        },
+        en: {
+          translation: {
+            "Início": "Home",
+            "Equipe": "Team",
+            "Contato": "Contact",
+            "Casos": "Cases",
+            "Pré-diagnóstico": "Pre-diagnosis",
+            "NOVO!": "NEW!",
+            "Equipe Jataí": "Jataí Team",
+            "Diretor executivo": "Executive director",
+            "Doutorando em Política Científica e Tecnológica - Unicamp": "PhD in Science and Technology Policy - Unicamp",
+            "Msc. Administração Pública - Columbia Graduado em Direito - USP": "Msc. Public Administration - Columbia Law School - USP Law School",
+            "Gestora de projetos": "Project manager",
+            "Mestrado em Ciência Política - IESP-UERJ": "Masters in Political Science - IESP-UERJ",
+            "Graduada em Relações Internacionais - UnB": "BA in International Relations - UnB",
+            "Pesquisador e Analista júnior": "Researcher and junior analyst",
+            "Mestrando em Política Científica Tecnológica – Unicamp": "Masters in Science and Technology Policy - Unicamp",
+            "Graduado em Direito - UFRJ": "Graduated in Law - UFRJ",
+            "Especialista em clima": "Climate specialist",
+            "Mestrado em Políticas Públicas - Oxford": "Masters in Public Policy - Oxford",
+            "Graduada em Engenharia Ambiental - Unesp": "Graduated in Environmental Engineering - Unesp",
+            "Especialista em tecnologia": "Technology specialist",
+            "Graduada em Engenharia de Software - UnB": "Graduated in Software Engineering - UnB",
+          }
+        },
+        es: {
+          translation: {
+            "Início": "Inicio",
+            "Equipe": "Equipo",
+            "Contato": "Contacto",
+            "Casos": "Casos",
+            "Pré-diagnóstico": "Pre-diagnóstico",
+            "NOVO!": "¡NUEVO!",
+            "Equipe Jataí": "Equipo Jataí",
+            "Diretor executivo": "Director ejecutivo",
+            "Doutorando em Política Científica e Tecnológica - Unicamp": "Doctorando en Política Científica y Tecnológica - Unicamp",
+            "Msc. Administração Pública - Columbia Graduado em Direito - USP": "Msc. Administración Pública - Columbia Graduado en Derecho - USP",
+            "Gestora de projetos": "Gestora de proyectos",
+            "Mestrado em Ciência Política - IESP-UERJ": "Maestría en Ciencia Política - IESP-UERJ",
+            "Graduada em Relações Internacionais - UnB": "Graduada en Relaciones Internacionales - UnB",
+            "Pesquisador e Analista júnior": "Investigador y analista junior",
+            "Mestrando em Política Científica Tecnológica – Unicamp": "Maestría en Política Científica Tecnológica - Unicamp",
+            "Graduado em Direito - UFRJ": "Graduado en Derecho - UFRJ",
+            "Especialista em clima": "Especialista en clima",
+            "Mestrado em Políticas Públicas - Oxford": "Maestría en Políticas Públicas - Oxford",
+            "Graduada em Engenharia Ambiental - Unesp": "Graduada en Ingeniería Ambiental - Unesp",
+            "Especialista em tecnologia": "Especialista en tecnología",
+            "Graduada em Engenharia de Software - UnB": "Graduada en Ingeniería de Software - UnB",
+          }
+        }
+      }
+    };
+
+    i18next.init(i18nextConfig, () => {
+      const elementsToTranslate = document.querySelectorAll('[data-i18n]');
+
+      elementsToTranslate.forEach((element) => {
+        const translationKey = element.getAttribute('data-i18n');
+        element.textContent = i18next.t(translationKey);
+      });
+    });
+
+    const languageSelect = document.querySelector('#language-select');
+    
+    languageSelect.addEventListener('change', (event) => {
+      i18next.changeLanguage(event.target.value, (error, t) => {
+        if (error) {
+          console.log(error);
+        } else {
+          const elementsToTranslate = document.querySelectorAll('[data-i18n]');
+
+          elementsToTranslate.forEach((element) => {
+            const translationKey = element.getAttribute('data-i18n');
+            element.textContent = i18next.t(translationKey);
+          });
+        }
+      });
+    });
+  </script>
+
   <script>
     function handleMobileMenu() {
       const header = document.getElementById("header");
