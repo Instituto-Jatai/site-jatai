@@ -17,6 +17,41 @@
 
     gtag('config', 'G-E2E5R7TPJW');
   </script>
+  <style>
+    select {
+
+      appearance: none;
+      background-size: 1.5rem;
+      padding: 2rem 1rem;
+      height: 2.8rem;
+      
+
+      border: 1px solid #e2e8f0;
+      border-radius: 0.25rem;
+      font-size: 0.1rem;
+      font-weight: 500;
+      color: #4a5568;
+      outline: none;
+      transition: all 0.2s ease-in-out;
+    }
+
+    select:hover {
+      border-color: #9fa6b2;
+    }
+
+    select:focus {
+      border-color: #9fa6b2;
+      box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+      outline: none;
+    }
+
+    select > option {
+      font-weight: normal;
+      font-size: 5rem;
+    }
+
+
+  </style>
 
 </head>
 
@@ -31,11 +66,8 @@
             <img src="../assets/jatai-green-logo.svg" alt="Logo" class="h-7 md:mr-10" />
           </a>
 
-          <select id="language-select" class="mr-10 md:flex">
-            <option value="pt">Português</option>
-            <option value="en">English</option>
-            <option value="es">Español</option>
-          </select>
+
+          
           
           <div class="hidden items-center lg:flex">
             <a href="/" class="text-base text-green-700 hover:text-green-700 mr-8 font-semibold" data-i18n="Início">
@@ -60,7 +92,24 @@
                   NOVO!
                 </span>
             </div>
-            </a>
+            
+          </div>
+
+
+        </div>
+
+        <div class="p-4">
+          <div class="relative inline-flex">
+            <select id="language-select" class="py-2 pl-3 pr-8 text-lg border border-gray-300 rounded-full focus:outline-none ">
+              <option class="" value="pt" data-icon="🇧🇷">🇧🇷</option>
+              <option value="en" data-icon="🇺🇸">🇺🇸</option>
+              <option value="es" data-icon="🇪🇸">🇪🇸</option>
+            </select>
+            <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+              <svg class="w-4 h-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M6 8l4 4 4-4H6z" clip-rule="evenodd" />
+              </svg>
+            </div>
           </div>
         </div>
 
