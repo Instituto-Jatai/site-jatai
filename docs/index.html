@@ -19,13 +19,11 @@
   </script>
   <style>
     select {
-
+      background: transparent;
       appearance: none;
       background-size: 1.5rem;
       padding: 2rem 1rem;
       height: 2.8rem;
-      
-
       border: 1px solid #e2e8f0;
       border-radius: 0.25rem;
       font-size: 0.1rem;
@@ -537,31 +535,52 @@
 
     };
 
-    i18next.init(i18nextConfig, () => {
-      const elementsToTranslate = document.querySelectorAll('[data-i18n]');
+// Função para obter a última língua selecionada do armazenamento local
+function getLastSelectedLanguage() {
+  return localStorage.getItem('selectedLanguage') || 'pt'; // Retorna 'pt' caso não haja uma língua selecionada anteriormente
+}
 
-      elementsToTranslate.forEach((element) => {
-        const translationKey = element.getAttribute('data-i18n');
-        element.textContent = i18next.t(translationKey);
-      });
-    });
+// Função para definir a última língua selecionada no armazenamento local
+function setLastSelectedLanguage(language) {
+  localStorage.setItem('selectedLanguage', language);
+}
 
-    const languageSelect = document.querySelector('#language-select');
-    
-    languageSelect.addEventListener('change', (event) => {
-      i18next.changeLanguage(event.target.value, (error, t) => {
-        if (error) {
-          console.log(error);
-        } else {
-          const elementsToTranslate = document.querySelectorAll('[data-i18n]');
+// Função para atualizar a tradução em todos os elementos
+function updateTranslation() {
+  const elementsToTranslate = document.querySelectorAll('[data-i18n]');
 
-          elementsToTranslate.forEach((element) => {
-            const translationKey = element.getAttribute('data-i18n');
-            element.textContent = i18next.t(translationKey);
-          });
-        }
-      });
-    });
+  elementsToTranslate.forEach((element) => {
+    const translationKey = element.getAttribute('data-i18n');
+    element.textContent = i18next.t(translationKey);
+  });
+}
+
+// Função para alterar a língua selecionada
+function changeLanguage(language) {
+  i18next.changeLanguage(language, (error, t) => {
+    if (error) {
+      console.log(error);
+    } else {
+      setLastSelectedLanguage(language); // Salva a língua selecionada no armazenamento local
+      updateTranslation(); // Atualiza a tradução em todos os elementos
+    }
+  });
+}
+
+i18next.init(i18nextConfig, () => {
+  const lastSelectedLanguage = getLastSelectedLanguage();
+  changeLanguage(lastSelectedLanguage); // Define a língua inicialmente ao inicializar
+
+  const languageSelect = document.querySelector('#language-select');
+  languageSelect.value = lastSelectedLanguage;
+
+  languageSelect.addEventListener('change', (event) => {
+    const selectedLanguage = event.target.value;
+    changeLanguage(selectedLanguage);
+  });
+});
+
+
   </script>
   
 

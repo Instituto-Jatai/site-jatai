@@ -21,6 +21,40 @@
 
         gtag("config", "G-E2E5R7TPJW");
     </script>
+
+<style>
+    select {
+      background: transparent;
+      appearance: none;
+      background-size: 1.5rem;
+      padding: 2rem 1rem;
+      height: 2.8rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 0.25rem;
+      font-size: 0.1rem;
+      font-weight: 500;
+      color: #4a5568;
+      outline: none;
+      transition: all 0.2s ease-in-out;
+    }
+  
+    select:hover {
+      border-color: #9fa6b2;
+    }
+  
+    select:focus {
+      border-color: #9fa6b2;
+      box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+      outline: none;
+    }
+  
+    select > option {
+      font-weight: normal;
+      font-size: 5rem;
+    }
+  
+  
+  </style>
 </head>
 
 <body>
@@ -28,15 +62,10 @@
         <!-- Header -->
         <div class="bg-white sticky top-0 left-0 right-0 h-20 overflow-hidden px-4 z-10" id="header">
             <div class="container w-full h-20 flex flex-row items-center justify-between">
-                <div class="p-4 flex flex-row">
+                <div class="p-4 flex flex-row items-center">
                     <a href="/">
                         <img src="../assets/jatai-green-logo.svg" alt="Logo" class="h-7 md:mr-10" />
                     </a>
-                    <select id="language-select" class="mr-10 md:flex">
-                        <option value="pt">Português</option>
-                        <option value="en">English</option>
-                        <option value="es">Español</option>
-                    </select>
                     <div class="hidden items-center lg:flex">
                         <a href="/" class="text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Início">
                             Início
@@ -62,6 +91,21 @@
                             </span>
                         </div>
                         </a>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="relative inline-flex">
+                          <select id="language-select" class="py-2 pl-3 pr-8 text-lg border border-gray-300 rounded-full focus:outline-none ">
+                            <option class="" value="pt" data-icon="🇧🇷">🇧🇷</option>
+                            <option value="en" data-icon="🇺🇸">🇺🇸</option>
+                            <option value="es" data-icon="🇪🇸">🇪🇸</option>
+                          </select>
+                          <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                              <path fill-rule="evenodd" d="M6 8l4 4 4-4H6z" clip-rule="evenodd" />
+                            </svg>
+                          </div>
+                        </div>
                     </div>
                 </div>
 
@@ -399,31 +443,50 @@
   
       };
   
-      i18next.init(i18nextConfig, () => {
-        const elementsToTranslate = document.querySelectorAll('[data-i18n]');
-  
-        elementsToTranslate.forEach((element) => {
-          const translationKey = element.getAttribute('data-i18n');
-          element.textContent = i18next.t(translationKey);
-        });
+          // Função para obter a última língua selecionada do armazenamento local
+    function getLastSelectedLanguage() {
+      return localStorage.getItem('selectedLanguage') || 'pt'; // Retorna 'pt' caso não haja uma língua selecionada anteriormente
+    }
+
+    // Função para definir a última língua selecionada no armazenamento local
+    function setLastSelectedLanguage(language) {
+      localStorage.setItem('selectedLanguage', language);
+    }
+
+    // Função para atualizar a tradução em todos os elementos
+    function updateTranslation() {
+      const elementsToTranslate = document.querySelectorAll('[data-i18n]');
+
+      elementsToTranslate.forEach((element) => {
+        const translationKey = element.getAttribute('data-i18n');
+        element.textContent = i18next.t(translationKey);
       });
-  
+    }
+
+    // Função para alterar a língua selecionada
+    function changeLanguage(language) {
+      i18next.changeLanguage(language, (error, t) => {
+        if (error) {
+          console.log(error);
+        } else {
+          setLastSelectedLanguage(language); // Salva a língua selecionada no armazenamento local
+          updateTranslation(); // Atualiza a tradução em todos os elementos
+        }
+      });
+    }
+
+    i18next.init(i18nextConfig, () => {
+      const lastSelectedLanguage = getLastSelectedLanguage();
+      changeLanguage(lastSelectedLanguage); // Define a língua inicialmente ao inicializar
+
       const languageSelect = document.querySelector('#language-select');
-      
+      languageSelect.value = lastSelectedLanguage;
+
       languageSelect.addEventListener('change', (event) => {
-        i18next.changeLanguage(event.target.value, (error, t) => {
-          if (error) {
-            console.log(error);
-          } else {
-            const elementsToTranslate = document.querySelectorAll('[data-i18n]');
-  
-            elementsToTranslate.forEach((element) => {
-              const translationKey = element.getAttribute('data-i18n');
-              element.textContent = i18next.t(translationKey);
-            });
-          }
-        });
+        const selectedLanguage = event.target.value;
+        changeLanguage(selectedLanguage);
       });
+    });
     </script>
     <script>
         function handleMobileMenu() {
