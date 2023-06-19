@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,336 +8,495 @@
     <title>Cases de Sucesso | Instituto Jatai</title>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E2E5R7TPJW"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-E2E5R7TPJW"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag("config", "G-E2E5R7TPJW");
+      gtag("config", "G-E2E5R7TPJW");
     </script>
-</head>
 
-<body>
+  <style>
+    select {
+      background: transparent;
+      appearance: none;
+      background-size: 1.5rem;
+      padding: 2rem 1rem;
+      height: 2.8rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 0.25rem;
+      font-size: 0.1rem;
+      font-weight: 500;
+      color: #4a5568;
+      outline: none;
+      transition: all 0.2s ease-in-out;
+    }
+
+    select:hover {
+      border-color: #9fa6b2;
+    }
+
+    select:focus {
+      border-color: #9fa6b2;
+      box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+      outline: none;
+    }
+
+    select > option {
+      font-weight: normal;
+      font-size: 5rem;
+    }
+
+
+  </style>
+  </head>
+
+  <body>
     <div class="relative bg-white">
         <!-- Header -->
-        <div class="bg-white sticky top-0 left-0 right-0 h-20 overflow-hidden px-4 z-10" id="header">
-            <div class="container w-full h-20 flex flex-row items-center justify-between">
-                <div class="p-4 flex flex-row">
-                    <a href="/">
-                        <img src="../../assets/jatai-green-logo.svg" alt="logo" class="mx-4 my-2" />
-                    </a>
-
-                    <div class="hidden items-center lg:flex">
-                        <a href="/" class="text-base text-gray-800 hover:text-green-700 mr-8">
-                            Início
-                        </a>
-                        <a href="/team" class="text-base text-gray-800 hover:text-green-700 mr-8">
-                            Equipe
-                        </a>
-                        <a href="/contact" class="text-base text-gray-800 hover:text-green-700 mr-8">
-                            Contato
-                        </a>
-                        <a href="/cases"
-                            class=" border-gray-600 p-4 text-base text-green-700 hover:text-green-700 mr-8 font-semibold">
-                            Cases de Sucesso
-                        </a>
-                        <a href="/prediagnosis"
-                            class="text-base text-gray-800 hover:text-green-700 mr-8 flex flex-row gap-2">
-                            Pré-diagnóstico
-                            <span
-                                class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full font-semibold">
-                                NOVO!
-                            </span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="p-4">
-                    <img src="../../assets/menu.svg" onclick="handleMobileMenu()" alt="menu" id="menu-sandwich"
-                        class="lg:hidden" />
-                    <img src="../../assets/close.svg" onclick="handleMobileMenu()" id="menu-close" alt="close menu "
-                        class="hidden lg:hidden" />
-                    <div class="items-center p-6 hidden lg:flex">
-                        <a href="https://twitter.com/jatai_org" target="_blank">
-                            <img src="../../assets/twitter.svg " alt="Twitter" class="h-10 mr-6" />
-                        </a>
-                        <a href="https://www.linkedin.com/company/jatai/about/" target="_blank">
-                            <img src="../../assets/linkedin.svg" alt="LinkedIn" class="h-10 mr-6" />
-                        </a>
-                        <a href="https://github.com/Instituto-Jatai" target="_blank">
-                            <img src="../../assets/github.svg" alt="Github" class="h-10 mr-6" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="container flex flex-col">
-                <a href="/" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8">
-                    Início
+        <div class="bg-white sticky top-0 left-0 right-0 h-20 overflow-hidden px-4" id="header">
+          <div class="container w-full h-20 flex flex-row items-center justify-between">
+            <div class="p-4 flex flex-row items-center">
+              <a href="/">
+                <img src="../../assets/jatai-green-logo.svg" alt="Logo" class="h-7 md:mr-10" />
+              </a>
+    
+    
+              
+              
+              <div class="hidden items-center lg:flex">
+                <a href="/" class="text-base text-green-700 hover:text-green-700 mr-8 font-semibold" data-i18n="Início">
+                  Início
                 </a>
-                <a href="/team" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8">
-                    Equipe
+                <a href="/team" class="text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Equipe">
+                  Equipe
                 </a>
-                <a href="/contact"
-                    class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8">
-                    Contato
+                <a href="/contact" class="text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Contato">
+                  Contato
+                </a>
                 </a>
                 <a href="/cases"
-                    class="border-b border-gray-600 p-4 text-base text-green-700 hover:text-green-700 mr-8 font-semibold">
-                    Cases de Sucesso
+                                class=" text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Casos">
+                                Casos
                 </a>
-                <a href="/prediagnosis"
-                    class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8">
+                <div class="flex flex-row gap-2">
+                  <a href="/prediagnosis" class="text-base text-gray-800 hover:text-green-700" data-i18n="Pré-diagnóstico">
                     Pré-diagnóstico
-                </a>
-
-                <div class="mt-6 items-center flex flex-row">
-                    <a class="mr-4" href="https://twitter.com/jatai_org" target="_blank">
-                        <img src="../../assets/twitter.svg " alt="Twitter" class="h-10" />
                     </a>
-                    <a class="mr-4" href="https://www.linkedin.com/company/jatai/about/" target="_blank">
-                        <img src="../../assets/linkedin.svg" alt="LinkedIn" class="h-10" />
-                    </a>
-                    <a class="mr-4" href="https://github.com/Instituto-Jatai" target="_blank">
-                        <img src="../../assets/github.svg" alt="Github" class="h-10" />
-                    </a>
+                    <span data-i18n="NOVO!" class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full font-semibold">
+                      NOVO!
+                    </span>
                 </div>
+                
+              </div>
+              
+              <div class="p-4">
+                <div class="relative inline-flex">
+                  <select id="language-select" class="py-2 pl-3 pr-8 text-lg border border-gray-300 rounded-full focus:outline-none ">
+                    <option class="" value="pt" data-icon="🇧🇷">🇧🇷</option>
+                    <option value="en" data-icon="🇺🇸">🇺🇸</option>
+                    <option value="es" data-icon="🇪🇸">🇪🇸</option>
+                  </select>
+                  <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M6 8l4 4 4-4H6z" clip-rule="evenodd" />
+                   </svg>
+                 </div>
+                </div>
+             </div>
+    
             </div>
+    
+            <div class="p-4">
+              <img src="../../assets/menu.svg" onclick="handleMobileMenu()" alt="menu" id="menu-sandwich" class="lg:hidden" />
+              <img src="../../assets/close.svg" onclick="handleMobileMenu()" id="menu-close" alt="close menu "
+                class="hidden lg:hidden" />
+              <div class="items-center p-6 hidden lg:flex">
+                <a href="https://twitter.com/jatai_org" target="_blank">
+                  <img src="../../assets/twitter.svg " alt="Twitter" class="h-10 mr-6" />
+                </a>
+                <a href="https://www.linkedin.com/company/jatai/about/" target="_blank">
+                  <img src="../../assets/linkedin.svg" alt="LinkedIn" class="h-10 mr-6" />
+                </a>
+                <a href="https://github.com/Instituto-Jatai" target="_blank">
+                  <img src="../../assets/github.svg" alt="Github" class="h-10 mr-6" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container flex flex-col">
+            <a href="/"
+              class="p-4 border-b border-gray-600 text-base text-green-700 hover:text-green-700 mr-8 font-semibold" data-i18n="Início">
+              Início
+            </a>
+            <a href="/team" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Equipe">
+              Equipe
+            </a>
+            <a href="/contact" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Contato">
+              Contato
+            </a>
+            <a href="/cases"
+              class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Casos">
+              Casos
+            </a>
+            <div class="flex flex-row items-center">
+              <a href="/prediagnosis" class="p-4  text-base text-gray-800 hover:text-green-700 flex flex-row" data-i18n="Pré-diagnóstico">
+                Pré-diagnóstico
+              </a>
+              <span data-i18n="NOVO!" class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full flex h-8 justify-center font-semibold">
+                NOVO!
+              </span>
+            </div>
+    
+    
+            <div class="mt-6 items-center flex flex-row">
+              <a class="mr-4" href="https://twitter.com/jatai_org" target="_blank">
+                <img src="../../assets/twitter.svg " alt="Twitter" class="h-10" />
+              </a>
+              <a class="mr-4" href="https://www.linkedin.com/company/jatai/about/" target="_blank">
+                <img src="../../assets/linkedin.svg" alt="LinkedIn" class="h-10" />
+              </a>
+              <a class="mr-4" href="https://github.com/Instituto-Jatai" target="_blank">
+                <img src="../../assets/github.svg" alt="Github" class="h-10" />
+              </a>
+            </div>
+          </div>
         </div>
         <!-- End of Header -->
 
-        <!-- Hero -->
-        <div class="h-[172px] bg-cover bg-center bg-no-repeat bg-[url('https://i.ibb.co/3YJ3LTB/Frame-685.png')]">
-            <div class="container h-full flex flex-col justify-center px-6">
+      <!-- Hero -->
+      <div
+        class="h-[172px] bg-cover bg-center bg-no-repeat bg-[url('https://i.ibb.co/3YJ3LTB/Frame-685.png')]"
+      >
+        <div class="container h-full flex flex-col justify-center px-6"></div>
+      </div>
+      <!-- End of Hero -->
 
-            </div>
+      <!-- Case ImpulsiONar -->
+      <div class="flex flex-col container">
+        <div
+          class="container flex flex-col md:flex-row justify-between px-6 md:px-0 py-20"
+        >
+          <div class="flex flex-col md:w-1/2 h-full">
+            <span class="text-4xl font-medium not-italic pb-2"
+              >ImpulsiONar</span
+            >
+            <span class="text-sm text-gray-500 pb-8"
+              >Como contratar recursos educacionais digitais (edtechs) para
+              educação pública? Casos de uso do Marco Legal de Startups no
+              programa impulsiONar</span
+            >
+
+            <span class="text-base text-gray-600 mt-4 mb-8">
+              O Programa ImpulsiONar tem como objetivo apoiar Secretarias
+              Municipais de Educação no desenvolvimento de estratégias de
+              prevenção e redução de defasagens em Língua Portuguesa e
+              Matemática de estudantes do 6º ao 9º ano de sua rede de escolas
+              públicas. A intervenção do programa nas Secretarias parte de um
+              modelo pedagógico, que é colocado em prática nas redes por meio do
+              apoio de organizações educacionais que oferecem serviços de
+              implementação e formação de professores, além de ter a tecnologia
+              (edtechs) como um recurso didático chave. Para fomentar o uso de
+              tecnologia, o impulsiONar também apoia as Secretarias com os
+              procedimentos jurídicos, financeiros e de gestão para testar a
+              utilização de edtechs (recursos educacionais digitais). Três
+              Secretarias Municipais de Educação realizaram, por meio do Marco
+              Legal de Startups, a contratação de recursos educacionais digitais
+              (edtechs) para apoiar professores e estudantes na evolução da
+              aprendizagem de Matemática e Língua Portuguesa.
+            </span>
+          </div>
+          <div
+            class="bg-blue-100 w-full h-[200px] md:w-[480px] flex flex-col justify-center items-center md:h-[532px] rounded-2xl"
+          >
+            <img src="../../assets/impulsionar.svg" alt="" class="w-[200px]" />
+          </div>
         </div>
-        <!-- End of Hero -->
+      </div>
+      <div class="bg-gray-100">
+        <div
+          class="container flex flex-col md:flex-row justify-between px-6 md:px-0 py-20"
+        >
+          <div class="flex flex-col w-1/2">
+            <span class="flex text-sm text-gray-600 mb-2">A INOVAÇÃO</span>
+            <span
+              class="flex text-4xl text-gray-900 w-[80%] font-medium not-italic pb-2"
+            >
+              Uso do MLS no setor da educação para contratação de edtechs
+            </span>
+          </div>
+          <div class="flex flex-col md:w-1/2">
+            <span class="text-base text-gray-600 mt-4 mb-8">
+              A inovação do programa foi a realização do processo de inovação
+              aberta para contratação de teste de edtechs pelo setor público
+              (Secretarias Municipais de Educação), via Marco Legal das Startups
+              (MLS). O arranjo permitiu o teste remunerado para edtechs nas
+              Secretarias de Educação Municipal (ainda que sem transferência de
+              recursos públicos e sim via terceiro setor) - e há a possibilidade
+              de posterior contratação direta pela administração pública.
+            </span>
+          </div>
+        </div>
+      </div>
 
-        <!-- Case ImpulsiONar -->
-        <div class="flex flex-col container">
-            <div class="container flex flex-col md:flex-row justify-between px-6 md:px-0 py-20">
-                <div class="flex flex-col md:w-1/2 h-full">
-                    <span class="text-4xl font-medium not-italic pb-2">ImpulsiONar</span>
-                    <span class="text-sm text-gray-500 pb-8">Como contratar recursos educacionais digitais
-                        (edtechs)
-                        para
-                        educação pública? Casos de uso do Marco Legal de Startups no programa impulsiONar</span>
+      <div class="container flex flex-row justify-between px-6 md:px-0 py-20">
+        <div class="container flex flex-col justify-between md:px-0">
+          <span class="text-4xl font-medium"
+            >Órgãos públicos que participaram do<br />
+            programa e utilizaram o MLS
+          </span>
 
-                    <span class="text-base text-gray-600 mt-4 mb-8">O Programa ImpulsiONar tem como objetivo
-                        apoiar
-                        Secretarias
-                        Municipais de Educação no desenvolvimento de estratégias de prevenção e redução de defasagens em
-                        Língua Portuguesa e Matemática de estudantes do 6º ao 9º ano de sua rede de escolas públicas.  A
-                        intervenção do programa nas Secretarias parte de um modelo pedagógico, que é colocado em prática
-                        nas redes por meio do apoio de organizações educacionais que oferecem serviços de implementação
-                        e formação de professores, além de ter a tecnologia (edtechs) como um recurso didático chave.
-                        Para fomentar o uso de tecnologia, o impulsiONar também apoia as Secretarias com os
-                        procedimentos jurídicos, financeiros e de gestão para testar a utilização de edtechs (recursos
-                        educacionais digitais). Três Secretarias Municipais de Educação realizaram, por meio do Marco
-                        Legal de Startups, a contratação de recursos educacionais digitais (edtechs) para apoiar
-                        professores e estudantes na evolução da aprendizagem de  Matemática e Língua Portuguesa.</span>
-                </div>
-                <div
-                    class="bg-blue-100 w-full h-[200px] md:w-[480px] flex flex-col justify-center items-center md:h-[532px] rounded-2xl">
-                    <img src="../../assets/impulsionar.svg" alt="" class="w-[200px] " />
-                </div>
+          <div
+            class="flex flex-col md:flex-row justify-between md:px-0 py-20 gap-10"
+          >
+            <div class="flex flex-col md:w-1/2">
+              <img
+                class="bg-red-200 h-[80px] w-[80px] rounded-full mb-4"
+                src="../../assets/educ-pernambuco.png"
+                alt=""
+              />
+              <span class="text-gray-600 text-base"
+                >Secretaria Municipal de Educação de Igarassu (Pernambuco)</span
+              >
+            </div>
+            <div class="flex flex-col md:w-1/2">
+              <img
+                class="bg-red-200 h-[80px] w-[80px] rounded-full mb-4"
+                src="../../assets/educ-guara.png"
+                alt=""
+              />
+              <span class="text-gray-600 text-base"
+                >Secretaria Municipal de Educação de Guaramiranga (Ceará) </span
+              >
+            </div>
+            <div class="flex flex-col md:w-1/2">
+              <img
+                class="bg-red-200 h-[80px] w-[80px] rounded-full mb-4"
+                src="../../assets/educ-piau.png"
+                alt=""
+              />
+              <span class="text-gray-600 text-base"
+                >Secretaria Municipal de Educação de Domingos Mourão
+                (Piauí)</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div>
+        <div class="container flex flex-col justify-between px-6 md:px-0">
+          <div class="flex flex-col md:w-1/2 h-full my-20">
+            <span
+              class="flex text-4xl text-gray-900 w-[80%] font-medium not-italic pb-20"
+            >
+              Principais desafios
+            </span>
+            <span class="flex text-base text-gray-600 mb-2"
+              >Sendo a utilização do Marco Legal das Startups na área de
+              educação algo inédito no Brasil, houve diversos desafios,
+              aprendizados e boas práticas ao longo da jornada do programa
+            </span>
+          </div>
+          <div class="flex flex-col md:w-1/2 h-full my-20">
+            <span
+              class="flex text-4xl text-gray-900 w-[80%] font-medium not-italic pb-20"
+            >
+              Principais aprendizados
+            </span>
+            <span class="flex text-base text-gray-600 mb-4"
+              >A construção das metas configura-se como um risco a ser mapeado,
+              uma vez que essas são desenhadas dentro de um cenário de
+              incertezas característico do modelo de desafio. Por isso, essas
+              devem ser feitas com base no maior número de evidências
+              contextuais, mas sendo importante acompanhá-las ao longo do
+              processo e calibrá-las sempre que possível e necessário.
+            </span>
+            <span class="flex text-base text-gray-600"
+              >Ainda que a contratação trate de um desafio específico, é
+              importante mapear situações correlatas ao desafio - como, no caso
+              do Impulsionar, foi a situação da infraestrutura (conectividade e
+              equipamentos), descrita no item abaixo.
+            </span>
+          </div>
+          <div class="flex flex-col md:flex-row w-full justify-between my-20">
+            <div class="flex flex-col w-full">
+              <span
+                class="flex text-4xl text-gray-900 md:w-[80%] font-medium not-italic pb-20"
+              >
+                Principais resultados
+              </span>
+              <span
+                class="flex flex-col text-base text-gray-600 mb-2 md:w-[80%]"
+              >
+                <p>
+                  Foram definidas 4 metas para o 1º período de teste das edtechs
+                  (de Abril à Dezembro de 2022), relacionadas a:
+                </p>
+                <br />
+
+                <ol class="list-decimal list-inside">
+                  <li>Implementação nas escolas;</li>
+                  <li>Formação dos usuários;</li>
+                  <li>Acesso e utilização dos estudantes;</li>
+                  <li>E satisfação dos professores e gestores.</li>
+                </ol>
+                <br />
+
+                Essa são as métricas para avaliar se o teste foi bem sucedido -
+                e que então possibilitam a contratação das edtechs pelas
+                Secretarias.
+
+                <br />
+                <br />
+
+                Os resultados obtidos foram (1) implementação em 100% das
+                escolas, (2) formação de mais de 80% dos usuários e alta
+                satisfação (> 80%) inicial dos gestores e professores. Porém, a
+                meta (3) de acesso e utilização dos estudantes ficou bastante
+                abaixo do esperado (entre 50-70% de utilização em média, a
+                depender do mês e da rede, versus a meta que seria 80% dos
+                estudantes utilizando 1 vez ao mês). Isso se deu devido a falta
+                de infraestrutura (conectividade e equipamentos) que permitisse
+                o amplo uso dos estudantes.
+
+                <br />
+                <br />
+
+                Dado então os desafios de tecnologia, o programa enviou
+                equipamentos para as redes de ensino e período do piloto foi
+                estendido, ofertando para as redes de ensino mais 6 meses (de
+                jan-jun/23), para permitir o uso intensivo da solução - e os
+                resultados concretos em termos de evolução da aprendizagem dos
+                estudantes
+              </span>
             </div>
 
-
-
-        </div>
-        <div class="bg-gray-100">
-            <div class="container flex flex-col md:flex-row justify-between px-6 md:px-0 py-20">
-                <div class="flex flex-col w-1/2">
-                    <span class="flex text-sm text-gray-600 mb-2">A INOVAÇÃO</span>
-                    <span class="flex text-4xl text-gray-900 w-[80%] font-medium not-italic pb-2">
-                        Uso do MLS no setor da educação para contratação de edtechs
-                    </span>
-                </div>
-                <div class="flex flex-col md:w-1/2">
-                    <span class="text-base text-gray-600 mt-4 mb-8">
-                        A inovação do programa foi a realização do processo de inovação aberta para contratação de
-                        teste
-                        de edtechs pelo setor público (Secretarias Municipais de Educação), via Marco Legal das
-                        Startups
-                        (MLS). O arranjo permitiu o teste remunerado para edtechs nas Secretarias de Educação
-                        Municipal
-                        (ainda que sem transferência de recursos públicos e sim via terceiro setor) - e há a
-                        possibilidade de posterior contratação direta pela administração pública.
-                    </span>
-
-                </div>
+            <div class="flex flex-col md:w-1/2 h-full mt-10">
+              <img
+                class="bg-red-200 mb-4"
+                src="../../assets/children.png"
+                alt=""
+              />
             </div>
+          </div>
         </div>
+      </div>
+      <!-- End of Case ImpulsiONar -->
 
-        <div class="container flex flex-row justify-between px-6 md:px-0 py-20">
-            <div class="container flex flex-col justify-between  md:px-0">
-                <span class="text-4xl font-medium">Órgãos públicos que participaram do<br> programa e utilizaram o
-                    MLS
-                </span>
+      <!-- Footer -->
+      <div class="bg-black h-full">
+        <div
+          class="container px-6 flex flex-col items-start justify-between h-[600px] md:h-[380px]"
+        >
+          <img
+            src="../../assets/jatai-white-logo.svg"
+            alt=""
+            class="mt-10 h-10"
+          />
 
-                <div class="flex flex-col md:flex-row justify-between md:px-0 py-20 gap-10">
-                    <div class="flex flex-col md:w-1/2">
-                        <img class="bg-red-200 h-[80px] w-[80px] rounded-full mb-4"
-                            src="../../assets/educ-pernambuco.png" alt="">
-                        <span class="text-gray-600 text-base">Secretaria Municipal de Educação de Igarassu
-                            (Pernambuco)</span>
-                    </div>
-                    <div class="flex flex-col md:w-1/2">
-                        <img class="bg-red-200 h-[80px] w-[80px] rounded-full mb-4" src="../../assets/educ-guara.png"
-                            alt="">
-                        <span class="text-gray-600 text-base">Secretaria Municipal de Educação de Guaramiranga
-                            (Ceará) </span>
-                    </div>
-                    <div class="flex flex-col md:w-1/2">
-                        <img class="bg-red-200 h-[80px] w-[80px] rounded-full mb-4" src="../../assets/educ-piau.png"
-                            alt="">
-                        <span class="text-gray-600 text-base">Secretaria Municipal de Educação de Domingos Mourão
-                            (Piauí)</span>
-                    </div>
-                </div>
+          <div
+            class="flex flex-col mb-10 md:justify-between md:flex-row w-full"
+          >
+            <div class="flex flex-col mt-8">
+              <span class="text-white flex text-2xl"
+                >Vamos marcar uma conversa?</span
+              >
+              <span class="text-white mt-2 md:w-[558px]"
+                >Entre em contato para discutir conosco suas necessidades!
+                Podemos marcar um encontro online informal para pensar em como
+                podemos te ajudar.</span
+              >
+
+              <button
+                class="bg-slate-900 text-white w-[180px] h-[48px] rounded-xl mt-4"
+              >
+                <a href="https://calendly.com/eduardospano/jatai-30min"
+                  >Fale com a gente</a
+                >
+              </button>
             </div>
-        </div>
 
-        <div>
-            <div class="container flex flex-col justify-between px-6 md:px-0">
-                <div class="flex flex-col md:w-1/2 h-full my-20">
-                    <span class="flex text-4xl text-gray-900 w-[80%] font-medium not-italic pb-20">
-                        Principais desafios
-                    </span>
-                    <span class="flex text-base text-gray-600 mb-2">Sendo a utilização do Marco Legal das Startups na
-                        área
-                        de educação algo inédito no Brasil, houve diversos desafios, aprendizados e boas práticas ao
-                        longo da jornada do programa
-                    </span>
-                </div>
-                <div class="flex flex-col md:flex-row w-full justify-between  my-20">
-                    <div class="flex flex-col w-full">
-                        <span class="flex text-4xl text-gray-900 md:w-[80%] font-medium not-italic pb-20">
-                            Resultados
-                        </span>
-                        <span class="flex flex-col text-base text-gray-600 mb-2 md:w-[80%]">
-                            <p>
-                                Foram definidas 4 metas para o 1º período de teste das edtechs (de Abril à Dezembro de
-                                2022), relacionadas a:
-                            </p><br>
+            <div class="flex flex-col mt-8">
+              <span class="text-white font-bold mb-6">Siga a Jataí</span>
 
-                            <ol class="list-decimal list-inside">
-                                <li>Implementação nas escolas;</li>
-                                <li>Formação dos usuários;</li>
-                                <li>Acesso e utilização dos estudantes;</li>
-                                <li>E satisfação dos professores e gestores.</li>
-                            </ol><br>
+              <div class="flex flex-row mb-6 gap-2">
+                <img src="../../assets/twitter-p.svg" alt="" />
+                <span class="text-white"
+                  ><a
+                    href="https://twitter.com/jatai_org"
+                    target="_blank"
+                    class="text-green-600 underline"
+                    >@jatai_org</a
+                  >
+                  no Twitter</span
+                >
+              </div>
 
+              <div class="flex flex-row mb-6 gap-2">
+                <img src="../../assets/github-p.svg" alt="" />
+                <span class="text-white"
+                  ><a
+                    href="https://github.com/Instituto-Jatai"
+                    target="_blank"
+                    class="text-green-600 underline"
+                    >@Instituto-Jatai</a
+                  >
+                  no GitHub</span
+                >
+              </div>
 
-                            Essa são as métricas para avaliar se o teste foi bem sucedido - e que então possibilitam a
-                            contratação das edtechs pelas Secretarias.
-                            Os resultados obtidos foram:
-                            Implementação em 100% das escolas;
-                            Formação de mais de 80% dos usuários e alta satisfação (> 80%) inicial dos gestores e
-                            professores;
-                            Porém, a meta de acesso e utilização dos estudantes ficou bastante abaixo do esperado (entre
-                            50-70% de utilização em média, a depender do mês e da rede, versus a meta que seria 80% dos
-                            estudantes utilizando 1 vez ao mês). Isso se deu devido a falta de infraestrutura
-                            (conectividade e equipamentos) que permitisse o amplo uso dos estudantes.
-                            Dado então os desafios de tecnologia, o programa enviou equipamentos para as redes de ensino
-                            e período do piloto foi estendido, ofertando para as redes de ensino mais 6 meses (de
-                            Janeiro à Junho de 2023), para permitir o uso intensivo da solução - e os resultados
-                            concretos em termos de evolução da aprendizagem dos estudantes.
-                        </span>
-                    </div>
-
-                    <div class="flex flex-col md:w-1/2 h-full mt-10">
-                        <img class="bg-red-200 mb-4" src="../../assets/children.png" alt="">
-                    </div>
-
-                </div>
-
+              <div class="flex flex-row gap-2">
+                <img src="../../assets/linkedin-p.svg" alt="" />
+                <span class="text-white"
+                  ><a
+                    href="https://www.linkedin.com/company/jatai/about/"
+                    class="text-green-600 underline"
+                    target="_blank"
+                    >LinkedIn</a
+                  ></span
+                >
+              </div>
             </div>
+          </div>
         </div>
-        <!-- End of Case ImpulsiONar -->
-
-
-        <!-- Footer -->
-        <div class=" bg-black h-full">
-            <div class="container px-6 flex flex-col items-start justify-between h-[600px] md:h-[380px]">
-                <img src="../../assets/jatai-white-logo.svg" alt="" class="mt-10 h-10" />
-
-                <div class="flex flex-col mb-10 md:justify-between md:flex-row w-full">
-                    <div class="flex flex-col mt-8">
-                        <span class="text-white flex text-2xl">Vamos marcar uma conversa?</span>
-                        <span class="text-white mt-2 md:w-[558px]">Entre em contato para discutir conosco suas
-                            necessidades!
-                            Podemos marcar um encontro online informal para pensar em como
-                            podemos te ajudar.</span>
-
-                        <button class="bg-slate-900 text-white w-[180px] h-[48px] rounded-xl mt-4">
-                            <a href="https://calendly.com/eduardospano/jatai-30min">Fale com a gente</a>
-                        </button>
-                    </div>
-
-                    <div class="flex flex-col mt-8">
-                        <span class="text-white font-bold mb-6">Siga a Jataí</span>
-
-                        <div class="flex flex-row mb-6 gap-2">
-                            <img src="../../assets/twitter-p.svg" alt="" />
-                            <span class="text-white"><a href="https://twitter.com/jatai_org" target="_blank"
-                                    class="text-green-600 underline">@jatai_org</a>
-                                no Twitter</span>
-                        </div>
-
-                        <div class="flex flex-row mb-6 gap-2">
-                            <img src="../../assets/github-p.svg" alt="" />
-                            <span class="text-white"><a href="https://github.com/Instituto-Jatai" target="_blank"
-                                    class="text-green-600 underline">@Instituto-Jatai</a>
-                                no GitHub</span>
-                        </div>
-
-                        <div class="flex flex-row gap-2">
-                            <img src="../../assets/linkedin-p.svg" alt="" />
-                            <span class="text-white"><a href="https://www.linkedin.com/company/jatai/about/"
-                                    class="text-green-600 underline" target="_blank">LinkedIn</a></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End of Footer -->
-
+      </div>
+      <!-- End of Footer -->
     </div>
     <script>
-        function handleMobileMenu() {
-            const header = document.getElementById("header");
-            const menuSanduiche = document.getElementById("menu-sandwich");
-            const closeButton = document.getElementById("menu-close");
+      function handleMobileMenu() {
+        const header = document.getElementById("header");
+        const menuSanduiche = document.getElementById("menu-sandwich");
+        const closeButton = document.getElementById("menu-close");
 
-            menuSanduiche.addEventListener("click", () => {
-                header.classList.add(
-                    "flex",
-                    "flex-col",
+        menuSanduiche.addEventListener("click", () => {
+          header.classList.add(
+            "flex",
+            "flex-col",
 
-                    "h-[100vh]"
-                );
-                menuSanduiche.classList.add("hidden");
-                closeButton.classList.remove("hidden");
-            });
+            "h-[100vh]"
+          );
+          menuSanduiche.classList.add("hidden");
+          closeButton.classList.remove("hidden");
+        });
 
-            closeButton.addEventListener("click", () => {
-                header.classList.remove(
-                    "flex",
-                    "flex-col",
+        closeButton.addEventListener("click", () => {
+          header.classList.remove(
+            "flex",
+            "flex-col",
 
-                    "h-[100vh]"
-                );
-                menuSanduiche.classList.remove("hidden");
-                closeButton.classList.add("hidden");
-            });
-        }
+            "h-[100vh]"
+          );
+          menuSanduiche.classList.remove("hidden");
+          closeButton.classList.add("hidden");
+        });
+      }
     </script>
-</body>
-
+  </body>
 </html>
