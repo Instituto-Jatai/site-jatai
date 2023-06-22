@@ -60,114 +60,83 @@
   <body>
     <div class="relative bg-white">
         <!-- Header -->
-        <div class="bg-white sticky top-0 left-0 right-0 h-20 overflow-hidden px-4" id="header">
-          <div class="container w-full h-20 flex flex-row items-center justify-between">
-            <div class="p-4 flex flex-row items-center">
-              <a href="/">
-                <img src="../../assets/jatai-green-logo.svg" alt="Logo" class="h-7 md:mr-10" />
-              </a>
-    
-    
-              
-              
-              <div class="hidden items-center lg:flex">
-                <a href="/" class="text-base text-green-700 hover:text-green-700 mr-8 font-semibold" data-i18n="Início">
-                  Início
-                </a>
-                <a href="/team" class="text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Equipe">
-                  Equipe
-                </a>
-                <a href="/contact" class="text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Contato">
-                  Contato
-                </a>
-                </a>
-                <a href="/cases"
-                                class=" text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Casos">
-                                Casos
-                </a>
-                <div class="flex flex-row gap-2">
-                  <a href="/prediagnosis" class="text-base text-gray-800 hover:text-green-700" data-i18n="Pré-diagnóstico">
-                    Pré-diagnóstico
-                    </a>
-                    <span data-i18n="NOVO!" class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full font-semibold">
-                      NOVO!
-                    </span>
-                </div>
-                
-              </div>
-              
-              <div class="p-4">
-                <div class="relative inline-flex">
-                  <select id="language-select" class="py-2 pl-3 pr-8 text-lg border border-gray-300 rounded-full focus:outline-none ">
-                    <option class="" value="pt" data-icon="🇧🇷">🇧🇷</option>
-                    <option value="en" data-icon="🇺🇸">🇺🇸</option>
-                    <option value="es" data-icon="🇪🇸">🇪🇸</option>
-                  </select>
-                  <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                    <svg class="w-4 h-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M6 8l4 4 4-4H6z" clip-rule="evenodd" />
-                   </svg>
-                 </div>
-                </div>
-             </div>
-    
+      <div class="bg-white sticky top-0 left-0 right-0 h-20 overflow-hidden px-4" id="header">
+        <div class="container w-full h-20 flex flex-row items-center justify-between">
+        <div class="flex flex-row items-center">
+            <a href="/">
+            <img src="../../assets/jatai-green-logo.svg" alt="Logo" class="h-7 md:mr-10" />
+            </a>
+            
+            <div class="hidden items-center lg:flex">
+            <a href="/" class="text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Início"></a>
+            <a href="/team" class="text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Equipe"></a>
+            <a href="/contact" class="text-base text-gray-800 hover:text-green-700 mr-8  " data-i18n="Contato"></a>
+            <a href="/cases" class=" text-base text-green-700 hover:text-green-700 mr-8 font-semibold" data-i18n="Casos"></a>
+            <a href="/model-docs"class=" text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Documentos modelo"></a>
+            <div class="flex flex-row gap-2">
+                <a href="/prediagnosis" class="text-base text-gray-800 hover:text-green-700" data-i18n="Pré-diagnóstico"></a>
+                <span data-i18n="NOVO!" class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full font-semibold"></span>
             </div>
-    
+            </a>
+            </div>
+
             <div class="p-4">
-              <img src="../../assets/menu.svg" onclick="handleMobileMenu()" alt="menu" id="menu-sandwich" class="lg:hidden" />
-              <img src="../../assets/close.svg" onclick="handleMobileMenu()" id="menu-close" alt="close menu "
-                class="hidden lg:hidden" />
-              <div class="items-center p-6 hidden lg:flex">
-                <a href="https://twitter.com/jatai_org" target="_blank">
-                  <img src="../../assets/twitter.svg " alt="Twitter" class="h-10 mr-6" />
-                </a>
-                <a href="https://www.linkedin.com/company/jatai/about/" target="_blank">
-                  <img src="../../assets/linkedin.svg" alt="LinkedIn" class="h-10 mr-6" />
-                </a>
-                <a href="https://github.com/Instituto-Jatai" target="_blank">
-                  <img src="../../assets/github.svg" alt="Github" class="h-10 mr-6" />
-                </a>
-              </div>
+            <div class="relative inline-flex">
+                <select id="language-select" class="py-2 pl-3 pr-8 text-lg border border-gray-300 rounded-full focus:outline-none ">
+                <option class="" value="pt" data-icon="🇧🇷">🇧🇷</option>
+                <option value="en" data-icon="🇺🇸">🇺🇸</option>
+                <option value="es" data-icon="🇪🇸">🇪🇸</option>
+                </select>
+                <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                <svg class="w-4 h-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M6 8l4 4 4-4H6z" clip-rule="evenodd" />
+                </svg>
+                </div>
             </div>
-          </div>
-          <div class="container flex flex-col">
-            <a href="/"
-              class="p-4 border-b border-gray-600 text-base text-green-700 hover:text-green-700 mr-8 font-semibold" data-i18n="Início">
-              Início
-            </a>
-            <a href="/team" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Equipe">
-              Equipe
-            </a>
-            <a href="/contact" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Contato">
-              Contato
-            </a>
-            <a href="/cases"
-              class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Casos">
-              Casos
-            </a>
-            <div class="flex flex-row items-center">
-              <a href="/prediagnosis" class="p-4  text-base text-gray-800 hover:text-green-700 flex flex-row" data-i18n="Pré-diagnóstico">
-                Pré-diagnóstico
-              </a>
-              <span data-i18n="NOVO!" class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full flex h-8 justify-center font-semibold">
-                NOVO!
-              </span>
             </div>
-    
-    
-            <div class="mt-6 items-center flex flex-row">
-              <a class="mr-4" href="https://twitter.com/jatai_org" target="_blank">
-                <img src="../../assets/twitter.svg " alt="Twitter" class="h-10" />
-              </a>
-              <a class="mr-4" href="https://www.linkedin.com/company/jatai/about/" target="_blank">
-                <img src="../../assets/linkedin.svg" alt="LinkedIn" class="h-10" />
-              </a>
-              <a class="mr-4" href="https://github.com/Instituto-Jatai" target="_blank">
-                <img src="../../assets/github.svg" alt="Github" class="h-10" />
-              </a>
-            </div>
-          </div>
         </div>
+
+        <div class="p-4">
+            <img src="../../assets/menu.svg" onclick="handleMobileMenu()" alt="menu" id="menu-sandwich" class="lg:hidden" />
+            <img src="../../assets/close.svg" onclick="handleMobileMenu()" id="menu-close" alt="close menu "
+            class="hidden lg:hidden" />
+            <div class="items-center p-6 hidden lg:flex">
+            <a href="https://twitter.com/jatai_org" target="_blank">
+                <img src="../../assets/twitter.svg " alt="Twitter" class="h-10 mr-6" />
+            </a>
+            <a href="https://www.linkedin.com/company/jatai/about/" target="_blank">
+                <img src="../../assets/linkedin.svg" alt="LinkedIn" class="h-10 mr-6" />
+            </a>
+            <a href="https://github.com/Instituto-Jatai" target="_blank">
+                <img src="../../assets/github.svg" alt="Github" class="h-10 mr-6" />
+            </a>
+            </div>
+        </div>
+        </div>
+        <div class="container flex flex-col">
+        <a href="/"  class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Início"></a>
+        <a href="/team" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Equipe"></a>
+        <a href="/contact" class="border-b border-gray-600 p-4 text-base text-gray-800 hover:text-green-700 mr-8 " data-i18n="Contato"></a>
+        <a href="/cases"class="p-4 border-b border-gray-600 text-base text-green-700 font-semibold hover:text-green-700 mr-8" data-i18n="Casos"></a>
+        <a href="/model-docs"class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Documentos modelo"></a>
+        <div class="flex flex-row items-center">
+            <a href="/prediagnosis" class="p-4  text-base text-gray-800 hover:text-green-700 flex flex-row" data-i18n="Pré-diagnóstico"></a>
+            <span data-i18n="NOVO!" class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full flex h-8 justify-center font-semibold"></span>
+        </div>
+
+        <div class="mt-6 items-center flex flex-row">
+            <a class="mr-4" href="https://twitter.com/jatai_org" target="_blank">
+            <img src="../../assets/twitter.svg " alt="Twitter" class="h-10" />
+            </a>
+            <a class="mr-4" href="https://www.linkedin.com/company/jatai/about/" target="_blank">
+            <img src="../../assets/linkedin.svg" alt="LinkedIn" class="h-10" />
+            </a>
+            <a class="mr-4" href="https://github.com/Instituto-Jatai" target="_blank">
+            <img src="../../assets/github.svg" alt="Github" class="h-10" />
+            </a>
+        </div>
+        </div>
+    </div>
         <!-- End of Header -->
 
       <!-- Hero -->
@@ -469,34 +438,264 @@
       </div>
       <!-- End of Footer -->
     </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/20.2.2/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.0/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/1.2.2/i18nextHttpBackend.min.js"></script>
     <script>
-      function handleMobileMenu() {
-        const header = document.getElementById("header");
-        const menuSanduiche = document.getElementById("menu-sandwich");
-        const closeButton = document.getElementById("menu-close");
+      const i18nextConfig = {
+          lng: 'pt',
+          resources: {
+            pt: {
+              translation: {
+                "Início": "Início",
+                "Equipe": "Equipe",
+                "Contato": "Contato",
+                "Casos": "Casos",
+                "Pré-diagnóstico": "Pré-diagnóstico",
+                "NOVO!": "NOVO!",
+                "EM BREVE!": "EM BREVE!",
+                "Tem dúvidas sobre como as compras públicas podem promover inovação e potencializar governos mais digitais e sustentáveis?": "Tem dúvidas sobre como as compras públicas podem promover inovação e potencializar governos mais digitais e sustentáveis? Nós reunimos aqui casos diversos, com o objetivo de disseminar práticas inovadoras, promovendo o conhecimento, oportunidades de conexão e fortalecimento de redes.",
+                "Como contratar": "Como contratar tecnologias educacionais em escala?",
+                "Casos da Ata de Registro": "Casos da Ata de Registro de Preços na Secretaria Estadual de Educação do Rio Grande do Sul",
+                "Construindo organizações": "Construindo organizações públicas para o mundo",
+                "A Secretaria de Educação do Rio Grande do Sul": "A Secretaria de Educação do Rio Grande do Sul, em parceria com a Secretaria de Gestão, realizou a contratação de tecnologias para apoiar professores na diversificação das suas práticas pedagógicas em português e matemática. Este material tem como objetivo compartilhar principalmente os desafios e aprendizados das secretarias que realizaram pregão eletrônico de uma Ata de Registro de Preços para compra de recursos educacionais digitais, abrindo oportunidade para que não somente a rede estadual, mas também as redes municipais interessadas, pudessem contratar esses recursos.",
+                "Saiba mais": "Saiba mais",
+                "Como melhorar resultados educacionais": "Como melhorar resultados educacionais, otimizar recursos e gerenciar as rotinas da Secretaria de Educação?",
+                "O caso da secretaria de educação de Monte Alegre": "O caso da secretaria de educação de Monte Alegre, no Rio Grande do Norte",
+                "A Secretaria Municipal de Educação de Monte Alegre": "A Secretaria Municipal de Educação de Monte Alegre, no Rio Grande do Norte, realizou a contratação de serviço de suporte para o uso do sistema i-Educar. Como o sistema tem licenciamento livre e está disponível para todos, a rede realizou a instalação por conta própria em 2014. Ao perceber a necessidade de aprofundamento do uso, decidiu pela contratação de um serviço de suporte ao sistema, com oferta de hospedagem, manutenção corretiva, suporte técnico e desenvolvimento de módulos específicos.",
+                "digital": "digital",
+                "e": "e",
+                "world": "",
+                "sustentável": "sustentável",
+                "Somos uma organização": "Somos uma organização sem fins lucrativos criada com a missão de apoiar organizações públicas a se tornarem mais ágeis para se adaptarem ao mundo digital e sustentável.",
+                "Fale conosco": "Fale conosco",
+                "O que fazemos": "O que fazemos",
+                "Ajudamos você": "Ajudamos você que é gestor público a enfrentar os desafios da inovação e digitalização no setor público. Construímos com você soluções para desafios de equipe, governança, recursos e contratações.",
+                "Construir equipes de tecnologia": "Construir equipes de tecnologia",
+                "Apoiamos a criação de equipe interna e contratação de equipes.": "Apoiamos a criação de equipe interna e contratação de equipes.",
+                "Por quê?": "Por quê?",
+                "Sem equipes de tecnologia": "Sem equipes de tecnologia adequadas e qualificadas, iniciativas de uso de tecnologias não prosperam. Por isso, é importante garantir uma equipe com capacidade para transformar sua organização com uso de tecnologia.",
+                "O que fazemos?": "O que fazemos?",
+                "Apoiamos na definição de perfis necessários": "Apoiamos na definição de perfis necessários, da estrutura organizacional e na contratação de equipes multidisciplinares em modelo de Ateliê de software, para superar as dificuldades com as antigas contratações de fábrica de software",
+                "Resultados esperados": "Resultados esperados:",
+                "Equipe estruturada e com capacidade de entrega": "Equipe estruturada e com capacidade de entrega de produtos digitais de qualidade mais rapidamente",
+    
+                "Digitalizar gestão com uso de tecnologias abertas": "Digitalizar gestão com uso de tecnologias abertas",
+                "Apoiamos a escolha de tecnologias abertas": "Apoiamos a escolha de tecnologias abertas que gerem impacto, eficiência e autonomia.",
+                "Tecnologias abertas oferecem soluções comuns": "Tecnologias abertas oferecem soluções comuns para necessidades compartilhadas entre diferentes organizações públicas. Mas além de entregarem resultados, geram mais eficiência nos gastos com tecnologias, garantem independência com relação aos fornecedores e permitem mais flexibilidade na entrega do serviço público.",
+                "Apoiamos na busca de software em código-aberto": "Apoiamos na busca de software em código-aberto que resolvam problemas de gestão pública, no levantamento do mercado de fornecedores para essas soluções e na contratação para implantação e fornecimento e suporte dessas soluções para a organização pública.",
+                "Tecnologia aberta contratada e implantada": "Tecnologia aberta contratada e implantada, gerando resultados para a organização pública.",
+    
+                "Contratar soluções para problemas públicos": "Contratar soluções para problemas públicos",
+                "Apoiamos na definição de problemas públicos": "Apoiamos na definição de problemas públicos e chamada de soluções para o ecossistema de inovação.",
+                "Nem sempre a melhor solução": "Nem sempre a melhor solução para os problemas públicos sai de dentro das nossas organizações. Abrir problemas do governo para o ecossistema de inovação, permitindo o teste de soluções e sua contratação tem grande potencial para a resolução desses problemas de forma criativa.",
+                "Apoiamos na definição de problemas públicos e na realização da chamada de soluções para o ecossistema de inovação. Estruturamos": "Apoiamos na definição de problemas públicos e na realização da chamada de soluções para o ecossistema de inovação. Estruturamos a chamada tendo como base a licitação prevista no Marco Legal de Startups e Empreendedorismo, o que permite o pagamento dos testes pela organização pública, assim como sua contratação caso esses testes sejam bem sucedidos.",
+                "Teste de soluções e contratação para a resolução": "Teste de soluções e contratação para a resolução do problema apresentado.",
+                
+                "Parceiros, Beneficiários e Clientes": "Parceiros, Beneficiários e Clientes",
+    
+                "Vamos marcar uma conversa?": "Vamos marcar uma conversa?",
+                "Entre em contato para discutir conosco suas necessidades!": "Entre em contato para discutir conosco suas necessidades! Podemos marcar um encontro online informal para pensar em como podemos te ajudar.",
+                "Fale com a gente": "Fale com a gente",
+                "Siga a Jataí": "Siga a Jataí",
 
-        menuSanduiche.addEventListener("click", () => {
-          header.classList.add(
-            "flex",
-            "flex-col",
+                "impulsionar-title": "Como contratar recursos educacionais digitais (edtechs) para educação pública? Casos de uso do Marco Legal de Startups no programa impulsiONar",
+                "impulsionar-body": "O Programa ImpulsiONar tem como objetivo apoiar Secretarias Municipais de Educação no desenvolvimento de estratégias de prevenção e redução de defasagens em Língua Portuguesa e Matemática de estudantes do 6º ao 9º ano de sua rede de escolas públicas.  A intervenção do programa nas Secretarias parte de um modelo pedagógico, que é colocado em prática nas redes por meio do apoio de organizações educacionais que oferecem serviços de implementação e formação de professores, além de ter a tecnologia (edtechs) como um recurso didático chave. Para fomentar o uso de tecnologia, o impulsiONar também apoia as Secretarias com os procedimentos jurídicos, financeiros e de gestão para testar a utilização de edtechs (recursos educacionais digitais). Três Secretarias Municipais de Educação realizaram, por meio do Marco Legal de Startups, a contratação de recursos educacionais digitais (edtechs) para apoiar professores e estudantes na evolução da aprendizagem de  Matemática e Língua Portuguesa.",
+              }
+            },
+            en: {
+              translation: {
+                "Início": "Home",
+                "Equipe": "Team",
+                "Contato": "Contact",
+                "Casos": "Cases",
+                "Pré-diagnóstico": "Pre-diagnosis",
+                "NOVO!": "NEW!",
+                "Tem dúvidas sobre como as compras públicas podem promover inovação e potencializar governos mais digitais e sustentáveis?": "Do you have any questions about how public procurement can promote innovation and leverage more digital and sustainable governments? We have gathered here several cases, with the objective of disseminating innovative practices, promoting knowledge, opportunities for connection and strengthening of networks.",
+                "Como contratar": "How to contract educational technologies on a large scale?",
+                "Casos da Ata de Registro": "Cases of the Price Registration Form at the State Department of Education of Rio Grande do Sul",
+                "A Secretaria de Educação do Rio Grande do Sul": "The State Department of Education of Rio Grande do Sul, in partnership with the Department of Management, contracted technologies to support teachers in diversifying their pedagogical practices in Portuguese and Mathematics. This material aims to share mainly the challenges and learnings of the departments that carried out an electronic auction of a Price Registration List for the purchase of digital educational resources, opening up the opportunity for not only the state network, but also the interested municipal networks, to contract these resources.",
+                "Saiba mais": "Learn more",
 
-            "h-[100vh]"
-          );
-          menuSanduiche.classList.add("hidden");
-          closeButton.classList.remove("hidden");
-        });
+                "Como melhorar resultados educacionais": "How to improve educational results through the use of technology?",
+                "O caso da secretaria de educação de Monte Alegre": "The case of the Department of Education of Monte Alegre, in Rio Grande do Norte",
+                "A Secretaria Municipal de Educação de Monte Alegre": "The Municipal Department of Education of Monte Alegre, in Rio Grande do Norte, contracted a support service for the use of the i-Educar system. As the system has free licensing and is available to everyone, the network installed it on its own in 2014. When it realized the need to deepen its use, it decided to contract a support service for the system, with an offer of hosting, corrective maintenance, technical support and development of specific modules.",
 
-        closeButton.addEventListener("click", () => {
-          header.classList.remove(
-            "flex",
-            "flex-col",
+                "EM BREVE!": "COMING SOON!",
+                "Construindo organizações": "Building public organizations for the",
+                "digital": "digital",
+                "e": "and",
+                "world": "world",
+                "sustentável": "sustainable",
+                "Somos uma organização": "We are a non-profit organization created with the mission of supporting public organizations to become more agile in adapting to the digital and sustainable world.",
+                "Fale conosco": "Contact us",
+                "O que fazemos": "What we do",
+                "Ajudamos você": "We help you as a public manager meet the challenges of innovation and digitalization in the public sector. We build with you solutions to team bulding, governance, and public procurement challenges.",
+                "Construir equipes de tecnologia": "Building Technology Teams",
+                "Apoiamos a criação de equipe interna e contratação de equipes.": "We support internal team building and hiring teams.",
+                "Por quê?": "Why?",
+                "Sem equipes de tecnologia": "Without adequate and qualified technology teams, technology initiatives do not prosper. That's why it's important to secure a team with the capability to transform your organization using technology.",
+                "O que fazemos?": "What we do?",
+                "Apoiamos na definição de perfis necessários": "We support you in defining the necessary profiles, the organizational structure, and in procuring multidisciplinary teams in a software studio model, to overcome the difficulties with the traditional software house public procurement",
+                "Resultados esperados": "Expected results:",
+                "Equipe estruturada e com capacidade de entrega": "Structured team with the ability to deliver quality digital products faster",
+                
+                "Digitalizar gestão com uso de tecnologias abertas": "Digitize management using open technologies",
+                "Apoiamos a escolha de tecnologias abertas": "We support the choice of open technologies that generate impact, efficiency, and autonomy.",
+                "Tecnologias abertas oferecem soluções comuns": "Open technologies offer common solutions to shared needs across different public organizations. But as well as delivering results, they generate more efficiency in technology spending, guarantee independence from suppliers and allow more flexibility in public service delivery.",
+                "Apoiamos na busca de software em código-aberto": "We provide support in the search for open source software that solves public management problems, in surveying the market for suppliers of these solutions, and in contracting the implementation, supply, and support of these solutions for the public organization.",
+                "Tecnologia aberta contratada e implantada": "Open technology contracted and implemented, generating results for the public organization.",
+    
+                "Contratar soluções para problemas públicos": "Public procurement of solutions for public problems",
+                "Apoiamos na definição de problemas públicos": "We support in defining public problems and setting up public procurement for solutions from the innovation ecosystem.",
+                "Nem sempre a melhor solução": "The best solution to public problems does not always come from within our organizations. Opening up government problems to the innovation ecosystem, allowing for the testing of solutions and their public procurement has great potential for solving these problems creatively.",
+                "Apoiamos na definição de problemas públicos e na realização da chamada de soluções para o ecossistema de inovação. Estruturamos": "We support the definition of public problems and the execution of the call for solutions for the innovation ecosystem. We structure the call based on the bidding foreseen in the Legal Framework for Startups and Entrepreneurship, which allows the payment of the tests by the public organization, as well as its hiring in case these tests are successful.",
+                "Teste de soluções e contratação para a resolução": "Testing of solutions and public procurement for solutions of the problem presented.",
+    
+                "Parceiros, Beneficiários e Clientes": "Partners, Beneficiaries and Clients",
+    
+                "Vamos marcar uma conversa?": "Let's have a chat?",
+                "Entre em contato para discutir conosco suas necessidades!": "Get in touch to discuss your needs with us! We can schedule an informal online meeting to think about how we can help you.",
+                "Fale com a gente": "Contact us",
+                "Siga a Jataí": "Follow Jataí",
+              }
+            },
+            es: {
+              translation: {
+                "Início": "Inicio",
+                "Equipe": "Equipo",
+                "Contato": "Contacto",
+                "Casos": "Casos",
+                "Pré-diagnóstico": "Pre-diagnóstico",
+                "NOVO!": "¡NUEVO!",
+                "Tem dúvidas sobre como as compras públicas podem promover inovação e potencializar governos mais digitais e sustentáveis?": "¿Tiene dudas sobre cómo las compras públicas pueden promover la innovación y potenciar gobiernos más digitales y sostenibles? Hemos reunido aquí varios casos, con el objetivo de difundir prácticas innovadoras, promover el conocimiento, oportunidades de conexión y fortalecimiento de redes.",
+                "Como contratar": "¿Cómo contratar tecnologías educativas a gran escala?",
+                "Casos da Ata de Registro": "Casos de la Lista de Precios de la Secretaría de Educación del Estado de Rio Grande do Sul",
+                "A Secretaria de Educação do Rio Grande do Sul": "El Departamento de Educación del Estado de Rio Grande do Sul, en asociación con el Departamento de Gestión, contrató tecnologías para apoyar a los profesores en la diversificación de sus prácticas pedagógicas en portugués y matemáticas. Este material tiene como objetivo compartir principalmente los desafíos y aprendizajes de los departamentos que llevaron a cabo una subasta electrónica de una Lista de Registro de Precios para la compra de recursos educativos digitales, abriendo la oportunidad para que no sólo la red estatal, sino también las redes municipales interesadas, contraten estos recursos.",
+                "Saiba mais": "Más información",
 
-            "h-[100vh]"
-          );
-          menuSanduiche.classList.remove("hidden");
-          closeButton.classList.add("hidden");
-        });
+
+                "Como melhorar resultados educacionais": "¿Cómo mejorar los resultados educativos, optimizar los recursos y gestionar las rutinas del Departamento de Educación?",
+                "O caso da secretaria de educação de Monte Alegre": "El caso del Departamento de Educación de Monte Alegre, en Rio Grande do Norte",
+                "A Secretaria Municipal de Educação de Monte Alegre": "El Departamento Municipal de Educación de Monte Alegre, en Rio Grande do Norte, contrató un servicio de apoyo para el uso del sistema i-Educar. Como el sistema tiene licencia gratuita y está disponible para todos, la red lo instaló por su cuenta en 2014. Cuando se dio cuenta de la necesidad de profundizar su uso, decidió contratar un servicio de apoyo para el sistema, con una oferta de alojamiento, mantenimiento correctivo, soporte técnico y desarrollo de módulos específicos.",
+
+
+                "EM BREVE!": "¡PRÓXIMAMENTE!",
+                "Construindo organizações": "Construyendo organizaciones públicas para el mundo",
+                "digital": "digital",
+                "e": "y",
+                "world": "",
+                "sustentável": "sostenible",
+                "Somos uma organização": "Somos una organización sin fines de lucro creada con la misión de apoyar a las organizaciones públicas a ser más ágiles para adaptarse al mundo digital y sostenible.",
+                "Fale conosco": "Contáctanos",
+                "O que fazemos": "A qué nos dedicamos",
+                "Ajudamos você": "Ayudamos a los gestores públicos a afrontar los retos de la innovación y la digitalización en el sector público. Construimos con usted soluciones a los retos de personal, gobernanza, dotación de recursos y contratación.",
+                "Construir equipes de tecnologia": "Creación de equipos tecnológicos",
+                "Apoiamos a criação de equipe interna e contratação de equipes.": "Apoyamos la creación de equipos internos y la contratación de equipos.",
+                "Por quê?": "¿Por qué?",
+                "Sem equipes de tecnologia": "Sin equipos tecnológicos adecuados y cualificados, las iniciativas tecnológicas no prosperan. Por eso es importante asegurarse un equipo con capacidad para transformar su organización utilizando la tecnología.",
+                "O que fazemos?": "¿Qué hacemos?",
+                "Apoiamos na definição de perfis necessários": "Apoyamos en la definición de los perfiles necesarios, de la estructura organizativa y en la contratación de equipos multidisciplinares en un modelo de estudio de software, para superar las dificultades con las antiguas contrataciones de fábrica de software",
+                "Resultados esperados": "Resultados esperados:",
+                "Equipe estruturada e com capacidade de entrega": "Equipo estructurado y con capacidad de entrega de productos digitales de calidad más rápidamente",
+    
+                "Digitalizar gestão com uso de tecnologias abertas": "Digitalizar la gestión mediante tecnologías abiertas",
+                "Apoiamos a escolha de tecnologias abertas": "Apoyamos la elección de tecnologías abiertas que ofrezcan impacto, eficiencia y autonomía.",
+                "Tecnologias abertas oferecem soluções comuns": "Las tecnologías abiertas ofrecen soluciones comunes a necesidades compartidas por distintas organizaciones públicas. Pero además de ofrecer resultados, generan más eficiencia en el gasto tecnológico, garantizan la independencia de los proveedores y permiten más flexibilidad en la prestación de servicios públicos.",
+                "Apoiamos na busca de software em código-aberto": "Prestamos apoyo en la búsqueda de software de código abierto que resuelva problemas de gestión pública, en la prospección del mercado de proveedores de estas soluciones y en la contratación de la implantación, suministro y soporte de estas soluciones para la organización pública.",
+                "Tecnologia aberta contratada e implantada": "Tecnología abierta contratada e implantada, generando resultados para la organización pública.",
+                
+                "Contratar soluções para problemas públicos": "Contratar soluciones a problemas públicos",
+                "Apoiamos na definição de problemas públicos": "Apoyamos en la definición de problemas públicos y en la convocatoria de soluciones para el ecosistema de innovación.",
+                "Nem sempre a melhor solução": "La mejor solución a los problemas públicos no siempre procede de nuestras organizaciones. Abrir los problemas de la Administración al ecosistema de innovación, permitir que se prueben y contraten soluciones tiene un gran potencial para resolver estos problemas de forma creativa.",
+                "Apoiamos na definição de problemas públicos e na realização da chamada de soluções para o ecossistema de inovação. Estruturamos": "Ayudamos a definir los problemas públicos y hacemos la convocatoria de soluciones al ecosistema de innovación. Estructuramos la convocatoria en base al proceso de licitación previsto en el Marco Legal para Startups y Emprendimiento, que permite el pago de las pruebas por parte del organismo público, así como su contratación en caso de que estas pruebas sean exitosas.",
+                "Teste de soluções e contratação para a resolução": "Pruebas de soluciones y contratación para la resolución del problema planteado.",
+                "Parceiros, Beneficiários e Clientes": "Aliados, Beneficiarios y Clientes",
+    
+                "Vamos marcar uma conversa?": "¿Vamos a marcar una conversación?",
+                "Entre em contato para discutir conosco suas necessidades!": "¡Contáctanos para discutir tus necesidades! Podemos programar una reunión informal en línea para pensar en cómo podemos ayudarle.",
+                "Fale com a gente": "Contáctanos",
+                "Siga a Jataí": "Sigue a Jataí",
+              }
+            }
+          }
+    
+        };
+    
+      // Função para obter a última língua selecionada do armazenamento local
+      function getLastSelectedLanguage() {
+        return localStorage.getItem('selectedLanguage') || 'pt'; // Retorna 'pt' caso não haja uma língua selecionada anteriormente
       }
+
+    // Função para definir a última língua selecionada no armazenamento local
+    function setLastSelectedLanguage(language) {
+      localStorage.setItem('selectedLanguage', language);
+    }
+
+    // Função para atualizar a tradução em todos os elementos
+    function updateTranslation() {
+      const elementsToTranslate = document.querySelectorAll('[data-i18n]');
+
+      elementsToTranslate.forEach((element) => {
+        const translationKey = element.getAttribute('data-i18n');
+        element.textContent = i18next.t(translationKey);
+      });
+    }
+
+    // Função para alterar a língua selecionada
+    function changeLanguage(language) {
+      i18next.changeLanguage(language, (error, t) => {
+        if (error) {
+          console.log(error);
+        } else {
+          setLastSelectedLanguage(language); // Salva a língua selecionada no armazenamento local
+          updateTranslation(); // Atualiza a tradução em todos os elementos
+        }
+      });
+    }
+
+    i18next.init(i18nextConfig, () => {
+      const lastSelectedLanguage = getLastSelectedLanguage();
+      changeLanguage(lastSelectedLanguage); // Define a língua inicialmente ao inicializar
+
+      const languageSelect = document.querySelector('#language-select');
+      languageSelect.value = lastSelectedLanguage;
+
+      languageSelect.addEventListener('change', (event) => {
+        const selectedLanguage = event.target.value;
+        changeLanguage(selectedLanguage);
+      });
+    });
+    </script>
+    <script>
+        function handleMobileMenu() {
+            const header = document.getElementById("header");
+            const menuSanduiche = document.getElementById("menu-sandwich");
+            const closeButton = document.getElementById("menu-close");
+
+            menuSanduiche.addEventListener("click", () => {
+                header.classList.add(
+                    "flex",
+                    "flex-col",
+
+                    "h-[100vh]"
+                );
+                menuSanduiche.classList.add("hidden");
+                closeButton.classList.remove("hidden");
+            });
+
+            closeButton.addEventListener("click", () => {
+                header.classList.remove(
+                    "flex",
+                    "flex-col",
+
+                    "h-[100vh]"
+                );
+                menuSanduiche.classList.remove("hidden");
+                closeButton.classList.add("hidden");
+            });
+        }
     </script>
   </body>
 </html>

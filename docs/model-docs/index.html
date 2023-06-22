@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css" />
+  <title>Jataí Contato</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E2E5R7TPJW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-E2E5R7TPJW');
+  </script>
+
+<style>
+  select {
+    background: transparent;
+    appearance: none;
+    background-size: 1.5rem;
+    padding: 2rem 1rem;
+    height: 2.8rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.25rem;
+    font-size: 0.1rem;
+    font-weight: 500;
+    color: #4a5568;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  select:hover {
+    border-color: #9fa6b2;
+  }
+
+  select:focus {
+    border-color: #9fa6b2;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+    outline: none;
+  }
+
+  select > option {
+    font-weight: normal;
+    font-size: 5rem;
+  }
+
+
+</style>
+</head>
+
+<body>
+  <div class="relative bg-white">
+    <!-- Header -->
+    <div class="bg-white sticky top-0 left-0 right-0 h-20 overflow-hidden px-4" id="header">
+      <div class="container w-full h-20 flex flex-row items-center justify-between">
+        <div class="flex flex-row items-center">
+          <a href="/">
+            <img src="../assets/jatai-green-logo.svg" alt="Logo" class="h-7 md:mr-10" />
+          </a>
+          
+          <div class="hidden items-center lg:flex">
+            <a href="/" class="text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Início"></a>
+            <a href="/team" class="text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Equipe"></a>
+            <a href="/contact" class="text-base  text-gray-800 hover:text-green-700 mr-8  " data-i18n="Contato"></a>
+            <a href="/cases" class=" text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Casos"></a>
+            <a href="/model-docs"class=" text-base text-green-700 hover:text-green-700 mr-8 font-semibold" data-i18n="Documentos modelo"></a>
+            <div class="flex flex-row gap-2">
+              <a href="/prediagnosis" class="text-base text-gray-800 hover:text-green-700" data-i18n="Pré-diagnóstico"></a>
+              <span data-i18n="NOVO!" class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full font-semibold"></span>
+            </div>
+            </a>
+          </div>
+
+          <div class="p-4">
+            <div class="relative inline-flex">
+              <select id="language-select" class="py-2 pl-3 pr-8 text-lg border border-gray-300 rounded-full focus:outline-none ">
+                <option class="" value="pt" data-icon="🇧🇷">🇧🇷</option>
+                <option value="en" data-icon="🇺🇸">🇺🇸</option>
+                <option value="es" data-icon="🇪🇸">🇪🇸</option>
+              </select>
+              <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                <svg class="w-4 h-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M6 8l4 4 4-4H6z" clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4">
+          <img src="../assets/menu.svg" onclick="handleMobileMenu()" alt="menu" id="menu-sandwich" class="lg:hidden" />
+          <img src="../assets/close.svg" onclick="handleMobileMenu()" id="menu-close" alt="close menu "
+            class="hidden lg:hidden" />
+          <div class="items-center p-6 hidden lg:flex">
+            <a href="https://twitter.com/jatai_org" target="_blank">
+              <img src="../assets/twitter.svg " alt="Twitter" class="h-10 mr-6" />
+            </a>
+            <a href="https://www.linkedin.com/company/jatai/about/" target="_blank">
+              <img src="../assets/linkedin.svg" alt="LinkedIn" class="h-10 mr-6" />
+            </a>
+            <a href="https://github.com/Instituto-Jatai" target="_blank">
+              <img src="../assets/github.svg" alt="Github" class="h-10 mr-6" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container flex flex-col">
+        <a href="/"  class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Início"></a>
+        <a href="/team" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Equipe"></a>
+        <a href="/contact" class="border-b border-gray-600 p-4 text-base text-gray-800 hover:text-green-700 mr-8 " data-i18n="Contato"></a>
+        <a href="/cases"class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Casos"></a>
+        <a href="/model-docs"class="p-4 border-b border-gray-600 text-base text-green-700  hover:text-green-700 mr-8 font-semibold" data-i18n="Documentos modelo"></a>
+        <div class="flex flex-row items-center">
+          <a href="/prediagnosis" class="p-4  text-base text-gray-800 hover:text-green-700 flex flex-row" data-i18n="Pré-diagnóstico"></a>
+          <span data-i18n="NOVO!" class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full flex h-8 justify-center font-semibold"></span>
+        </div>
+
+        <div class="mt-6 items-center flex flex-row">
+          <a class="mr-4" href="https://twitter.com/jatai_org" target="_blank">
+            <img src="../assets/twitter.svg " alt="Twitter" class="h-10" />
+          </a>
+          <a class="mr-4" href="https://www.linkedin.com/company/jatai/about/" target="_blank">
+            <img src="../assets/linkedin.svg" alt="LinkedIn" class="h-10" />
+          </a>
+          <a class="mr-4" href="https://github.com/Instituto-Jatai" target="_blank">
+            <img src="../assets/github.svg" alt="Github" class="h-10" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End of Header -->
+
+    <!-- Hero -->
+    <div class="h-[172px] bg-cover bg-center bg-no-repeat bg-[url('https://i.ibb.co/Lnf1byd/hero-contact.png')]">
+      <div class="container h-full flex flex-col justify-center px-16">
+        <span data-i18n="title" class="text-white text-4xl font-semibold not-italic"></span>
+      </div>
+    </div>
+    <!-- End of Hero -->
+
+    <!-- Docs model -->
+    <div class="flex flex-col md:flex-row container p-16 ">
+      <div class="my-10 flex-1 mr-8 border-gray-200">
+        <p class="text-2xl font-semibold mb-6" data-i18n="body-title"></p>
+        <p data-i18n="body-p-1"></p>
+        <br />
+        <p data-i18n="body-p-2"></p>
+        <br />
+        <p data-i18n="body-p-3"></p>
+      </div>
+
+      <div class="bg-[#E6E6E6] w-[1px]"></div> 
+
+      <div class="my-10 flex-1 ml-8 border-gray-200">
+        <form id="model-form" class="flex flex-col">
+          <p class="text-3xl font-semibold mb-6" data-i18n="form-title"></p>
+
+          <label for="name" class="mb-2 font-medium text-sm" data-i18n="form-name"></label>
+          <input id="name" name="name" placeholder="Nome" required class="mb-6 rounded-lg border-[1px] border-solid border-gray-400 px-4 py-3"/>
+
+          <label for="email" class="mb-2 font-medium text-sm" data-i18n="form-email"></label>
+          <input id="email" type="email" name="email" placeholder="Email" required class="mb-6 rounded-lg border-[1px] border-solid border-gray-400 px-4 py-3"/>
+
+          <label for="organization" class="mb-2 font-medium text-sm" data-i18n="form-organization"></label>
+          <input id="organization" name="organization" required placeholder="Orgão Público"  class="mb-6 rounded-lg border-[1px] border-solid border-gray-400 px-4 py-3"/>
+
+          <div class="rounded-xl bg-[#FAFAFA] font-medium w-full flex flex-col mb-8">
+            <div class="p-3 flex items-center"><img src="../assets/file.svg" class="mr-3"/>Modelo ETP - Estudo Técnico Preliminar da Contratação</div>
+            <span class="w-full h-[1px] bg-[#F3F3F3]"> </span>
+            <div class="p-3 flex"><img src="../assets/file.svg" class="mr-3"/>Modelo TR - Termo de Referência</div>
+          </div>
+
+          <button class="bg-[#008040] text-white px-6 py-3 rounded-xl text-base font-medium font-body" data-i18n="form-button"></button>
+        </form>
+      </div>
+    </div>
+    <!-- End of Docs model -->
+
+    <!-- Footer -->
+    <div class="bg-black h-full">
+      <div class="container px-6 flex flex-col items-start justify-between h-[600px] md:h-[380px]">
+        <img src="../assets/jatai-white-logo.svg" alt="" class="mt-10 h-10" />
+
+        <div class="flex flex-col mb-10 md:justify-between md:flex-row w-full">
+          <div class="flex flex-col mt-8">
+            <span data-i18n="Vamos marcar uma conversa?" class="text-white flex text-2xl"></span>
+            <span data-i18n="Entre em contato para discutir conosco suas necessidades!" class="text-white mt-2 md:w-[558px]"></span>
+
+            <button class="bg-slate-900 text-white w-[180px] h-[48px] rounded-xl mt-4">
+              <a data-i18n="Fale com a gente" href="https://calendly.com/eduardospano/jatai-30min"></a>
+            </button>
+          </div>
+
+          <div class="flex flex-col mt-8">
+            <span data-i18n="Siga a Jataí" class="text-white font-bold mb-6"></span>
+
+            <div class="flex flex-row mb-6 gap-2">
+              <img src="../assets/twitter-p.svg" alt="" />
+              <span class="text-white"><a href="https://twitter.com/jatai_org" target="_blank"
+                  class="text-green-600 underline">@jatai_org</a>
+                no Twitter</span>
+            </div>
+
+            <div class="flex flex-row mb-6 gap-2">
+              <img src="../assets/github-p.svg" alt="" />
+              <span class="text-white"><a href="https://github.com/Instituto-Jatai" target="_blank"
+                  class="text-green-600 underline">@Instituto-Jatai</a>
+                no GitHub</span>
+            </div>
+
+            <div class="flex flex-row gap-2">
+              <img src="../assets/linkedin-p.svg" alt="" />
+              <span class="text-white"><a href="https://www.linkedin.com/company/jatai/about/"
+                  class="text-green-600 underline" target="_blank">LinkedIn</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Footer -->
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/20.2.2/i18next.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.1.0/i18nextBrowserLanguageDetector.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/1.2.2/i18nextHttpBackend.min.js"></script>
+  <script>
+    const i18nextConfig = {
+      lng: 'pt',
+      resources: {
+        pt: {
+          translation: {
+            "title": "Documentos modelo",
+            "form-title": "Complete o formulário e faça o download gratuito do documentos modelo",
+            "form-name": "Nome",
+            "form-email": "Email",
+            "form-organization": "Orgão Público",
+            "form-button": "Baixar modelos",
+            "body-title": "Modelos ETP e TR",
+            "body-p-1": "Os modelos de Estudo Técnico Preliminar (ETP) e Termo de Referência (TR) para a contratação de i-Educar e i-Diário estão prontos para serem utilizados por qualquer Secretaria de Educação interessada em informatizar a gestão escolar. Esses sistemas são de código aberto e possuem licenciamento gratuito, o que significa que o foco da contratação está no serviço de sustentação do sistema, isto é, a implementação dos sistemas, a migração de dados, o treinamento dos servidores, além da hospedagem em nuvem, suporte técnico e manutenção corretiva e evolutiva.",
+            "body-p-2": "É importante ressaltar que os modelos foram desenvolvidos considerando o acesso público ao código-fonte, visando estimular a ampla concorrência e garantir transparência no processo. Os modelos são para contratação em formato pregão e, a fim de promover ainda mais a participação e a transparência, recomendamos a realização de uma consulta pública antes da contratação.",
+            "body-p-3": "Estamos à disposição caso precisem de ajuda nesse processo, é só agendar uma conversa aqui pelo site!",
+          }
+        },
+        en: {
+          translation: {
+            "Início": "Home",
+            "Equipe": "Team",
+            "Contato": "Contact",
+            "Casos": "Cases",
+            "Documentos modelo": "Model Documents",
+            "Pré-diagnóstico": "Pre-diagnosis",
+            "NOVO!": "NEW!",
+            "EM BREVE!": "COMING SOON!",
+            "title": "Model Documents",
+            "form-title": "Complete the form and download the model documents for free",
+            "form-name": "Name",
+            "form-email": "Email",
+            "form-organization": "Public Agency",
+            "form-button": "Download models",
+            "body-title": "ETP and TR Models",
+            "body-p-1": "The models for Preliminary Technical Study (ETP) and Terms of Reference (TR) for the contracting of i-Educar and i-Diário are ready to be used by any interested Department of Education to computerize school management. These systems are open source and have free licensing, which means that the focus of the contract is on the system support service, including system implementation, data migration, server training, cloud hosting, technical support, and corrective and evolutionary maintenance.",
+            "body-p-2": "It is important to emphasize that the models were developed considering public access to the source code, aiming to stimulate broad competition and ensure transparency in the process. The models are for procurement through bidding, and in order to further promote participation and transparency, we recommend conducting a public consultation before contracting.",
+            "body-p-3": "We are available to assist you in this process. Just schedule a conversation here on the website!"
+          }
+        },
+        es: {
+          translation: {
+            "Início": "Inicio",
+            "Equipe": "Equipo",
+            "Contato": "Contacto",
+            "Casos": "Casos",
+            "Documentos modelo": "Documentos modelo",
+            "Pré-diagnóstico": "Pre-diagnóstico",
+            "NOVO!": "¡NUEVO!",
+            "EM BREVE!": "¡PRÓXIMAMENTE!",
+            "title": "Documentos modelo",
+            "form-title": "Completa el formulario y descarga los documentos modelo de forma gratuita",
+            "form-name": "Nombre",
+            "form-email": "Correo electrónico",
+            "form-organization": "Organismo Público",
+            "form-button": "Descargar modelos",
+            "body-title": "Modelos ETP y TR",
+            "body-p-1": "Los modelos de Estudio Técnico Preliminar (ETP) y Término de Referencia (TR) para la contratación de i-Educar y i-Diario están listos para ser utilizados por cualquier Secretaría de Educación interesada en informatizar la gestión escolar. Estos sistemas son de código abierto y tienen licencia gratuita, lo que significa que el enfoque de la contratación está en el servicio de soporte del sistema, es decir, la implementación de los sistemas, la migración de datos, la capacitación de los servidores, así como el alojamiento en la nube, el soporte técnico y el mantenimiento correctivo y evolutivo.",
+            "body-p-2": "Es importante destacar que los modelos se desarrollaron teniendo en cuenta el acceso público al código fuente, con el objetivo de estimular una amplia competencia y garantizar transparencia en el proceso. Los modelos son para la contratación a través de licitación y, para promover aún más la participación y la transparencia, recomendamos realizar una consulta pública antes de la contratación.",
+            "body-p-3": "Estamos a su disposición si necesitan ayuda en este proceso. ¡Solo agenden una conversación aquí en el sitio web!"
+          }
+        }
+      }
+
+    };
+
+        // Função para obter a última língua selecionada do armazenamento local
+        function getLastSelectedLanguage() {
+      return localStorage.getItem('selectedLanguage') || 'pt'; // Retorna 'pt' caso não haja uma língua selecionada anteriormente
+    }
+
+    // Função para definir a última língua selecionada no armazenamento local
+    function setLastSelectedLanguage(language) {
+      localStorage.setItem('selectedLanguage', language);
+    }
+
+    // Função para atualizar a tradução em todos os elementos
+    function updateTranslation() {
+      const elementsToTranslate = document.querySelectorAll('[data-i18n]');
+
+      elementsToTranslate.forEach((element) => {
+        const translationKey = element.getAttribute('data-i18n');
+        element.textContent = i18next.t(translationKey);
+      });
+    }
+
+    // Função para alterar a língua selecionada
+    function changeLanguage(language) {
+      i18next.changeLanguage(language, (error, t) => {
+        if (error) {
+          console.log(error);
+        } else {
+          setLastSelectedLanguage(language); // Salva a língua selecionada no armazenamento local
+          updateTranslation(); // Atualiza a tradução em todos os elementos
+        }
+      });
+    }
+
+    i18next.init(i18nextConfig, () => {
+      const lastSelectedLanguage = getLastSelectedLanguage();
+      changeLanguage(lastSelectedLanguage); // Define a língua inicialmente ao inicializar
+
+      const languageSelect = document.querySelector('#language-select');
+      languageSelect.value = lastSelectedLanguage;
+
+      languageSelect.addEventListener('change', (event) => {
+        const selectedLanguage = event.target.value;
+        changeLanguage(selectedLanguage);
+      });
+    });
+  </script>
+  <script>
+    function handleMobileMenu() {
+      const header = document.getElementById("header");
+      const menuSanduiche = document.getElementById("menu-sandwich");
+      const closeButton = document.getElementById("menu-close");
+
+      menuSanduiche.addEventListener("click", () => {
+        header.classList.add(
+          "flex",
+          "flex-col",
+          "h-[100vh]"
+        );
+        menuSanduiche.classList.add("hidden");
+        closeButton.classList.remove("hidden");
+      });
+
+      closeButton.addEventListener("click", () => {
+        header.classList.remove(
+          "flex",
+          "flex-col",
+          "h-[100vh]"
+        );
+        menuSanduiche.classList.remove("hidden");
+        closeButton.classList.add("hidden");
+      });
+    }
+    document.getElementById("model-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      var form = document.getElementById("model-form");
+      var formData = new FormData(form);
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "https://script.google.com/macros/s/AKfycbyuYpLN1mtAkJdQgmOCoPODFOKV7ebsQUYO77SgshIMi6gViQMKA83bCsDXS4ylLjBIeQ/exec", true);
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          form.reset();
+        }
+      };
+      xhr.send(formData);
+
+      const file1Url = 'https://'+window.location.hostname+'/assets/docs/Modelo_TR.docx';
+      const file2Url = 'https://'+window.location.hostname+'/assets/docs/Modelo_ETP.docx';
+      
+      downloadFile(file1Url);
+      downloadFile(file2Url);
+    });
+
+    function downloadFile(url) {
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = url.split('/').pop();
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(function() {
+        document.body.removeChild(a);
+      }, 0);
+    }
+  </script>
+</body>
+
+</html>

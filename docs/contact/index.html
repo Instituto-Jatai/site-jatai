@@ -58,108 +58,82 @@
     <!-- Header -->
     <div class="bg-white sticky top-0 left-0 right-0 h-20 overflow-hidden px-4" id="header">
       <div class="container w-full h-20 flex flex-row items-center justify-between">
-        <div class="p-4 flex flex-row items-center">
+      <div class="flex flex-row items-center">
           <a href="/">
-            <img src="../assets/jatai-green-logo.svg" alt="Logo" class="h-7 md:mr-10" />
+          <img src="../assets/jatai-green-logo.svg" alt="Logo" class="h-7 md:mr-10" />
           </a>
           
           <div class="hidden items-center lg:flex">
-            <a href="/" class="text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Início">
-              Início
-            </a>
-            <a href="/team" class="text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Equipe">
-              Equipe
-            </a>
-            <a href="/contact" class="text-base text-green-700 hover:text-green-700 mr-8 font-semibold " data-i18n="Contato">
-              Contato
-            </a>
-            </a>
-            <a href="/cases"
-              class=" text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Casos">
-              Casos
-            </a>
-            <div class="flex flex-row gap-2">
-              <a href="/prediagnosis" class="text-base text-gray-800 hover:text-green-700" data-i18n="Pré-diagnóstico">
-                Pré-diagnóstico
-                </a>
-                <span data-i18n="NOVO!" class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full font-semibold">
-                  NOVO!
-                </span>
-            </div>
-            </a>
+          <a href="/" class="text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Início"></a>
+          <a href="/team" class="text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Equipe"></a>
+          <a href="/contact" class="text-base text-green-700 hover:text-green-700 mr-8 font-semibold " data-i18n="Contato"></a>
+          <a href="/cases" class=" text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Casos"></a>
+          <a href="/model-docs"class=" text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Documentos modelo"></a>
+          <div class="flex flex-row gap-2">
+              <a href="/prediagnosis" class="text-base text-gray-800 hover:text-green-700" data-i18n="Pré-diagnóstico"></a>
+              <span data-i18n="NOVO!" class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full font-semibold"></span>
+          </div>
+          </a>
           </div>
 
           <div class="p-4">
-            <div class="relative inline-flex">
+          <div class="relative inline-flex">
               <select id="language-select" class="py-2 pl-3 pr-8 text-lg border border-gray-300 rounded-full focus:outline-none ">
-                <option class="" value="pt" data-icon="🇧🇷">🇧🇷</option>
-                <option value="en" data-icon="🇺🇸">🇺🇸</option>
-                <option value="es" data-icon="🇪🇸">🇪🇸</option>
+              <option class="" value="pt" data-icon="🇧🇷">🇧🇷</option>
+              <option value="en" data-icon="🇺🇸">🇺🇸</option>
+              <option value="es" data-icon="🇪🇸">🇪🇸</option>
               </select>
               <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                <svg class="w-4 h-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+              <svg class="w-4 h-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M6 8l4 4 4-4H6z" clip-rule="evenodd" />
-                </svg>
+              </svg>
               </div>
-            </div>
           </div>
-        </div>
+          </div>
+      </div>
 
-        <div class="p-4">
+      <div class="p-4">
           <img src="../assets/menu.svg" onclick="handleMobileMenu()" alt="menu" id="menu-sandwich" class="lg:hidden" />
           <img src="../assets/close.svg" onclick="handleMobileMenu()" id="menu-close" alt="close menu "
-            class="hidden lg:hidden" />
+          class="hidden lg:hidden" />
           <div class="items-center p-6 hidden lg:flex">
-            <a href="https://twitter.com/jatai_org" target="_blank">
+          <a href="https://twitter.com/jatai_org" target="_blank">
               <img src="../assets/twitter.svg " alt="Twitter" class="h-10 mr-6" />
-            </a>
-            <a href="https://www.linkedin.com/company/jatai/about/" target="_blank">
+          </a>
+          <a href="https://www.linkedin.com/company/jatai/about/" target="_blank">
               <img src="../assets/linkedin.svg" alt="LinkedIn" class="h-10 mr-6" />
-            </a>
-            <a href="https://github.com/Instituto-Jatai" target="_blank">
+          </a>
+          <a href="https://github.com/Instituto-Jatai" target="_blank">
               <img src="../assets/github.svg" alt="Github" class="h-10 mr-6" />
-            </a>
+          </a>
           </div>
-        </div>
+      </div>
       </div>
       <div class="container flex flex-col">
-        <a href="/"
-        class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Início">
-        Início
-      </a>
-      <a href="/team" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Equipe">
-        Equipe
-      </a>
-      <a href="/contact" class="border-b border-gray-600 p-4 text-base text-green-700 hover:text-green-700 mr-8 font-semibold" data-i18n="Contato">
-        Contato
-      </a>
-      <a href="/cases"
-        class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Casos">
-        Casos
-      </a>
+      <a href="/"  class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Início"></a>
+      <a href="/team" class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Equipe"></a>
+      <a href="/contact" class="border-b border-gray-600 p-4 text-base text-green-700 hover:text-green-700 mr-8 font-semibold" data-i18n="Contato"></a>
+      <a href="/cases"class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Casos"></a>
+      <a href="/model-docs"class="p-4 border-b border-gray-600 text-base text-gray-800 hover:text-green-700 mr-8" data-i18n="Documentos modelo"></a>
       <div class="flex flex-row items-center">
-        <a href="/prediagnosis" class="p-4  text-base text-gray-800 hover:text-green-700 flex flex-row" data-i18n="Pré-diagnóstico">
-          Pré-diagnóstico
-        </a>
-        <span data-i18n="NOVO!" class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full flex h-8 justify-center font-semibold">
-          NOVO!
-        </span>
+          <a href="/prediagnosis" class="p-4  text-base text-gray-800 hover:text-green-700 flex flex-row" data-i18n="Pré-diagnóstico"></a>
+          <span data-i18n="NOVO!" class="bg-green-700 text-white px-2 py-1 text-xs font-semibol rounded-full flex h-8 justify-center font-semibold"></span>
       </div>
 
-        <div class="mt-6 items-center flex flex-row">
+      <div class="mt-6 items-center flex flex-row">
           <a class="mr-4" href="https://twitter.com/jatai_org" target="_blank">
-            <img src="../assets/twitter.svg " alt="Twitter" class="h-10" />
+          <img src="../assets/twitter.svg " alt="Twitter" class="h-10" />
           </a>
           <a class="mr-4" href="https://www.linkedin.com/company/jatai/about/" target="_blank">
-            <img src="../assets/linkedin.svg" alt="LinkedIn" class="h-10" />
+          <img src="../assets/linkedin.svg" alt="LinkedIn" class="h-10" />
           </a>
           <a class="mr-4" href="https://github.com/Instituto-Jatai" target="_blank">
-            <img src="../assets/github.svg" alt="Github" class="h-10" />
+          <img src="../assets/github.svg" alt="Github" class="h-10" />
           </a>
-        </div>
       </div>
-    </div>
-    <!-- End of Header -->
+      </div>
+  </div>
+  <!-- End of Header -->
 
     <!-- Hero -->
     <div class="h-[172px] bg-cover bg-center bg-no-repeat bg-[url('https://i.ibb.co/Lnf1byd/hero-contact.png')]">
