@@ -23,8 +23,8 @@ const HomeSlider: React.FC = () => {
               data-i18n="Construindo organizações públicas para o mundo <b>digital</b> e <b>sustentável</b>"
               className="text-left text-white text-4xl md:text-hero-title max-w-[756px]"
             >
-              Construindo organizações públicas para o mundo digital e
-              sustentável
+              Construindo organizações públicas para o mundo <b>digital</b> e
+              <b>sustentável</b>
             </span>
             <span
               data-i18n="Somos uma organização sem fins lucrativos criada com a missão de apoiar organizações públicas a se tornarem mais ágeis para se adaptarem ao mundo digital e sustentável."
@@ -50,8 +50,8 @@ const HomeSlider: React.FC = () => {
               data-i18n="Confira o edital para apoio a <b>contratação de sistema de gestão escolar</b>"
               className="text-left text-white text-4xl md:text-hero-title max-w-[756px]"
             >
-              Confira o edital para apoio a contratação de sistema de gestão
-              escolar
+              Confira o edital para apoio a{" "}
+              <b>contratação de sistema de gestão escolar</b>
             </span>
             <span
               data-i18n="Qualquer secretaria, consórcio ou organização do terceiro setor que trabalhe com educação pode participar. Não deixe de conferir!"

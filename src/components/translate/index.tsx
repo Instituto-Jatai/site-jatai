@@ -2,8 +2,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import i18next from "i18next";
-import en from "./en.json";
-import es from "./es.json";
+import en from "./en";
+import es from "./es";
 
 const Translate: React.FC = () => {
   const [languageSelect, setSelectedLanguage] = useState("pt");

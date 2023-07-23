@@ -1,3 +1,4 @@
+import Accordion from "@/components/accordion";
 import HomeSlider from "@/components/home-slider";
 import Script from "next/script";
 
@@ -25,8 +26,8 @@ export default function Home() {
         <HomeSlider />
       </section>
 
-      <div className="mb-16" id="what-we-do">
-        <div className="container flex flex-col px-6">
+      <section about="what-we-do" className="container mx-auto p-4 md:p-0">
+        <div className="container flex flex-col">
           <span
             data-i18n="O que fazemos"
             className="text-gray-800 mt-16 text-4xl font-semibold"
@@ -34,8 +35,8 @@ export default function Home() {
             O que fazemos
           </span>
           <span
-            data-i18n="Ajudamos você"
-            className="text-gray-800 text-base mt-6 md:max-w-[756px]"
+            data-i18n="Ajudamos você que é gestor público a enfrentar os desafios da inovação e digitalização no setor público. Construímos com você soluções para desafios de equipe, governança, recursos e contratações."
+            className="text-gray-800 text-base mt-6 max-w-[756px]"
           >
             Ajudamos você que é gestor público a enfrentar os desafios da
             inovação e digitalização no setor público. Construímos com você
@@ -43,204 +44,207 @@ export default function Home() {
             contratações.
           </span>
 
-          <div className="mt-16">
-            <div className="flex flex-row items-center justify-between">
-              <div className="flex items-center">
-                <img
-                  src="assets/build-tech-teams.svg"
-                  alt=""
-                  className="mr-6"
-                />
+          <div className="my-16">
+            <Accordion
+              id="hiring-teams"
+              title="Construir equipes de tecnologia"
+              icon="images/home/team.svg"
+            >
+              <div className="ml-10 md:ml-20">
                 <span
-                  data-i18n="Construir equipes de tecnologia"
-                  className="w-[159px] md:w-full text-xl font-semibold"
-                ></span>
+                  data-i18n="Apoiamos a criação de equipe interna e contratação de equipes."
+                  className="font-semibold"
+                >
+                  Apoiamos a criação de equipe interna e contratação de equipes.
+                </span>
+
+                <ul className="mt-8 pl-6 list-disc">
+                  <li>
+                    <span data-i18n="<b>Por quê?</b> Sem equipes de tecnologia adequadas e qualificadas, iniciativas de uso de tecnologias não prosperam. Por isso, é importante garantir uma equipe com capacidade para transformar sua organização com uso de tecnologia.">
+                      <b>Por quê?</b> Sem equipes de tecnologia adequadas e
+                      qualificadas, iniciativas de uso de tecnologias não
+                      prosperam. Por isso, é importante garantir uma equipe com
+                      capacidade para transformar sua organização com uso de
+                      tecnologia.
+                    </span>
+                  </li>
+
+                  <li>
+                    <span data-i18n="<b>O que fazemos?</b> Apoiamos na definição de perfis necessários, da estrutura organizacional e na contratação de equipes multidisciplinares em modelo de Ateliê de software, para superar as dificuldades com as antigas contratações de fábrica de software">
+                      <b>O que fazemos?</b> Apoiamos na definição de perfis
+                      necessários, da estrutura organizacional e na contratação
+                      de equipes multidisciplinares em modelo de Ateliê de
+                      software, para superar as dificuldades com as antigas
+                      contratações de fábrica de software
+                    </span>
+                  </li>
+
+                  <li>
+                    <span data-i18n="<b>Resultados esperados:</b> Equipe estruturada e com capacidade de entrega de produtos digitais de qualidade mais rapidamente">
+                      <b>Resultados esperados:</b> Equipe estruturada e com
+                      capacidade de entrega de produtos digitais de qualidade
+                      mais rapidamente
+                    </span>
+                  </li>
+                </ul>
               </div>
+            </Accordion>
 
-              <img
-                src="assets/plus.svg"
-                alt=""
-                className="p-4 hover:cursor-pointer"
-                id="img-topic-one"
-              />
-            </div>
+            <div className="w-full h-[1px] bg-black my-16"></div>
 
-            <div className="mt-10 hidden" id="div-topic-one">
-              <span
-                data-i18n="Apoiamos a criação de equipe interna e contratação de equipes."
-                className="font-semibold"
-              ></span>
-
-              <ul className="mt-8 pl-6 list-disc">
-                <li>
-                  <span data-i18n="Por quê?" className="font-semibold"></span>
-                  <span data-i18n="Sem equipes de tecnologia"></span>
-                </li>
-
-                <li>
-                  <span
-                    data-i18n="O que fazemos?"
-                    className="font-semibold"
-                  ></span>{" "}
-                  <span data-i18n="Apoiamos na definição de perfis necessários"></span>
-                </li>
-
-                <li>
-                  <span
-                    data-i18n="Resultados esperados"
-                    className="font-semibold"
-                  ></span>
-                  <span data-i18n="Equipe estruturada e com capacidade de entrega"></span>
-                </li>
-              </ul>
-            </div>
-            <div className="w-full h-[1px] bg-black mt-16"></div>
-          </div>
-
-          <div className="mt-16">
-            <div className="flex flex-row items-center justify-between">
-              <div className="flex items-center">
-                <img src="assets/code.svg" alt="" className="mr-6" />
+            <Accordion
+              id="open-source"
+              title="Digitalizar gestão com uso de tecnologias abertas"
+              icon="images/home/code.svg"
+            >
+              <div className="ml-10 md:ml-20">
                 <span
-                  data-i18n="Digitalizar gestão com uso de tecnologias abertas"
-                  className="w-[159px] md:w-full text-xl font-semibold"
-                ></span>
+                  data-i18n="Apoiamos a escolha de tecnologias abertas que gerem impacto, eficiência e autonomia."
+                  className="font-semibold"
+                >
+                  Apoiamos a escolha de tecnologias abertas que gerem impacto,
+                  eficiência e autonomia.
+                </span>
+
+                <ul className="mt-8 pl-6 list-disc">
+                  <li>
+                    <span data-i18n="<b>Por quê?</b> Tecnologias abertas oferecem soluções comuns para necessidades compartilhadas entre diferentes organizações públicas. Mas além de entregarem resultados, geram mais eficiência nos gastos com tecnologias, garantem independência com relação aos fornecedores e permitem mais flexibilidade na entrega do serviço público.">
+                      <b>Por quê?</b> Tecnologias abertas oferecem soluções
+                      comuns para necessidades compartilhadas entre diferentes
+                      organizações públicas. Mas além de entregarem resultados,
+                      geram mais eficiência nos gastos com tecnologias, garantem
+                      independência com relação aos fornecedores e permitem mais
+                      flexibilidade na entrega do serviço público.
+                    </span>
+                  </li>
+
+                  <li>
+                    <span data-i18n="<b>O que fazemos?</b> Apoiamos na busca de software em código-aberto que resolvam problemas de gestão pública, no levantamento do mercado de fornecedores para essas soluções e na contratação para implantação e fornecimento e suporte dessas soluções para a organização pública.">
+                      <b>O que fazemos?</b> Apoiamos na busca de software em
+                      código-aberto que resolvam problemas de gestão pública, no
+                      levantamento do mercado de fornecedores para essas
+                      soluções e na contratação para implantação e fornecimento
+                      e suporte dessas soluções para a organização pública.
+                    </span>
+                  </li>
+
+                  <li>
+                    <span data-i18n="<b>Resultados esperados:</b> Tecnologia aberta contratada e implantada, gerando resultados para a organização pública.">
+                      <b>Resultados esperados:</b> Tecnologia aberta contratada
+                      e implantada, gerando resultados para a organização
+                      pública.
+                    </span>
+                  </li>
+                </ul>
               </div>
+            </Accordion>
 
-              <img
-                src="assets/plus.svg"
-                alt=""
-                className="p-4 hover:cursor-pointer"
-                id="img-topic-two"
-              />
-            </div>
+            <div className="w-full h-[1px] bg-black my-16"></div>
 
-            <div className="mt-10 hidden" id="div-topic-two">
-              <span
-                data-i18n="Apoiamos a escolha de tecnologias abertas"
-                className="font-semibold"
-              ></span>
-
-              <ul className="mt-8 pl-6 list-disc">
-                <li>
-                  <span data-i18n="Por quê?" className="font-semibold"></span>{" "}
-                  <span data-i18n="Tecnologias abertas oferecem soluções comuns"></span>
-                </li>
-
-                <li>
-                  <span
-                    data-i18n="O que fazemos?"
-                    className="font-semibold"
-                  ></span>{" "}
-                  <span data-i18n="Apoiamos na busca de software em código-aberto"></span>
-                </li>
-
-                <li>
-                  <span
-                    data-i18n="Resultados esperados"
-                    className="font-semibold"
-                  ></span>
-                  <span data-i18n="Tecnologia aberta contratada e implantada"></span>
-                </li>
-              </ul>
-            </div>
-            <div className="w-full h-[1px] bg-black mt-16"></div>
-          </div>
-
-          <div className="mt-16">
-            <div className="flex flex-row items-center justify-between">
-              <div className="flex items-center">
-                <img src="assets/idea.svg" alt="" className="mr-6" />
+            <Accordion
+              id="public-problemns"
+              title="Contratar soluções para problemas públicos"
+              icon="images/home/lightbulb.svg"
+            >
+              <div className="ml-10 md:ml-20">
                 <span
-                  data-i18n="Contratar soluções para problemas públicos"
-                  className="w-[159px] md:w-full text-xl font-semibold"
-                ></span>
+                  data-i18n="Apoiamos na definição de problemas públicos e chamada de soluções para o ecossistema de inovação."
+                  className="font-semibold"
+                >
+                  Apoiamos na definição de problemas públicos e chamada de
+                  soluções para o ecossistema de inovação.
+                </span>
+
+                <ul className="mt-8 pl-6 list-disc">
+                  <li>
+                    <span data-i18n="<b>Por quê?</b> Nem sempre a melhor solução para os problemas públicos sai de dentro das nossas organizações. Abrir problemas do governo para o ecossistema de inovação, permitindo o teste de soluções e sua contratação tem grande potencial para a resolução desses problemas de forma criativa.">
+                      <b>Por quê?</b> Nem sempre a melhor solução para os
+                      problemas públicos sai de dentro das nossas organizações.
+                      Abrir problemas do governo para o ecossistema de inovação,
+                      permitindo o teste de soluções e sua contratação tem
+                      grande potencial para a resolução desses problemas de
+                      forma criativa.
+                    </span>
+                  </li>
+
+                  <li>
+                    <span data-i18n="<b>O que fazemos?</b> Apoiamos na definição de problemas públicos e na realização da chamada de soluções para o ecossistema de inovação. Estruturamos a chamada tendo como base a licitação prevista no Marco Legal de Startups e Empreendedorismo, o que permite o pagamento dos testes pela organização pública, assim como sua contratação caso esses testes sejam bem sucedidos.">
+                      <b>O que fazemos?</b> Apoiamos na definição de problemas
+                      públicos e na realização da chamada de soluções para o
+                      ecossistema de inovação. Estruturamos a chamada tendo como
+                      base a licitação prevista no Marco Legal de Startups e
+                      Empreendedorismo, o que permite o pagamento dos testes
+                      pela organização pública, assim como sua contratação caso
+                      esses testes sejam bem sucedidos.
+                    </span>
+                  </li>
+
+                  <li>
+                    <span data-i18n="<b>Resultados esperados:</b> Teste de soluções e contratação para a resolução do problema apresentado.">
+                      <b>Resultados esperados:</b> Teste de soluções e
+                      contratação para a resolução do problema apresentado.
+                    </span>
+                  </li>
+                </ul>
               </div>
-
-              <img
-                src="assets/plus.svg"
-                alt=""
-                className="p-4 hover:cursor-pointer"
-                id="img-topic-three"
-              />
-            </div>
-
-            <div className="mt-10 hidden" id="div-topic-three">
-              <span
-                data-i18n="Apoiamos na definição de problemas públicos"
-                className="font-semibold"
-              ></span>
-
-              <ul className="mt-8 pl-6 list-disc">
-                <li>
-                  <span data-i18n="Por quê?" className="font-semibold"></span>
-                  <span data-i18n="Nem sempre a melhor solução"></span>
-                </li>
-
-                <li>
-                  <span
-                    data-i18n="O que fazemos?"
-                    className="font-semibold"
-                  ></span>
-                  <span data-i18n="Apoiamos na definição de problemas públicos e na realização da chamada de soluções para o ecossistema de inovação. Estruturamos"></span>
-                </li>
-
-                <li>
-                  <span
-                    data-i18n="Resultados esperados"
-                    className="font-semibold"
-                  ></span>
-                  <span data-i18n="Teste de soluções e contratação para a resolução"></span>
-                </li>
-              </ul>
-            </div>
+            </Accordion>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="bg-gray-02">
-        <div className="container  px-6 pt-6">
+      <section about="partners" className="bg-gray-100  p-4 md:p-0">
+        <div className="container py-14 mx-auto">
           <span
             data-i18n="Parceiros, Beneficiários e Clientes"
             className="text-4xl font-semibold"
-          ></span>
+          >
+            Parceiros, Beneficiários e Clientes
+          </span>
+
           <div className="filter grayscale grid grid-cols-2 gap-4 md:grid-cols-4 pb-16 mt-6">
             <div className="h-[150px] flex items-center justify-center">
               <img src="/images/home/gesto.png" alt="Instituto Gesto" />
             </div>
+
             <div className="h-[150px] flex items-center justify-center">
               <img src="/images/home/imaginable.png" alt="Imaginable futures" />
             </div>
+
             <div className="h-[150px] flex items-center justify-center">
               <img src="/images/home/lemann.png" alt="Fundação Lemann" />
             </div>
+
             <div className="h-[150px] flex items-center justify-center">
               <img
                 src="/images/home/riogov.png"
                 alt="Governo do Estado do Rio de Janeiro"
               />
             </div>
+
             <div className="h-[150px] flex items-center justify-center">
               <img
                 src="/images/home/caf.png"
                 alt="CAF - Banco de Desenvolvimento da America Latina"
               />
             </div>
+
             <div className="h-[150px] flex items-center justify-center">
               <img src="/images/home/quintessa.png" alt="Quintessa" />
             </div>
+
             <div className="h-[150px] flex items-center justify-center">
               <img
                 src="/images/home/tltl.png"
                 alt="TLTL - Transformative Learning Technologies Lab"
               />
             </div>
+
             <div className="h-[150px] flex items-center justify-center">
               <img src="/images/home/recife.png" alt="Prefeitura de Recife" />
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <div id="modal" className="fixed inset-0 z-20">
         <div className="flex items-center justify-center min-h-screen ">
