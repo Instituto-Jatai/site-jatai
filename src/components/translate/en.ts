@@ -63,4 +63,31 @@ const home = {
   "Parceiros, Beneficiários e Clientes":
     "Partners, Beneficiaries, and Customers",
 };
-export default { ...header, ...footer, ...home };
+
+const team = {
+  "Equipe Jataí": "Jataí Team",
+  "Diretor executivo": "Executive Director",
+  "Doutorando em Política Científica e Tecnológica - Unicamp":
+    "PhD Candidate in Science and Technology Policy - Unicamp",
+  "Msc. Administração Pública - Columbia Graduado em Direito - USP":
+    "Msc. Public Administration - Columbia Law Graduate - USP",
+  "Gestora de projetos": "Project Manager",
+  "Mestrado em Ciência Política - IESP-UERJ":
+    "Master's in Political Science - IESP-UERJ",
+  "Graduada em Relações Internacionais - UnB":
+    "Graduate in International Relations - UnB",
+  "Pesquisador e Analista júnior": "Researcher and Junior Analyst",
+  "Mestrando em Política Científica Tecnológica – Unicamp":
+    "Master's Candidate in Science Technology Policy – Unicamp",
+  "Graduado em Direito - UFRJ": "Law Graduate - UFRJ",
+  "Especialista em clima": "Climate Specialist",
+  "Mestrado em Políticas Públicas - Oxford":
+    "Master's in Public Policy - Oxford",
+  "Graduada em Engenharia Ambiental - Unesp":
+    "Environmental Engineering Graduate - Unesp",
+  "Especialista em tecnologia": "Technology Specialist",
+  "Graduada em Engenharia de Software - UnB":
+    "Software Engineering Graduate - UnB",
+};
+
+export default { ...header, ...footer, ...home, ...team };

@@ -50,11 +50,15 @@ const Team = () => {
               <span
                 data-i18n="Doutorando em Política Científica e Tecnológica - Unicamp"
                 className="text-base text-gray-600 mb-4"
-              ></span>
+              >
+                Doutorando em Política Científica e Tecnológica - Unicamp
+              </span>
               <span
                 data-i18n="Msc. Administração Pública - Columbia Graduado em Direito - USP"
                 className="text-base text-gray-600"
-              ></span>
+              >
+                Msc. Administração Pública - Columbia Graduado em Direito - USP
+              </span>
             </div>
           </div>
 
@@ -72,7 +76,9 @@ const Team = () => {
                   <span
                     data-i18n="Gestora de projetos"
                     className="text-base text-gray-700"
-                  ></span>
+                  >
+                    Gestora de projetos
+                  </span>
                 </div>
                 <div className="flex gap-2 items-center">
                   <a
@@ -87,11 +93,15 @@ const Team = () => {
               <span
                 data-i18n="Mestrado em Ciência Política - IESP-UERJ"
                 className="text-base text-gray-600 mb-4"
-              ></span>
+              >
+                Mestrado em Ciência Política - IESP-UERJ
+              </span>
               <span
                 data-i18n="Graduada em Relações Internacionais - UnB"
                 className="text-base text-gray-600"
-              ></span>
+              >
+                Graduada em Relações Internacionais - UnB
+              </span>
             </div>
           </div>
 
@@ -109,7 +119,9 @@ const Team = () => {
                   <span
                     data-i18n="Pesquisador e Analista júnior"
                     className="text-base text-gray-700"
-                  ></span>
+                  >
+                    Pesquisador e Analista júnior
+                  </span>
                 </div>
                 <div className="flex gap-2 items-center">
                   <a
@@ -124,11 +136,15 @@ const Team = () => {
               <span
                 data-i18n="Mestrando em Política Científica Tecnológica – Unicamp"
                 className="text-base text-gray-600 mb-4"
-              ></span>
+              >
+                Mestrando em Política Científica Tecnológica – Unicamp
+              </span>
               <span
                 data-i18n="Graduado em Direito - UFRJ"
                 className="text-base text-gray-600"
-              ></span>
+              >
+                Graduado em Direito - UFRJ
+              </span>
             </div>
           </div>
 
@@ -145,7 +161,9 @@ const Team = () => {
                   <span
                     data-i18n="Especialista em clima"
                     className="text-base text-gray-700"
-                  ></span>
+                  >
+                    Especialista em clima
+                  </span>
                 </div>
                 <div className="flex gap-2 items-center">
                   <a
@@ -160,11 +178,15 @@ const Team = () => {
               <span
                 data-i18n="Mestrado em Políticas Públicas - Oxford"
                 className="text-base text-gray-600 mb-4"
-              ></span>
+              >
+                Mestrado em Políticas Públicas - Oxford
+              </span>
               <span
                 data-i18n="Graduada em Engenharia Ambiental - Unesp"
                 className="text-base text-gray-600"
-              ></span>
+              >
+                Graduada em Engenharia Ambiental - Unesp
+              </span>
             </div>
           </div>
 
@@ -181,7 +203,9 @@ const Team = () => {
                   <span
                     data-i18n="Especialista em tecnologia"
                     className="text-base text-gray-700"
-                  ></span>
+                  >
+                    Especialista em tecnologia
+                  </span>
                 </div>
                 <div className="flex gap-2 items-center">
                   <a
@@ -196,7 +220,9 @@ const Team = () => {
               <span
                 data-i18n="Graduada em Engenharia de Software - UnB"
                 className="text-base text-gray-600"
-              ></span>
+              >
+                Graduada em Engenharia de Software - UnB
+              </span>
             </div>
           </div>
         </div>
