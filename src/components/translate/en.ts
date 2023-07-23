@@ -90,4 +90,13 @@ const team = {
     "Software Engineering Graduate - UnB",
 };
 
-export default { ...header, ...footer, ...home, ...team };
+const contact = {
+  Contato: "Contact",
+  "Envie um e-mail pra gente": "Send us an email",
+  "Marque uma conversa no nosso Calendly": "Schedule a chat on our Calendly",
+  "Entre em contato para discutir conosco suas necessidades!":
+    "Get in touch to discuss your needs with us!",
+  "Fale com a gente": "Talk to us",
+};
+
+export default { ...header, ...footer, ...home, ...team, ...contact };
