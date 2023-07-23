@@ -99,4 +99,19 @@ const contact = {
   "Fale com a gente": "Talk to us",
 };
 
-export default { ...header, ...footer, ...home, ...team, ...contact };
+const prediagnostic = {
+  "Pré-diagnóstico": "Pre-diagnosis",
+  "O que é o Pré-diagnóstico?": "What is the Pre-diagnosis?",
+  "O pré-diagnóstico é uma ferramenta para redes de ensino que não possuem sistemas de gestão ou querem aprimorar seu uso. A partir das respostas, podemos identificar soluções compatíveis com o cenário em que sua secretaria se encontra e propor soluções conjuntas.":
+    "Pre-diagnosis is a tool for educational networks that do not have management systems or want to improve their use. From the answers, we can identify solutions compatible with the scenario in which your secretariat is located and propose joint solutions.",
+  "Acesse:": "Access:",
+  "Iniciar preenchimento": "Start filling out",
+};
+export default {
+  ...header,
+  ...footer,
+  ...home,
+  ...team,
+  ...contact,
+  ...prediagnostic,
+};
