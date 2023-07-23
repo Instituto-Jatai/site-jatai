@@ -393,11 +393,11 @@ const ModelDocs = () => {
               };
               xhr.send(formData);
         
-              // const file1Url = 'https://'+window.location.hostname+'/files/Modelo_TR.docx';
-              // const file2Url = 'https://'+window.location.hostname+'/files/Modelo_ETP.docx';
+              const file1Url = 'https://'+window.location.hostname+'/files/Modelo_TR.docx';
+              const file2Url = 'https://'+window.location.hostname+'/files/Modelo_ETP.docx';
               
-              // downloadFile(file1Url);
-              // downloadFile(file2Url);
+              downloadFile(file1Url);
+              downloadFile(file2Url);
               openModal('modal-success');
               closeModal('modal-team');
             });
@@ -415,11 +415,11 @@ const ModelDocs = () => {
               };
               xhr.send(formData);
         
-              // const file1Url = 'https://'+window.location.hostname+'/files/Modelo_TR.docx';
-              // const file2Url = 'https://'+window.location.hostname+'/files/Modelo_ETP.docx';
+              const file1Url = 'https://'+window.location.hostname+'/files/Modelo_TR.docx';
+              const file2Url = 'https://'+window.location.hostname+'/files/Modelo_ETP.docx';
               
-              // downloadFile(file1Url);
-              // downloadFile(file2Url);
+              downloadFile(file1Url);
+              downloadFile(file2Url);
               openModal('modal-success');
               closeModal('modal-sistem');
             });

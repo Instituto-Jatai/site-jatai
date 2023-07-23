@@ -6,7 +6,7 @@ import en from "./en";
 import es from "./es";
 
 const Translate: React.FC = () => {
-  const [languageSelect, setSelectedLanguage] = useState("pt");
+  const [languageSelect, setSelectedLanguage] = useState<string>();
 
   function updateTranslation() {
     const elementsToTranslate = document.querySelectorAll("[data-i18n]");
@@ -24,6 +24,7 @@ const Translate: React.FC = () => {
       } else {
         updateTranslation();
         setSelectedLanguage(language);
+        localStorage.setItem("last_language", language);
       }
     });
   }
@@ -45,7 +46,8 @@ const Translate: React.FC = () => {
         },
       },
       () => {
-        changeLanguage(languageSelect);
+        const lastLanguage = localStorage.getItem("last_language");
+        changeLanguage(lastLanguage || "pt");
       }
     );
   }, []);

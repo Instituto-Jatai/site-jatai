@@ -223,6 +223,25 @@ const caseImpulsionar = {
     "Dado entonces los desafíos tecnológicos, el programa envió equipos a las redes de enseñanza y el periodo piloto se extendió, ofreciendo a las redes de enseñanza 6 meses más (de ene-jun/23), para permitir el uso intensivo de la solución - y los resultados concretos en términos de evolución del aprendizaje de los estudiantes",
 };
 
+const modelDocs = {
+  "Documentos modelo": "Documentos modelo",
+  "Modelo ETP e TR": "Modelo ETP y TR",
+  "Para contratação de sistema de gestão escolar":
+    "Para la contratación de un sistema de gestión escolar",
+  "Os modelos de Estudo Técnico Preliminar (ETP) e Termo de Referência (TR) para a contratação de i-Educar e i-Diário estão prontos para serem utilizados por qualquer Secretaria de Educação interessada em informatizar a gestão escolar. Esses sistemas são de código aberto e possuem licenciamento gratuito, o que significa que o foco da contratação está no serviço de sustentação do sistema, isto é, a implementação dos sistemas, a migração de dados, o treinamento dos servidores, além da hospedagem em nuvem, suporte técnico e manutenção corretiva e evolutiva. É importante ressaltar que os modelos foram desenvolvidos considerando o acesso público ao código-fonte, visando estimular a ampla concorrência e garantir transparência no processo. Os modelos são para contratação em formato pregão e, a fim de promover ainda mais a participação e a transparência, recomendamos a realização de uma consulta pública antes da contratação. Estamos à disposição caso precisem de ajuda nesse processo, é só agendar uma conversa aqui pelo site!":
+    "Los modelos de Estudio Técnico Preliminar (ETP) y Término de Referencia (TR) para la contratación de i-Educar e i-Diário están listos para ser utilizados por cualquier Secretaría de Educación interesada en informatizar la gestión escolar. Estos sistemas son de código abierto y tienen licencia gratuita, lo que significa que el enfoque del contrato está en el servicio de soporte del sistema, es decir, la implementación de los sistemas, la migración de datos, la formación de servidores, además de alojamiento en la nube, soporte técnico y mantenimiento correctivo y evolutivo. Es importante destacar que los modelos se desarrollaron considerando el acceso público al código fuente, con el objetivo de estimular la amplia competencia y garantizar la transparencia en el proceso. Los modelos son para contratar en formato de licitación y, para promover aún más la participación y la transparencia, recomendamos realizar una consulta pública antes de la contratación. Estamos a disposición si necesitan ayuda en este proceso, ¡solo programen una conversación aquí en el sitio web!",
+  "Para montar equipes de tecnologia": "Para formar equipos de tecnología",
+  "Complete o formulário e faça o download gratuito do documentos modelo":
+    "Complete el formulario y descargue los documentos modelo de forma gratuita",
+  Nome: "Nombre",
+  "E-mail": "Correo electrónico",
+  "Orgão Público": "Organismo público",
+  "Os documentos foram baixados com sucesso.":
+    "Los documentos se descargaron con éxito.",
+  "Por favor, verifique a pasta de downloads do seu computador para acessá-los.":
+    "Por favor, revise la carpeta de descargas de su computadora para acceder a ellos.",
+};
+
 export default {
   ...header,
   ...footer,
@@ -234,4 +253,5 @@ export default {
   ...caseRS,
   ...caseMonteAlegre,
   ...caseImpulsionar,
+  ...modelDocs,
 };
