@@ -61,6 +61,10 @@ const home = {
   "<b>Resultados esperados:</b> Teste de soluções e contratação para a resolução do problema apresentado.":
     "<b>Resultados esperados:</b> Prueba de soluciones y contratación para la resolución del problema presentado.",
   "Parceiros, Beneficiários e Clientes": "Socios, Beneficiarios y Clientes",
+  "Edital para apoio a contratação de sistema de gestão escolar":
+    "Anuncio para apoyo en la contratación de un sistema de gestión escolar",
+  "Este edital é focado para inscrições de secretarias de educação, consórcios públicos compostos por secretarias deeducação ou outras organizações sem fins lucrativos que apoiem secretarias de educação, interessadas em aprimorarpolíticas educacionais com uso de procedimentos de compras inovadoras. A atuação do Instituto Jataí nesta cooperação é total ou parcialmente financiada por apoio institucional recebido da Aliança entre Fundação Lemann e Imaginable Futures.":
+    "Este anuncio se centra en las solicitudes de los departamentos de educación, consorcios públicos compuestos por departamentos de educación u otras organizaciones sin fines de lucro que apoyan a los departamentos de educación, interesados en mejorar las políticas educativas con el uso de procedimientos de adquisiciones innovadores. La participación del Instituto Jataí en esta cooperación es totalmente o parcialmente financiada por el apoyo institucional recibido de la Alianza entre la Fundación Lemann y Imaginable Futures.",
 };
 
 const team = {
