@@ -108,6 +108,121 @@ const prediagnostic = {
   "Iniciar preenchimento": "Comenzar a llenar",
 };
 
+const cases = {
+  Casos: "Casos",
+  "Tem dúvidas sobre como as compras públicas podem promover inovação e potencializar governos mais digitais e sustentáveis? Nós reunimos aqui casos diversos, com o objetivo de disseminar práticas inovadoras, promovendo o conhecimento, oportunidades de conexão e fortalecimento de redes.":
+    "¿Tiene dudas sobre cómo las compras públicas pueden promover la innovación y potenciar gobiernos más digitales y sostenibles? Hemos reunido aquí varios casos, con el objetivo de difundir prácticas innovadoras, promoviendo el conocimiento, oportunidades de conexión y fortalecimiento de redes.",
+  "Como contratar tecnologias educacionais em escala?":
+    "¿Cómo contratar tecnologías educativas a gran escala?",
+  "Casos da Ata de Registro de Preços na Secretaria Estadual de Educação do Rio Grande do Sul":
+    "Casos de la Acta de Registro de Precios en la Secretaría de Educación del Estado de Rio Grande do Sul",
+  "A Secretaria de Educação do Rio Grande do Sul, em parceria com a Secretaria de Gestão, realizou a contratação de tecnologias para apoiar professores na diversificação das suas práticas pedagógicas em português e matemática. Este material tem como objetivo compartilhar principalmente os desafios e aprendizados das secretarias que realizaram pregão eletrônico de uma Ata de Registro de Preços para compra de recursos educacionais digitais, abrindo oportunidade para que não somente a rede estadual, mas também as redes municipais interessadas, pudessem contratar esses recursos.":
+    "La Secretaría de Educación de Rio Grande do Sul, en colaboración con la Secretaría de Gestión, realizó la contratación de tecnologías para apoyar a los profesores en la diversificación de sus prácticas pedagógicas en portugués y matemáticas. Este material tiene como objetivo compartir principalmente los desafíos y aprendizajes de las secretarías que realizaron una subasta electrónica de un Acta de Registro de Precios para la compra de recursos educativos digitales, abriendo oportunidades para que no sólo la red estatal, sino también las redes municipales interesadas, pudieran contratar estos recursos.",
+  "Como melhorar resultados educacionais, otimizar recursos e gerenciar as rotinas da Secretaria de Educação?":
+    "¿Cómo mejorar los resultados educativos, optimizar los recursos y gestionar las rutinas de la Secretaría de Educación?",
+  "O caso da secretaria de educação de Monte Alegre, no Rio Grande do Norte":
+    "El caso de la Secretaría de Educación de Monte Alegre, en Rio Grande do Norte",
+  "A Secretaria Municipal de Educação de Monte Alegre, no Rio Grande do Norte, realizou a contratação de serviço de suporte para o uso do sistema i-Educar. Como o sistema tem licenciamento livre e está disponível para todos, a rede realizou a instalação por conta própria em 2014. Ao perceber a necessidade de aprofundamento do uso, decidiu pela contratação de um serviço de suporte ao sistema, com oferta de hospedagem, manutenção corretiva, suporte técnico e desenvolvimento de módulos específicos.":
+    "La Secretaría Municipal de Educación de Monte Alegre, en Rio Grande do Norte, realizó la contratación de un servicio de soporte para el uso del sistema i-Educar. Como el sistema tiene licencia libre y está disponible para todos, la red realizó la instalación por su cuenta en 2014. Al percibir la necesidad de profundizar el uso, decidió contratar un servicio de soporte para el sistema, con oferta de alojamiento, mantenimiento correctivo, soporte técnico y desarrollo de módulos específicos.",
+  "Como contratar recursos educacionais digitais (edtechs) para educação pública? Casos de uso do Marco Legal de Startups no programa impulsiONar":
+    "¿Cómo contratar recursos educativos digitales (edtechs) para la educación pública? Casos de uso del Marco Legal de Startups en el programa impulsiONar",
+  "O Programa ImpulsiONar tem como objetivo apoiar Secretarias Municipais de Educação no desenvolvimento de estratégias de prevenção e redução de defasagens em Língua Portuguesa e Matemática de estudantes do 6º ao 9º ano de sua rede de escolas públicas. A intervenção do programa nas Secretarias parte de um modelo pedagógico, que é colocado em prática nas redes por meio do apoio de organizações educacionais que oferecem serviços de implementação e formação de professores, além de ter a tecnologia (edtechs) como um recurso didático chave. Para fomentar o uso de tecnologia, o impulsiONar também apoia as Secretarias com os procedimentos jurídicos, financeiros e de gestão para testar a utilização de edtechs (recursos educacionais digitais). Três Secretarias Municipais de Educação realizaram, por meio do Marco Legal de Startups, a contratação de recursos educacionais digitais (edtechs) para apoiar professores e estudantes na evolução da aprendizagem de Matemática e Língua Portuguesa.":
+    "El Programa ImpulsiONar tiene como objetivo apoyar a las Secretarías Municipales de Educación en el desarrollo de estrategias de prevención y reducción de rezagos en Lengua Portuguesa y Matemáticas de los estudiantes del 6º al 9º grado de su red de escuelas públicas. La intervención del programa en las Secretarías parte de un modelo pedagógico, que se pone en práctica en las redes a través del apoyo de organizaciones educativas que ofrecen servicios de implementación y formación de profesores, además de tener la tecnología (edtechs) como un recurso didáctico clave. Para fomentar el uso de la tecnología, ImpulsiONar también apoya a las Secretarías con los procedimientos jurídicos, financieros y de gestión para probar el uso de edtechs (recursos educativos digitales). Tres Secretarías Municipales de Educación llevaron a cabo, a través del Marco Legal de Startups, la contratación de recursos educativos digitales (edtechs) para apoyar a los profesores y estudiantes en el progreso del aprendizaje de Matemáticas y Lengua Portuguesa.",
+  "Saiba mais": "Saber más",
+};
+
+const caseRS = {
+  "A INOVAÇÃO": "LA INNOVACIÓN",
+  "Utilização de Ata de Registro de Preço": "Uso de Acta de Registro de Precio",
+  "Ata de Registro de Preço permite experimentar soluções e escalar de forma ágil sua implementação e traz eficiência aos processos de licitação pois permite que outros órgãos possam colaborar contratando conjuntamente a solução ou, dentro de limitações jurídicas, contratar a tecnologia cujo preço foi registrado em ata":
+    "El Acta de Registro de Precio permite experimentar soluciones y escalar de manera ágil su implementación y trae eficiencia a los procesos de licitación ya que permite que otros órganos puedan colaborar contratando conjuntamente la solución o, dentro de las limitaciones legales, contratar la tecnología cuyo precio fue registrado en acta.",
+  "Órgãos públicos que participaram": "Órganos públicos que participaron",
+  "Secretaria Estadual de Educação (Seduc) do Rio Grande do Sul":
+    "Secretaría Estatal de Educación (Seduc) de Rio Grande do Sul",
+  "Secretaria de Planejamento, Governança e Gestão (SPGG) do Rio Grande do Sul":
+    "Secretaría de Planificación, Gobernanza y Gestión (SPGG) de Rio Grande do Sul",
+  "Principais desafios": "Principales desafíos",
+  "A emergência trazida pela pandemia fez com o que o processo tivesse que ser realizado em tempo recorde.":
+    "La emergencia provocada por la pandemia hizo que el proceso tuviera que realizarse en tiempo récord.",
+  "Comprar algo pronto, sem a necessidade de desenvolvimento do produto.":
+    "Comprar algo listo, sin la necesidad de desarrollo del producto.",
+  "Principais aprendizados": "Principales aprendizajes",
+  "Modelo de licenciamento poderia ser aprimorado para prever pagamento por licenças em uso e/ou também faixas de preço para se beneficiar dos ganhos de escala no fornecimento da tecnologia":
+    "El modelo de licenciamiento podría ser mejorado para prever el pago por licencias en uso y/o también rangos de precio para beneficiarse de las ganancias de escala en la provisión de la tecnología.",
+  "Realização de Prova de Conceito é importante para garantir que a solução vencedora na etapa de lances por menor preço do pregão esteja de acordo com as necessidades especificadas":
+    "La realización de Prueba de Concepto es importante para garantizar que la solución ganadora en la etapa de ofertas por el menor precio de la licitación cumpla con las necesidades especificadas.",
+  "Principais Resultados": "Principales Resultados",
+};
+
+const caseMonteAlegre = {
+  "Como melhorar resultados educacionais, otimizar recursos e gerenciar as rotinas da Secretaria de Educação? O caso da secretaria de educação de Monte Alegre, no Rio Grande do Norte":
+    "¿Cómo mejorar los resultados educativos, optimizar los recursos y gestionar las rutinas de la Secretaría de Educación? El caso de la secretaría de educación de Monte Alegre, en Rio Grande do Norte",
+  "A Secretaria Municipal de Educação de Monte Alegre, no Rio Grande do Norte, realizou a contratação de serviço de suporte para o uso do sistema i-Educar. Como o sistema tem licenciamento livre e está disponível para todos, a rede realizou a instalação por conta própria em 2014. Ao perceber a necessidade de aprofundamento do uso, decidiu pela contratação de um serviço de suporte ao sistema, com oferta de hospedagem, manutenção corretiva, suporte técnico e desenvolvimento de módulos específicos.":
+    "La Secretaría Municipal de Educación de Monte Alegre, en Rio Grande do Norte, realizó la contratación de un servicio de soporte para el uso del sistema i-Educar. Como el sistema tiene licencia libre y está disponible para todos, la red realizó la instalación por cuenta propia en 2014. Al percibir la necesidad de profundizar el uso, decidió contratar un servicio de soporte al sistema, con oferta de alojamiento, mantenimiento correctivo, soporte técnico y desarrollo de módulos específicos.",
+  "A INOVAÇÃO": "LA INNOVACIÓN",
+  "Utilização de sistema de código aberto com contratação de serviço de suporte":
+    "Uso de sistema de código abierto con contratación de servicio de soporte",
+  "A implantação de sistema de código aberto, como o i-Educar, permite autonomia para a gestão municipal, uma vez que afasta a dependência de único fornecedor e garante que a estrutura e dados do sistema pertençam à Secretaria. A contratação do serviço de suporte, após a implementação inicial do sistema, foi uma inflexão importante na gestão, ao trazer para o órgão facilidade na manutenção do sistema e no suporte às escolas.":
+    "La implementación de un sistema de código abierto, como i-Educar, permite autonomía para la gestión municipal, ya que elimina la dependencia de un único proveedor y garantiza que la estructura y los datos del sistema pertenezcan a la Secretaría. La contratación del servicio de soporte, después de la implementación inicial del sistema, fue un punto de inflexión importante en la gestión, al facilitar al órgano el mantenimiento del sistema y el soporte a las escuelas.",
+  "Órgãos públicos que participaram": "Órganos públicos que participaron",
+  "Secretaria Municipal de Educação": "Secretaría Municipal de Educación",
+  "Secretaria Municipal de Finanças": "Secretaría Municipal de Finanzas",
+  "Principais desafios": "Principales desafíos",
+  "Um desafio foi a decisão pela contratação do serviço, uma vez que a rede havia iniciado a implementação com uso de recursos próprios, tendo sido preciso analisar prós e contras.":
+    "Un desafío fue la decisión de contratar el servicio, dado que la red había iniciado la implementación con uso de recursos propios, habiendo sido necesario analizar pros y contras.",
+  "Outro desafio central foi a implantação do projeto junto às escolas e professores, uma vez que representava mudança nas formas de trabalho.":
+    "Otro desafío central fue la implementación del proyecto junto a las escuelas y profesores, ya que representaba un cambio en las formas de trabajo.",
+  "Principais aprendizados": "Principales aprendizajes",
+  "A contratação de serviço de suporte para o sistema de gestão escolar de código aberto otimiza as rotinas, uma vez que o serviço é especialista na temática, mas é essencial que o sistema seja estudado antes pela Secretaria e que se produzam decisões de uso pelo órgão que levem a seu uso efetivo. Isto é, o preenchimento de informações e a análise delas deve compor a rotina de trabalho das Secretarias para que o sistema alavanque bons resultados.":
+    "La contratación de un servicio de soporte para el sistema de gestión escolar de código abierto optimiza las rutinas, ya que el servicio es especialista en la temática, pero es esencial que el sistema sea estudiado previamente por la Secretaría y que se tomen decisiones de uso por el órgano que conduzcan a su uso efectivo. Es decir, el llenado de información y su análisis debe formar parte de la rutina de trabajo de las Secretarías para que el sistema impulse buenos resultados.",
+  "Principais Resultados": "Principales Resultados",
+  "A melhoria da gestão educacional gerou economia de R$2,4 milhões por ano, segundo cálculos da Secretaria, a partir de ampliação da arrecadação do Fundeb em 8%, com a comprovação de alunos matriculados na rede, do aumento de 61% para 95% na ocupação das escolas, permitindo reduzir o número de professores contratado, e da economia de 15% da merenda escolar. A rede pode, então, alocar os recursos em outras necessidades elencadas.":
+    "La mejora de la gestión educativa generó un ahorro de R$2,4 millones por año, según cálculos de la Secretaría, a partir de la ampliación de la recaudación del Fundeb en un 8%, con la comprobación de alumnos matriculados en la red, del aumento del 61% al 95% en la ocupación de las escuelas, permitiendo reducir el número de profesores contratados, y del ahorro del 15% de la comida escolar. La red puede entonces asignar los recursos a otras necesidades enumeradas.",
+};
+
+const caseImpulsionar = {
+  "Como contratar recursos educacionais digitais (edtechs) para educação pública? Casos de uso do Marco Legal de Startups no programa impulsiONar":
+    "¿Cómo contratar recursos educativos digitales (edtechs) para la educación pública? Casos de uso del Marco Legal de Startups en el programa impulsiONar",
+  "O Programa ImpulsiONar tem como objetivo apoiar Secretarias Municipais de Educação no desenvolvimento de estratégias de prevenção e redução de defasagens em Língua Portuguesa e Matemática de estudantes do 6º ao 9º ano de sua rede de escolas públicas. A intervenção do programa nas Secretarias parte de um modelo pedagógico, que é colocado em prática nas redes por meio do apoio de organizações educacionais que oferecem serviços de implementação e formação de professores, além de ter a tecnologia (edtechs) como um recurso didático chave. Para fomentar o uso de tecnologia, o impulsiONar também apoia as Secretarias com os procedimentos jurídicos, financeiros e de gestão para testar a utilização de edtechs (recursos educacionais digitais). Três Secretarias Municipais de Educação realizaram, por meio do Marco Legal de Startups, a contratação de recursos educacionais digitais (edtechs) para apoiar professores e estudantes na evolução da aprendizagem de Matemática e Língua Portuguesa.":
+    "El Programa ImpulsiONar tiene como objetivo apoyar a las Secretarías Municipales de Educación en el desarrollo de estrategias de prevención y reducción de retrasos en Portugués y Matemáticas para estudiantes de 6º a 9º grado de su red de escuelas públicas. La intervención del programa en las Secretarías se basa en un modelo pedagógico, que se pone en práctica en las redes con el apoyo de organizaciones educativas que ofrecen servicios de implementación y formación de profesores, además de tener la tecnología (edtechs) como un recurso didáctico clave. Para fomentar el uso de la tecnología, ImpulsiONar también apoya a las Secretarías con los procedimientos jurídicos, financieros y de gestión para probar el uso de edtechs (recursos educativos digitales). Tres Secretarías Municipales de Educación llevaron a cabo, a través del Marco Legal de Startups, la contratación de recursos educativos digitales (edtechs) para apoyar a profesores y estudiantes en la evolución del aprendizaje de Matemáticas y Portugués.",
+  "A INOVAÇÃO": "LA INNOVACIÓN",
+  "Uso do MLS no setor da educação para contratação de edtechs":
+    "Uso del MLS en el sector de la educación para la contratación de edtechs",
+  "A inovação do programa foi a realização do processo de inovação aberta para contratação de teste de edtechs pelo setor público (Secretarias Municipais de Educação), via Marco Legal das Startups (MLS). O arranjo permitiu o teste remunerado para edtechs nas Secretarias de Educação Municipal (ainda que sem transferência de recursos públicos e sim via terceiro setor) - e há a possibilidade de posterior contratação direta pela administração pública.":
+    "La innovación del programa fue la realización del proceso de innovación abierta para la contratación de pruebas de edtechs por el sector público (Secretarías Municipales de Educación), a través del Marco Legal de Startups (MLS). El arreglo permitió la prueba remunerada para edtechs en las Secretarías de Educación Municipal (aunque sin transferencia de recursos públicos y sí a través del tercer sector) - y existe la posibilidad de contratación directa posterior por la administración pública.",
+  "Órgãos públicos que participaram do programa e utilizaram o MLS":
+    "Órganos públicos que participaron en el programa y utilizaron el MLS",
+  "Secretaria Municipal de Educação de Igarassu (Pernambuco)":
+    "Secretaría Municipal de Educación de Igarassu (Pernambuco)",
+  "Secretaria Municipal de Educação de Guaramiranga (Ceará)":
+    "Secretaría Municipal de Educación de Guaramiranga (Ceará)",
+  "Secretaria Municipal de Educação de Domingos Mourão (Piauí)":
+    "Secretaría Municipal de Educación de Domingos Mourão (Piauí)",
+  "Principais desafios": "Desafíos principales",
+  "Sendo a utilização do Marco Legal das Startups na área de educação algo inédito no Brasil, houve diversos desafios, aprendizados e boas práticas ao longo da jornada do programa":
+    "Dado que el uso del Marco Legal de Startups en el área de educación es algo sin precedentes en Brasil, hubo varios desafíos, aprendizajes y buenas prácticas a lo largo del viaje del programa",
+  "Principais aprendizados": "Aprendizajes principales",
+  "A construção das metas configura-se como um risco a ser mapeado, uma vez que essas são desenhadas dentro de um cenário de incertezas característico do modelo de desafio. Por isso, essas devem ser feitas com base no maior número de evidências contextuais, mas sendo importante acompanhá-las ao longo do processo e calibrá-las sempre que possível e necessário.":
+    "La construcción de las metas se configura como un riesgo a mapear, ya que se diseñan dentro de un escenario de incertidumbre característico del modelo de desafío. Por lo tanto, deben hacerse con base en la mayor cantidad de evidencias contextuales, pero es importante seguirlas a lo largo del proceso y calibrarlas siempre que sea posible y necesario.",
+  "Ainda que a contratação trate de um desafio específico, é importante mapear situações correlatas ao desafio - como, no caso do Impulsionar, foi a situação da infraestrutura (conectividade e equipamentos), descrita no item abaixo.":
+    "Aunque la contratación se refiera a un desafío específico, es importante mapear situaciones correlacionadas con el desafío - como, en el caso de Impulsar, fue la situación de la infraestructura (conectividad y equipos), descrita en el punto siguiente.",
+  "Principais resultados": "Resultados principales",
+  "Foram definidas 4 metas para o 1º período de teste das edtechs (de Abril à Dezembro de 2022), relacionadas a:":
+    "Se definieron 4 metas para el primer periodo de prueba de las edtechs (de Abril a Diciembre de 2022), relacionadas con:",
+  "Implementação nas escolas;": "Implementación en las escuelas;",
+  "Formação dos usuários;": "Formación de los usuarios;",
+  "Acesso e utilização dos estudantes;":
+    "Acceso y utilización de los estudiantes;",
+  "E satisfação dos professores e gestores.":
+    "Y satisfacción de los profesores y gestores.",
+  "Essa são as métricas para avaliar se o teste foi bem sucedido - e que então possibilitam a contratação das edtechs pelas Secretarias.":
+    "Estas son las métricas para evaluar si la prueba fue exitosa - y que entonces permiten la contratación de las edtechs por las Secretarías.",
+  "Os resultados obtidos foram (1) implementação em 100% das escolas, (2) formação de mais de 80% dos usuários e alta satisfação (> 80%) inicial dos gestores e professores. Porém, a meta (3) de acesso e utilização dos estudantes ficou bastante abaixo do esperado (entre 50-70% de utilização em média, a depender do mês e da rede, versus a meta que seria 80% dos estudantes utilizando 1 vez ao mês). Isso se deu devido a falta de infraestrutura (conectividade e equipamentos) que permitisse o amplo uso dos estudantes.":
+    "Los resultados obtenidos fueron (1) implementación en el 100% de las escuelas, (2) formación de más del 80% de los usuarios y alta satisfacción inicial (> 80%) de los gestores y profesores. Sin embargo, la meta (3) de acceso y utilización de los estudiantes estuvo bastante por debajo de lo esperado (entre 50-70% de utilización en promedio, dependiendo del mes y de la red, frente a la meta que sería 80% de los estudiantes utilizando 1 vez al mes). Esto se debió a la falta de infraestructura (conectividad y equipos) que permitiera el amplio uso de los estudiantes.",
+  "Dado então os desafios de tecnologia, o programa enviou equipamentos para as redes de ensino e período do piloto foi estendido, ofertando para as redes de ensino mais 6 meses (de jan-jun/23), para permitir o uso intensivo da solução - e os resultados concretos em termos de evolução da aprendizagem dos estudantes":
+    "Dado entonces los desafíos tecnológicos, el programa envió equipos a las redes de enseñanza y el periodo piloto se extendió, ofreciendo a las redes de enseñanza 6 meses más (de ene-jun/23), para permitir el uso intensivo de la solución - y los resultados concretos en términos de evolución del aprendizaje de los estudiantes",
+};
+
 export default {
   ...header,
   ...footer,
@@ -115,4 +230,8 @@ export default {
   ...team,
   ...contact,
   ...prediagnostic,
+  ...cases,
+  ...caseRS,
+  ...caseMonteAlegre,
+  ...caseImpulsionar,
 };

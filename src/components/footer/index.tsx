@@ -3,7 +3,7 @@
 const Footer: React.FC = () => {
   return (
     <div className="bg-black h-full flex">
-      <div className="container px-6 flex flex-col items-start justify-between h-[600px] md:h-[380px]">
+      <div className="container mx-auto px-4 md:px-0 flex flex-col items-start justify-between h-[600px] md:h-[380px]">
         <img src="/images/footer/logo.svg" alt="" className="mt-10 h-10" />
 
         <div className="flex flex-col mb-10 md:justify-between md:flex-row w-full">
