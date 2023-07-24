@@ -70,26 +70,17 @@ const HomeSlider: React.FC = () => {
               >
                 Inscrever-se agora
               </a>
-              <button
+              <a
+                href="/edital"
                 data-i18n="Saiba mais"
                 className="bg-white open-modal-button  text-green-700 px-6 py-[14px] rounded-xl font-semibold transition-all hover:bg-gray-100"
               >
                 Saiba mais
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </Carousel>
-      <Script id="open-modal">
-        {`
-          function openModal() {
-            document.getElementById("modal").classList.remove("hidden");
-          }
-
-          document.getElementsByClassName("open-modal-button")[0].addEventListener("click", openModal);
-          document.getElementsByClassName("open-modal-button")[1].addEventListener("click", openModal);
-        `}
-      </Script>
     </>
   );
 };

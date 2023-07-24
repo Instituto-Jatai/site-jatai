@@ -89,30 +89,21 @@ const ModelDocs = () => {
           </span>
 
           <span
-            data-i18n="Os modelos de Estudo Técnico Preliminar (ETP) e Termo de Referência (TR) para a contratação de i-Educar e i-Diário estão prontos para serem utilizados por qualquer Secretaria de Educação interessada em informatizar a gestão escolar. Esses sistemas são de código aberto e possuem licenciamento gratuito, o que significa que o foco da contratação está no serviço de sustentação do sistema, isto é, a implementação dos sistemas, a migração de dados, o treinamento dos servidores, além da hospedagem em nuvem, suporte técnico e manutenção corretiva e evolutiva. É importante ressaltar que os modelos foram desenvolvidos considerando o acesso público ao código-fonte, visando estimular a ampla concorrência e garantir transparência no processo. Os modelos são para contratação em formato pregão e, a fim de promover ainda mais a participação e a transparência, recomendamos a realização de uma consulta pública antes da contratação. Estamos à disposição caso precisem de ajuda nesse processo, é só agendar uma conversa aqui pelo site!"
-            className="mt-6 text-base"
+            data-i18n="Os modelos de <b>Estudo Técnico Preliminar (ETP)</b> e <b>Termo de Referência (TR)</b> para contratação de Ateliê de Software estão prontos para serem utilizados por qualquer organização pública interessada em terceirização de equipes de tecnologia. A terceirização de equipes no modelo de Ateliê de Software foca na contratação de equipes multidisciplinares para desenvolvimento de produtos digitais utilizando métodos ágeis e design centrado no usuário."
+            className="mt-6 mb-12 text-base"
           >
-            Os modelos de <b>Estudo Técnico Preliminar (ETP)</b> e
-            <b>Termo de Referência (TR)</b> para a contratação de i-Educar e
-            i-Diário estão prontos para serem utilizados por qualquer Secretaria
-            de Educação interessada em informatizar a gestão escolar. Esses
-            sistemas são de código aberto e possuem licenciamento gratuito, o
-            que significa que o foco da contratação está no serviço de
-            sustentação do sistema, isto é, a implementação dos sistemas, a
-            migração de dados, o treinamento dos servidores, além da hospedagem
-            em nuvem, suporte técnico e manutenção corretiva e evolutiva. É
-            importante ressaltar que os modelos foram desenvolvidos considerando
-            o acesso público ao código-fonte, visando estimular a ampla
-            concorrência e garantir transparência no processo. Os modelos são
-            para contratação em formato pregão e, a fim de promover ainda mais a
-            participação e a transparência, recomendamos a realização de uma
-            consulta pública antes da contratação. Estamos à disposição caso
-            precisem de ajuda nesse processo, é só agendar uma conversa aqui
-            pelo site!
+            Os modelos de <b>Estudo Técnico Preliminar (ETP)</b> e{" "}
+            <b>Termo de Referência (TR)</b> para contratação de Ateliê de
+            Software estão prontos para serem utilizados por qualquer
+            organização pública interessada em terceirização de equipes de
+            tecnologia. A terceirização de equipes no modelo de Ateliê de
+            Software foca na contratação de equipes multidisciplinares para
+            desenvolvimento de produtos digitais utilizando métodos ágeis e
+            design centrado no usuário.
           </span>
           <button
             id="team-model-button"
-            className="py-[14px] px-6 rounded-xl bg-green-700 text-white mt-12"
+            className="py-[14px] px-6 rounded-xl bg-green-700 text-white mt-auto"
             data-i18n="Baixar modelo"
           >
             Baixar modelo
@@ -353,31 +344,53 @@ const ModelDocs = () => {
       </div>
       <Script id="handle-modal">
         {`
-            function closeModal(id) {
+            function closeEditalModal(id) {
               document.getElementById(id).classList.add("hidden");
             }
-            function openModal(id) {
+            function openEditalModal(id) {
               document.getElementById(id).classList.remove("hidden");
             }
             
             document.getElementById("team-model-button").addEventListener("click", () => {
-              openModal('modal-team');
+              openEditalModal('modal-team');
             });
             document.getElementById("sistem-model-button").addEventListener("click", () => {
-              openModal('modal-sistem');
+              openEditalModal('modal-sistem');
             });
             
             document.getElementById("modal-success-close-button").addEventListener("click", () => {
-              closeModal('modal-success');
+              closeEditalModal('modal-success');
             });
             document.getElementById("modal-success-close-button-2").addEventListener("click", () => {
-              closeModal('modal-success');
+              closeEditalModal('modal-success');
             });
             document.getElementById("team-modal-close-button").addEventListener("click", () => {
-              closeModal('modal-team');
+              closeEditalModal('modal-team');
             });
             document.getElementById("sistem-modal-close-button").addEventListener("click", () => {
-              closeModal('modal-sistem');
+              closeEditalModal('modal-sistem');
+            });
+
+            document.getElementById("sistem-model-form").addEventListener("submit", function(e) {
+              e.preventDefault();
+              var form = document.getElementById("sistem-model-form");
+              var formData = new FormData(form);
+              var xhr = new XMLHttpRequest();
+              xhr.open("POST", "https://script.google.com/macros/s/AKfycbwXw4VvpCYKWjmERo00wgbnCvkcIPeAJBbogEt6h4PKOhdTZp7ApWwmOiTs49xFxmqXyA/exec", true);
+              xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                  form.reset();
+                }
+              };
+              xhr.send(formData);
+        
+              const file1Url = 'https://'+window.location.hostname+'/files/Modelo_TR.docx';
+              const file2Url = 'https://'+window.location.hostname+'/files/Modelo_ETP.docx';
+              
+              downloadFile(file1Url);
+              downloadFile(file2Url);
+              openEditalModal('modal-success');
+              closeEditalModal('modal-sistem');
             });
 
             document.getElementById("modal-team-form").addEventListener("submit", function(e) {
@@ -385,7 +398,7 @@ const ModelDocs = () => {
               var form = document.getElementById("modal-team-form");
               var formData = new FormData(form);
               var xhr = new XMLHttpRequest();
-              xhr.open("POST", "https://script.google.com/macros/s/AKfycbyuYpLN1mtAkJdQgmOCoPODFOKV7ebsQUYO77SgshIMi6gViQMKA83bCsDXS4ylLjBIeQ/exec", true);
+              xhr.open("POST", "https://script.google.com/macros/s/AKfycbwXw4VvpCYKWjmERo00wgbnCvkcIPeAJBbogEt6h4PKOhdTZp7ApWwmOiTs49xFxmqXyA/exec", true);
               xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4 && xhr.status === 200) {
                   form.reset();
@@ -400,30 +413,8 @@ const ModelDocs = () => {
               downloadFile(file1Url);
               downloadFile(file2Url);
               downloadFile(file3Url);
-              openModal('modal-success');
-              closeModal('modal-team');
-            });
-
-            document.getElementById("sistem-model-form").addEventListener("submit", function(e) {
-              e.preventDefault();
-              var form = document.getElementById("sistem-model-form");
-              var formData = new FormData(form);
-              var xhr = new XMLHttpRequest();
-              xhr.open("POST", "https://script.google.com/macros/s/AKfycbyuYpLN1mtAkJdQgmOCoPODFOKV7ebsQUYO77SgshIMi6gViQMKA83bCsDXS4ylLjBIeQ/exec", true);
-              xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                  form.reset();
-                }
-              };
-              xhr.send(formData);
-        
-              const file1Url = 'https://'+window.location.hostname+'/files/Modelo_TR.docx';
-              const file2Url = 'https://'+window.location.hostname+'/files/Modelo_ETP.docx';
-              
-              downloadFile(file1Url);
-              downloadFile(file2Url);
-              openModal('modal-success');
-              closeModal('modal-sistem');
+              openEditalModal('modal-success');
+              closeEditalModal('modal-team');
             });
         
             function downloadFile(url) {

@@ -244,6 +244,8 @@ const modelDocs = {
     "Los documentos se descargaron con éxito.",
   "Por favor, verifique a pasta de downloads do seu computador para acessá-los.":
     "Por favor, revise la carpeta de descargas de su computadora para acceder a ellos.",
+  "Os modelos de <b>Estudo Técnico Preliminar (ETP)</b> e <b>Termo de Referência (TR)</b> para contratação de Ateliê de Software estão prontos para serem utilizados por qualquer organização pública interessada em terceirização de equipes de tecnologia. A terceirização de equipes no modelo de Ateliê de Software foca na contratação de equipes multidisciplinares para desenvolvimento de produtos digitais utilizando métodos ágeis e design centrado no usuário.":
+    "Los modelos de <b>Estudio Técnico Preliminar (ETP)</b> y <b>Términos de Referencia (TR)</b> para la contratación de Atelier de Software están listos para ser utilizados por cualquier organización pública interesada en la externalización de equipos de tecnología. La externalización de equipos en el modelo de Atelier de Software se centra en la contratación de equipos multidisciplinarios para el desarrollo de productos digitales utilizando métodos ágiles y diseño centrado en el usuario.",
 };
 
 export default {

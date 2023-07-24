@@ -241,6 +241,8 @@ const modelDocs = {
     "The documents were successfully downloaded.",
   "Por favor, verifique a pasta de downloads do seu computador para acessá-los.":
     "Please check your computer's download folder to access them.",
+  "Os modelos de <b>Estudo Técnico Preliminar (ETP)</b> e <b>Termo de Referência (TR)</b> para contratação de Ateliê de Software estão prontos para serem utilizados por qualquer organização pública interessada em terceirização de equipes de tecnologia. A terceirização de equipes no modelo de Ateliê de Software foca na contratação de equipes multidisciplinares para desenvolvimento de produtos digitais utilizando métodos ágeis e design centrado no usuário.":
+    "The models of the <b>Preliminary Technical Study (PTS)</b> and <b>Terms of Reference (TOR)</b> for hiring Software Atelier are ready to be used by any public organization interested in outsourcing technology teams. The outsourcing of teams in the Software Atelier model focuses on hiring multidisciplinary teams for the development of digital products using agile methods and user-centered design.",
 };
 
 export default {

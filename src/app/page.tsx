@@ -1,6 +1,5 @@
 import Accordion from "@/components/accordion";
 import HomeSlider from "@/components/home-slider";
-import Script from "next/script";
 
 /* eslint-disable @next/next/no-img-element */
 export default function Home() {
@@ -245,77 +244,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <div id="modal" className="fixed inset-0 z-20">
-        <div className="flex items-center justify-center min-h-screen ">
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden mx-auto z-30 w-[90%] max-w-[862px] flex relative">
-            <button
-              id="modal-close-button"
-              className="bg-gray-100 absolute top-3 right-3 p-2 rounded-full transition-all hover:bg-gray-300"
-            >
-              <img
-                className="w-4 h-4"
-                alt="close modal"
-                src="/images/home/close-modal.svg"
-              />
-            </button>
-            <div className="w-full h-full max-w-[520px] p-10">
-              <h1
-                className="text-3xl font-semibold"
-                data-i18n="Edital para apoio a contratação de sistema de gestão escolar"
-              >
-                Edital para apoio a contratação de sistema de gestão escolar
-              </h1>
-              <p
-                className="my-8"
-                data-i18n="Este edital é focado para inscrições de secretarias de educação, consórcios públicos compostos por secretarias deeducação ou outras organizações sem fins lucrativos que apoiem secretarias de educação, interessadas em aprimorarpolíticas educacionais com uso de procedimentos de compras inovadoras. A atuação do Instituto Jataí nesta cooperação é total ou parcialmente financiada por apoio institucional recebido da Aliança entre Fundação Lemann e Imaginable Futures."
-              >
-                Este edital é focado para inscrições de secretarias de educação,
-                consórcios públicos compostos por secretarias deeducação ou
-                outras organizações sem fins lucrativos que apoiem secretarias
-                de educação, interessadas em aprimorarpolíticas educacionais com
-                uso de procedimentos de compras inovadoras. A atuação do
-                Instituto Jataí nesta cooperação é total ou parcialmente
-                financiada por apoio institucional recebido da Aliança entre
-                Fundação Lemann e Imaginable Futures.
-              </p>
-
-              <div className="flex ">
-                <button
-                  id="modal-subscrive-button"
-                  data-i18n="Inscrever-se agora"
-                  className="bg-green-700 text-white px-6 py-[14px] rounded-xl font-semibold mr-3 transition-all hover:bg-green-800"
-                >
-                  Inscrever-se agora
-                </button>
-                <a
-                  target="_blank"
-                  href="/files/20230711-edital.pdf"
-                  data-i18n="Ver edital"
-                  className="bg-gray-200 text-black px-6 py-[14px] rounded-xl font-semibold transition-all hover:bg-gray-300"
-                >
-                  Ver edital
-                </a>
-              </div>
-            </div>
-            <div className="flex-1 bg-cover bg-center bg-no-repeat bg-[url('/images/home/children.png')]"></div>
-          </div>
-        </div>
-        <div className="fixed inset-0 bg-black opacity-30"></div>
-      </div>
-      <Script id="close-modal">
-        {`
-            function closeModal() {
-              document.getElementById("modal").classList.add("hidden");
-            }
-            
-            document.getElementById("modal-close-button").addEventListener("click", closeModal);
-            document.getElementById("modal-subscrive-button").addEventListener("click", () => {
-              window.open("https://docs.google.com/forms/u/1/d/e/1FAIpQLSfcZHkxnMLg8CLttrZiWS9J_4rJIEbB7gnOz3ysljEhNkWU3w/viewform?usp=send_form", "_blank");
-              closeModal();
-            });
-          `}
-      </Script>
     </>
   );
 }
