@@ -393,11 +393,13 @@ const ModelDocs = () => {
               };
               xhr.send(formData);
         
-              const file1Url = 'https://'+window.location.hostname+'/files/Modelo_TR.docx';
-              const file2Url = 'https://'+window.location.hostname+'/files/Modelo_ETP.docx';
+              const file1Url = 'https://'+window.location.hostname+'/files/Modelo_ETP_Atelie.docx';
+              const file2Url = 'https://'+window.location.hostname+'/files/Modelo_TR_Atelie_Anexo_II.xlsx';
+              const file3Url = 'https://'+window.location.hostname+'/files/Modelo_TR_Atelie.docx';
               
               downloadFile(file1Url);
               downloadFile(file2Url);
+              downloadFile(file3Url);
               openModal('modal-success');
               closeModal('modal-team');
             });
