@@ -64,11 +64,11 @@ const HomeSlider: React.FC = () => {
             <div className="flex mt-9">
               <a
                 target="_blank"
-                data-i18n="Inscrever-se agora"
+                data-i18n="Inscreva-se agora"
                 className="bg-green-700 text-white px-6 py-[14px] rounded-xl font-semibold mr-3 transition-all hover:bg-green-800"
                 href="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfcZHkxnMLg8CLttrZiWS9J_4rJIEbB7gnOz3ysljEhNkWU3w/viewform?usp=send_form"
               >
-                Inscrever-se agora
+                Inscreva-se agora
               </a>
               <a
                 href="/edital"

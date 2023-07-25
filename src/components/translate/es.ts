@@ -26,7 +26,7 @@ const home = {
     "Revisa el anuncio para apoyo en la contratación de un sistema de gestión escolar",
   "Qualquer secretaria, consórcio ou organização do terceiro setor que trabalhe com educação pode participar. Não deixe de conferir!":
     "Cualquier secretaría, consorcio u organización del tercer sector que trabaje con educación puede participar. ¡No te lo pierdas!",
-  "Inscrever-se agora": "Inscríbete ahora",
+  "Inscreva-se agora": "Inscríbete ahora",
   "Saiba mais": "Aprende más",
   "O que fazemos": "Lo que hacemos",
   "Ajudamos você que é gestor público a enfrentar os desafios da inovação e digitalização no setor público. Construímos com você soluções para desafios de equipe, governança, recursos e contratações.":
@@ -63,7 +63,7 @@ const home = {
   "Parceiros, Beneficiários e Clientes": "Socios, Beneficiarios y Clientes",
   "Edital para apoio a contratação de sistema de gestão escolar":
     "Anuncio para apoyo en la contratación de un sistema de gestión escolar",
-  "Este edital é focado para inscrições de secretarias de educação, consórcios públicos compostos por secretarias deeducação ou outras organizações sem fins lucrativos que apoiem secretarias de educação, interessadas em aprimorarpolíticas educacionais com uso de procedimentos de compras inovadoras. A atuação do Instituto Jataí nesta cooperação é total ou parcialmente financiada por apoio institucional recebido da Aliança entre Fundação Lemann e Imaginable Futures.":
+  "Este edital é focado para inscrições de secretarias de educação, consórcios públicos compostos por secretarias deeducação ou outras organizações sem fins lucrativos que apoiem secretarias de educação, interessadas em aprimorar políticas educacionais com uso de procedimentos de compras inovadoras. A atuação do Instituto Jataí nesta cooperação é total ou parcialmente financiada por apoio institucional recebido da Aliança entre Fundação Lemann e Imaginable Futures.":
     "Este anuncio se centra en las solicitudes de los departamentos de educación, consorcios públicos compuestos por departamentos de educación u otras organizaciones sin fines de lucro que apoyan a los departamentos de educación, interesados en mejorar las políticas educativas con el uso de procedimientos de adquisiciones innovadores. La participación del Instituto Jataí en esta cooperación es totalmente o parcialmente financiada por el apoyo institucional recibido de la Alianza entre la Fundación Lemann y Imaginable Futures.",
 };
 

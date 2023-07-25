@@ -12,12 +12,12 @@ const Edital: React.FC = () => {
           </h1>
           <p
             className="my-8"
-            data-i18n="Este edital é focado para inscrições de secretarias de educação, consórcios públicos compostos por secretarias deeducação ou outras organizações sem fins lucrativos que apoiem secretarias de educação, interessadas em aprimorarpolíticas educacionais com uso de procedimentos de compras inovadoras. A atuação do Instituto Jataí nesta cooperação é total ou parcialmente financiada por apoio institucional recebido da Aliança entre Fundação Lemann e Imaginable Futures."
+            data-i18n="Este edital é focado para inscrições de secretarias de educação, consórcios públicos compostos por secretarias deeducação ou outras organizações sem fins lucrativos que apoiem secretarias de educação, interessadas em aprimorar políticas educacionais com uso de procedimentos de compras inovadoras. A atuação do Instituto Jataí nesta cooperação é total ou parcialmente financiada por apoio institucional recebido da Aliança entre Fundação Lemann e Imaginable Futures."
           >
             Este edital é focado para inscrições de secretarias de educação,
             consórcios públicos compostos por secretarias deeducação ou outras
             organizações sem fins lucrativos que apoiem secretarias de educação,
-            interessadas em aprimorarpolíticas educacionais com uso de
+            interessadas em aprimorar políticas educacionais com uso de
             procedimentos de compras inovadoras. A atuação do Instituto Jataí
             nesta cooperação é total ou parcialmente financiada por apoio
             institucional recebido da Aliança entre Fundação Lemann e Imaginable
@@ -27,10 +27,10 @@ const Edital: React.FC = () => {
           <div className="flex ">
             <button
               id="modal-subscrive-button"
-              data-i18n="Inscrever-se agora"
+              data-i18n="Inscreva-se agora"
               className="bg-green-700 text-white px-6 py-[14px] rounded-xl font-semibold mr-3 transition-all hover:bg-green-800"
             >
-              Inscrever-se agora
+              Inscreva-se agora
             </button>
             <a
               target="_blank"
