@@ -376,7 +376,7 @@ const ModelDocs = () => {
               var form = document.getElementById("sistem-model-form");
               var formData = new FormData(form);
               var xhr = new XMLHttpRequest();
-              xhr.open("POST", "https://script.google.com/macros/s/AKfycbxxLLoQU9UeGf5BghtWh7UzpjOUc9CS73SU-K7h5_7V9Lzu5HERGY--AIiitA03forX6Q/exec", true);
+              xhr.open("POST", "https://script.google.com/macros/s/AKfycbxpfU_8XisGE0r3LX1_3eGJg9Y7Lacs1nWbT2LqF-derDEdoSdgZQUwhwq3bFlqjVCMqQ/exec", true);
               xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4 && xhr.status === 200) {
                   form.reset();
@@ -398,7 +398,7 @@ const ModelDocs = () => {
               var form = document.getElementById("modal-team-form");
               var formData = new FormData(form);
               var xhr = new XMLHttpRequest();
-              xhr.open("POST", "https://script.google.com/macros/s/AKfycbxxLLoQU9UeGf5BghtWh7UzpjOUc9CS73SU-K7h5_7V9Lzu5HERGY--AIiitA03forX6Q/exec", true);
+              xhr.open("POST", "https://script.google.com/macros/s/AKfycbxpfU_8XisGE0r3LX1_3eGJg9Y7Lacs1nWbT2LqF-derDEdoSdgZQUwhwq3bFlqjVCMqQ/exec", true);
               xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4 && xhr.status === 200) {
                   form.reset();
