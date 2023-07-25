@@ -113,8 +113,11 @@ export default function RootLayout({
 
         <Script id="close-modal">
           {`
+            var wasOpened = false;
+
             document.addEventListener('mouseout', function(e) {
-                if (!e.relatedTarget && !e.toElement) {
+                if (!e.relatedTarget && !e.toElement && !wasOpened) {
+                  wasOpened = true;
                   document.getElementById("modal").classList.remove("hidden");
                 }
             });
