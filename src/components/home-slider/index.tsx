@@ -2,20 +2,19 @@
 "use client";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import Script from "next/script";
 
 const HomeSlider: React.FC = () => {
   return (
     <>
       <Carousel
         autoPlay
-        stopOnHover
         infiniteLoop
         showIndicators
         interval={5000}
         showArrows={false}
         showStatus={false}
         showThumbs={false}
+        stopOnHover={false}
       >
         <div className="h-[512px] bg-cover bg-center bg-no-repeat bg-[url('/images/home/bg-hero.png')]">
           <div className="m-auto container flex flex-col justify-center h-full p-4 md:p-0">
