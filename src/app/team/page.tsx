@@ -234,42 +234,6 @@ const Team = () => {
 
           <div className="flex flex-col md:flex-row lg:items-center gap-9">
             <img
-              src="/images/team/sofia.jpeg"
-              alt=""
-              className="w-[162px] h-[162px]"
-            />
-            <div className="flex flex-col justify-center">
-              <div className="flex justify-between">
-                <div className="flex flex-col">
-                  <span className="text-2xl mb-1">Sofia Ferreira</span>
-                  <span
-                    data-i18n="Especialista em tecnologia"
-                    className="text-base text-gray-700"
-                  >
-                    Analista de Projetos de Inovação Pública
-                  </span>
-                </div>
-                <div className="flex gap-2 items-center">
-                  <a
-                    href="https://www.linkedin.com/in/sofiaferreira01/"
-                    target="_blank"
-                  >
-                    <img src="/images/team/linkedin.svg" alt="" />
-                  </a>
-                </div>
-              </div>
-              <div className="w-full h-[1px] bg-black my-4"></div>
-              <span
-                data-i18n="Graduada em Gestão de Políticas Públicas - USP"
-                className="text-base text-gray-600"
-              >
-                Graduada em Gestão de Políticas Públicas - USP
-              </span>
-            </div>
-          </div>
-
-          <div className="flex flex-col md:flex-row lg:items-center gap-9">
-            <img
               src="/images/team/thiago.jpeg"
               alt=""
               className="w-[162px] h-[162px]"
@@ -306,6 +270,42 @@ const Team = () => {
                 className="text-base text-gray-600"
               >
                 Graduado em Engenharia de Produção - UEPA
+              </span>
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row lg:items-center gap-9">
+            <img
+              src="/images/team/sofia.jpeg"
+              alt=""
+              className="w-[162px] h-[162px]"
+            />
+            <div className="flex flex-col justify-center">
+              <div className="flex justify-between">
+                <div className="flex flex-col">
+                  <span className="text-2xl mb-1">Sofia Ferreira</span>
+                  <span
+                    data-i18n="Especialista em tecnologia"
+                    className="text-base text-gray-700"
+                  >
+                    Analista de Projetos de Inovação Pública
+                  </span>
+                </div>
+                <div className="flex gap-2 items-center">
+                  <a
+                    href="https://www.linkedin.com/in/sofiaferreira01/"
+                    target="_blank"
+                  >
+                    <img src="/images/team/linkedin.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div className="w-full h-[1px] bg-black my-4"></div>
+              <span
+                data-i18n="Graduada em Gestão de Políticas Públicas - USP"
+                className="text-base text-gray-600"
+              >
+                Graduada em Gestão de Políticas Públicas - USP
               </span>
             </div>
           </div>
