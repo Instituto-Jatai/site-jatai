@@ -13,7 +13,7 @@ const models = [
       "Modelo ETP - Estudo Técnico Preliminar da contratação",
       "Modelo TR - Termo de Referência",
     ],
-    linkToDownload: "http://localhost:3000/files/docs_modelo.zip",
+    linkToDownload: "https://jatai.org.br/files/docs_modelo.zip",
   },
   {
     tag: "Modelo ETP e TR",
@@ -27,7 +27,7 @@ const models = [
       "Modelo TR Ateliê (Anexo II) - Composição de custos e formação de preços",
       "Modelo ETP Ateliê",
     ],
-    linkToDownload: "http://localhost:3000/files/docs_modelo_atelie.zip",
+    linkToDownload: "https://jatai.org.br/files/docs_modelo_atelie.zip",
   },
   {
     tag: "Modelo ETP e TR",
@@ -35,7 +35,7 @@ const models = [
     description:
       "As contratações no contexto do Marco Legal de Startups (LCP 182/2021) ainda representam desafios para o governo. Por isso, disponibilizamos modelos para serem usados por qualquer organização pública interessada no lançamento de desafios de inovação.",
     descriptionMore:
-      "São os seguintes documentos: <br /> <ul> <li>Um passo a passo para a realização do Contrato Público de Solução Inovadora e para o Contrato de Fornecimento, que também explica, brevemente, o contexto do Programa Impulsionar onde foram produzidos.</li> <li>Para o Contrato Público de Solução Inovadora, disponibilizamos o Estudo Técnico Preliminar (ETP), Termo de Referência (TR), e Edital de Licitação. Para o Contrato de Fornecimento, disponibilizamos modelos de Portaria para avaliação, o Parecer Técnico Conclusivo, a Nota Técnica de Formalização de Demanda e a Minuta de Contrato.</li></ul>",
+      "São os seguintes documentos: <br /> <br />- Um passo a passo para a realização do Contrato Público de Solução Inovadora e para o Contrato de Fornecimento, que também explica, brevemente, o contexto do Programa Impulsionar onde foram produzidos.<br /><br />- Para o Contrato Público de Solução Inovadora, disponibilizamos o Estudo Técnico Preliminar (ETP), Termo de Referência (TR), e Edital de Licitação. <br /><br />- Para o Contrato de Fornecimento, disponibilizamos modelos de Portaria para avaliação, o Parecer Técnico Conclusivo, a Nota Técnica de Formalização de Demanda e a Minuta de Contrato.",
     files: [
       "1. Passo a passo para formalização do contrato de fornecimento de acordo com o Marco Legal das Startup",
       "Modelo 1. CPSI. Estudo Técnico Preliminar MLSEI",
@@ -46,7 +46,7 @@ const models = [
       "Modelo 6. Contrato de Fornecimento. Nota Técnica de Formalização de Demanda",
       "Modelo 7. Contrato de Fornecimento. Minuta_Contrato de Fornecimento",
     ],
-    linkToDownload: "http://localhost:3000/files/docs_modelo_inovacao.zip",
+    linkToDownload: "https://jatai.org.br/files/docs_modelo_inovacao.zip",
   },
 ];
 

@@ -79,8 +79,9 @@ const ModelDoc: React.FC<Props> = ({ model, index }) => {
               <span
                 className="mt-6 text-[#666666] text-base"
                 data-i18n={model.description}
+                dangerouslySetInnerHTML={{ __html: model.descriptionMore }}
               >
-                {model.descriptionMore}
+                {}
               </span>
             )}
             {!readMore && (
