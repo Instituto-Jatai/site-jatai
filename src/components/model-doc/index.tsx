@@ -58,7 +58,7 @@ const ModelDoc: React.FC<Props> = ({ model, index }) => {
     <>
       <div className="flex flex-col">
         {index > 0 && <div className="my-16 h-[1px] bg-[#EBEBEB]" />}
-        <div className="flex flex-row gap-6">
+        <div className="flex flex-col md:flex-row gap-6">
           <div className="flex flex-col flex-1">
             <span data-i18n={model.tag} className="text-sm text-gray-800">
               {model.tag}
@@ -94,7 +94,7 @@ const ModelDoc: React.FC<Props> = ({ model, index }) => {
               </button>
             )}
           </div>
-          <div className="flex flex-col flex-1 bg-[#FAFAFA] p-6 rounded-xl">
+          <div className="flex flex-col flex-1 mb-auto bg-[#FAFAFA] p-6 rounded-xl">
             <div className="flex flex-row">
               <img
                 className="h-6 w-6"
