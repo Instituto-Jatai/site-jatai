@@ -46,7 +46,8 @@ const models = [
       "Modelo 6. Contrato de Fornecimento. Nota Técnica de Formalização de Demanda",
       "Modelo 7. Contrato de Fornecimento. Minuta_Contrato de Fornecimento",
     ],
-    linkToDownload: "https://www.jatai.org.br/files/docs_modelo_inovacao.zip",
+    linkToDownload:
+      "https://www.jatai.org.br/files/docs_modelo_gestao escolar.zip",
   },
 ];
 
