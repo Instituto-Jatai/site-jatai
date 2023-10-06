@@ -76,8 +76,10 @@ const team = {
   "Diretor executivo": "Director Ejecutivo",
   "Doutorando em Política Científica e Tecnológica - Unicamp":
     "Doctorando en Política Científica y Tecnológica - Unicamp",
-  "Msc. Administração Pública - Columbia Graduado em Direito - USP":
-    "Msc. Administración Pública - Columbia Graduado en Derecho - USP",
+  "Msc. Administração Pública - Columbia":
+    "Msc. Administración Pública - Columbia",
+  "Graduado em Direito - USP":
+    "Graduado en Derecho - USP",
   "Gestora de projetos": "Gestora de proyectos",
   "Mestrado em Ciência Política - IESP-UERJ":
     "Máster en Ciencia Política - IESP-UERJ",

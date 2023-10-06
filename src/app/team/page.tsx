@@ -54,7 +54,7 @@ const Team = () => {
                 Doutorando em Política Científica e Tecnológica - Unicamp
               </span>
               <span
-                data-i18n="Msc. Administração Pública - Columbia Graduado em Direito - USP"
+                data-i18n="Msc. Administração Pública - Columbia"
                 className="text-base text-gray-600 mb-2"
               >
                 Msc. Administração Pública - Columbia

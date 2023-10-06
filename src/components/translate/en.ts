@@ -77,8 +77,10 @@ const team = {
   "Diretor executivo": "Executive Director",
   "Doutorando em Política Científica e Tecnológica - Unicamp":
     "PhD Candidate in Science and Technology Policy - Unicamp",
-  "Msc. Administração Pública - Columbia Graduado em Direito - USP":
-    "Msc. Public Administration - Columbia Law Graduate - USP",
+  "Msc. Administração Pública - Columbia":
+    "Msc. Public Administration - Columbia",
+  "Graduado em Direito - USP":
+    "Law Graduate - USP",
   "Gestora de projetos": "Project Manager",
   "Mestrado em Ciência Política - IESP-UERJ":
     "Master's in Political Science - IESP-UERJ",
