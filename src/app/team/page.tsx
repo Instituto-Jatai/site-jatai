@@ -312,7 +312,7 @@ const Team = () => {
 
           <div className="flex flex-col md:flex-row lg:items-center gap-9">
             <img
-              src="/images/team/marieli.jpeg"
+              src="/images/team/marieli.jpg"
               alt=""
               className="w-[162px] h-[162px]"
             />
