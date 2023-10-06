@@ -203,6 +203,7 @@ export default function Home() {
               </span>
               <a
                 data-i18n="Visualizar documento"
+                target="_blank"
                 href="https://www.jatai.org.br/files/codigo_de_conduta.pdf"
                 className="bg-green-700 cursor-pointer text-white mb-4 px-6 py-[14px] rounded-xl font-semibold mr-auto transition-all hover:bg-green-800"
               >
