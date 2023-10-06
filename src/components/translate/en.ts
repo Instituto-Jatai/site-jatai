@@ -60,6 +60,10 @@ const home = {
     "<b>What we do?</b> We assist in the definition of public problems and the call for solutions to the innovation ecosystem. We structure the call based on the tender foreseen in the Legal Framework for Startups and Entrepreneurship, which allows the public organization to pay for the tests, as well as their contracting if these tests are successful.",
   "<b>Resultados esperados:</b> Teste de soluções e contratação para a resolução do problema apresentado.":
     "<b>Expected results:</b> Testing of solutions and contracting for the resolution of the presented problem.",
+  "Código de Conduta": "Code of Conduct",
+  "Visualizar documento": "View document",
+  "O Instituto Jataí se preocupa em adotar um comportamento ético e responsável no apoio às contratações públicas, protegendo o Estado de Direito e a integridade de todos com quem atuamos. Por isso, buscamos registrar nesse Código de Conduta valores e orientações claras sobre o comportamento esperado, bem como medidas de conflito de interesse, para profissionais do Instituto Jataí e seus parceiros públicos.":
+    "The Jataí Institute is concerned with adopting ethical and responsible behavior in supporting public procurement, protecting the rule of law and the integrity of everyone with whom we work. Therefore, we seek to record in this Code of Conduct clear values and guidelines on expected behavior, as well as conflict of interest measures, for professionals at the Jataí Institute and its public partners.",
   "Parceiros, Beneficiários e Clientes":
     "Partners, Beneficiaries, and Customers",
   "Edital para apoio a contratação de sistema de gestão escolar":

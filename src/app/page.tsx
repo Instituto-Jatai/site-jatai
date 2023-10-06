@@ -193,6 +193,42 @@ export default function Home() {
 
       <section about="partners" className="bg-gray-100  p-4 md:p-0">
         <div className="container py-14 mx-auto">
+          <div className="flex flex-col md:flex-row">
+            <div className="flex-1 flex flex-col">
+              <span
+                data-i18n="Código de Conduta"
+                className="text-4xl font-semibold mb-4"
+              >
+                Código de Conduta
+              </span>
+              <a
+                data-i18n="Visualizar documento"
+                href="https://www.jatai.org.br/files/codigo_de_conduta.pdf"
+                className="bg-green-700 cursor-pointer text-white mb-4 px-6 py-[14px] rounded-xl font-semibold mr-auto transition-all hover:bg-green-800"
+              >
+                Visualizar documento
+              </a>
+            </div>
+            <div className="flex-1">
+              <span
+                className="text-base"
+                data-i18n="O Instituto Jataí se preocupa em adotar um comportamento ético e responsável no apoio às contratações públicas, protegendo o Estado de Direito e a integridade de todos com quem atuamos. Por isso, buscamos registrar nesse Código de Conduta valores e orientações claras sobre o comportamento esperado, bem como medidas de conflito de interesse, para profissionais do Instituto Jataí e seus parceiros públicos."
+              >
+                O Instituto Jataí se preocupa em adotar um comportamento ético e
+                responsável no apoio às contratações públicas, protegendo o
+                Estado de Direito e a integridade de todos com quem atuamos. Por
+                isso, buscamos registrar nesse Código de Conduta valores e
+                orientações claras sobre o comportamento esperado, bem como
+                medidas de conflito de interesse, para profissionais do
+                Instituto Jataí e seus parceiros públicos.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section about="partners" className="p-4 md:p-0">
+        <div className="container py-14 mx-auto">
           <span
             data-i18n="Parceiros, Beneficiários e Clientes"
             className="text-4xl font-semibold"

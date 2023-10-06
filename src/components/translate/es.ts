@@ -60,6 +60,10 @@ const home = {
     "<b>¿Qué hacemos?</b> Apoyamos en la definición de problemas públicos y en la realización de la convocatoria de soluciones para el ecosistema de innovación. Estructuramos la llamada basándonos en la licitación prevista en el Marco Legal de Startups y Emprendimiento, lo que permite el pago de las pruebas por la organización pública, así como su contratación en caso de que estas pruebas sean exitosas.",
   "<b>Resultados esperados:</b> Teste de soluções e contratação para a resolução do problema apresentado.":
     "<b>Resultados esperados:</b> Prueba de soluciones y contratación para la resolución del problema presentado.",
+  "Código de Conduta": "Código de Conducta",
+  "Visualizar documento": "Ver documento",
+  "O Instituto Jataí se preocupa em adotar um comportamento ético e responsável no apoio às contratações públicas, protegendo o Estado de Direito e a integridade de todos com quem atuamos. Por isso, buscamos registrar nesse Código de Conduta valores e orientações claras sobre o comportamento esperado, bem como medidas de conflito de interesse, para profissionais do Instituto Jataí e seus parceiros públicos.":
+    "El Instituto Jataí se preocupa por adoptar un comportamiento ético y responsable en el apoyo a las compras públicas, protegiendo el estado de derecho y la integridad de todas las personas con quienes trabajamos. Por lo tanto, buscamos dejar constancia en este Código de Conducta de valores y lineamientos claros sobre el comportamiento esperado, así como medidas de conflicto de intereses, para los profesionales del Instituto Jataí y sus socios públicos.",
   "Parceiros, Beneficiários e Clientes": "Socios, Beneficiarios y Clientes",
   "Edital para apoio a contratação de sistema de gestão escolar":
     "Anuncio para apoyo en la contratación de un sistema de gestión escolar",
