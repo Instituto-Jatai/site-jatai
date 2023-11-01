@@ -16,7 +16,7 @@ const HomeSlider: React.FC = () => {
         showThumbs={false}
         stopOnHover={false}
       >
-        <div className="h-[512px] bg-cover bg-center bg-no-repeat bg-[url('/images/home/bg-hero.png')]">
+        <div className="h-[512px] bg-cover bg-center bg-no-repeat bg-[url('/images/home/bg-hero.avif')]">
           <div className="m-auto container flex flex-col justify-center h-full p-4 md:p-0">
             <span
               data-i18n="Construindo organizações públicas para o mundo <b>digital</b> e <b>sustentável</b>"
@@ -43,7 +43,7 @@ const HomeSlider: React.FC = () => {
             </a>
           </div>
         </div>
-        <div className="h-[512px] bg-cover bg-center bg-no-repeat bg-[url('/images/home/bg-hero-2.png')]">
+        <div className="h-[512px] bg-cover bg-center bg-no-repeat bg-[url('/images/home/bg-hero-2.avif')]">
           <div className="m-auto container flex flex-col justify-center h-full p-4 md:p-0">
             <span
               data-i18n="Confira o edital para apoio a <b>contratação de sistema de gestão escolar</b>"
