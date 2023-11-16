@@ -310,47 +310,6 @@ const Team = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row lg:items-center gap-9">
-            <img
-              src="/images/team/marieli.jpg"
-              alt=""
-              className="w-[162px] h-[162px]"
-            />
-            <div className="flex flex-col justify-center">
-              <div className="flex justify-between">
-                <div className="flex flex-col">
-                  <span className="text-2xl mb-1">Mariéli Candido</span>
-                  <span
-                    data-i18n="Analista de Projetos de Inovação"
-                    className="text-base text-gray-700"
-                  >
-                    Analista de Projetos de Inovação
-                  </span>
-                </div>
-                <div className="flex gap-2 items-center">
-                  <a
-                    href="https://www.linkedin.com/in/mari%C3%A9li-candido-9b764314/"
-                    target="_blank"
-                  >
-                    <img src="/images/team/linkedin.svg" alt="" />
-                  </a>
-                </div>
-              </div>
-              <div className="w-full h-[1px] bg-black my-4"></div>
-              <span
-                data-i18n="Mestra em Gestão Pública e Cooperação Internacional - UPFB"
-                className="text-base text-gray-600 mb-2"
-              >
-                Mestra em Gestão Pública e Cooperação Internacional - UPFB
-              </span>
-              <span
-                data-i18n="Graduada em Administração - UEPB"
-                className="text-base text-gray-600"
-              >
-                Graduada em Administração - UEPB
-              </span>
-            </div>
-          </div>
         </div>
       </div>
     </>
