@@ -36,7 +36,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
 
-        <div id="modal" className="fixed inset-0 z-20 hidden">
+{/*         <div id="modal" className="fixed inset-0 z-20 hidden">
           <div className="flex items-center justify-center min-h-screen ">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden mx-auto z-30 w-[90%] max-w-[862px] flex relative">
               <button
@@ -93,7 +93,7 @@ export default function RootLayout({
             </div>
           </div>
           <div className="fixed inset-0 bg-black opacity-30"></div>
-        </div>
+        </div> */}
 
         <Script id="close-modal">
           {`
