@@ -37,7 +37,7 @@ const HomeSlider: React.FC = () => {
             <a
               data-i18n="Fale conosco"
               className="bg-green-700 text-white mt-9 px-6 py-[14px] rounded-xl font-semibold mr-auto transition-all hover:bg-green-800"
-              href="https://calendly.com/eduardospano/jatai-30min"
+              href="https://calendar.app.google/tjnvR1waGu4x1MC16"
             >
               Fale conosco
             </a>
