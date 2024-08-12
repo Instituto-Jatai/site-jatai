@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
             <button className="bg-slate-900 text-white w-[180px] h-[48px] rounded-xl mt-4">
               <a
                 data-i18n="Fale com a gente"
-                href="https://calendly.com/eduardospano/jatai-30min"
+                href="https://calendar.app.google/tjnvR1waGu4x1MC16"
               >
                 Fale com a gente
               </a>
