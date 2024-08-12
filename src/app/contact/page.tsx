@@ -48,7 +48,7 @@ const Contact = () => {
               <a
                 target="_blank"
                 data-i18n="Fale com a gente"
-                href="https://calendly.com/eduardospano/jatai-30min"
+                href="https://calendar.app.google/tjnvR1waGu4x1MC16"
               >
                 Fale com a gente
               </a>
