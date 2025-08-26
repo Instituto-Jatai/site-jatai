@@ -13,7 +13,7 @@ const models = [
       "Modelo ETP - Estudo Técnico Preliminar da contratação",
       "Modelo TR - Termo de Referência",
     ],
-    linkToDownload: "https://www.jatai.org.br/files/docs_modelo.zip",
+    linkToDownload: "https://antigo.jatai.org.br/files/docs_modelo.zip",
   },
   {
     tag: "Modelo ETP e TR",
@@ -27,7 +27,7 @@ const models = [
       "Modelo TR Ateliê (Anexo II) - Composição de custos e formação de preços",
       "Modelo ETP Ateliê",
     ],
-    linkToDownload: "https://www.jatai.org.br/files/docs_modelo_atelie.zip",
+    linkToDownload: "https://antigo.jatai.org.br/files/docs_modelo_atelie.zip",
   },
   {
     tag: "Modelo ETP e TR",
@@ -47,7 +47,7 @@ const models = [
       "Modelo 7. Contrato de Fornecimento. Minuta_Contrato de Fornecimento",
     ],
     linkToDownload:
-      "https://www.jatai.org.br/files/docs_modelo_gestao escolar.zip",
+      "https://antigo.jatai.org.br/files/docs_modelo_gestao escolar.zip",
   },
 ];
 
